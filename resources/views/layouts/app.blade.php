@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link rel="icon" type="image/png" href="{{ url('favicon.png')}}" />
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
