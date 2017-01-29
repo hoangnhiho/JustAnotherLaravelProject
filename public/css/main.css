@@ -936,3 +936,37 @@ ul.nostyle i {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+
+/*784BA7*/
+
+.overlayer {
+  /*height: 4em;*/
+  /*padding-top: 2em;*/
+  opacity: 0.5;
+  background: black;
+  /*border-top: 3px solid #ccc;*/
+  /*border-bottom: 3px solid #ccc;*/
+  /*margin-top: 5.0em;*/
+}
+
+
+.house-content {
+  position: relative;
+  height:300px;
+}
+
+.house-text {
+  position: absolute;
+  top: 0;
+  height:300px;
+  color:white;
+}
+
+.house-overlayer {
+  position: absolute;
+  top: 0;
+  height:300px;
+  width:100%;
+  opacity: 0.5;
+  background: black;
+}
