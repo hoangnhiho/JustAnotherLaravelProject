@@ -970,3 +970,35 @@ ul.nostyle i {
   opacity: 0.5;
   background: black;
 }
+
+#footer{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#footer-container{
+  margin: 0px 0px;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#footer-row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#footer-bar-text{
+  padding: 15px 15px;
+}
+#footer-bar-text > p{
+  margin-bottom: 0px;
+}
+#footer-bar-icons{
+  background: gray;
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
+.footer-links{
+  margin-top:25px;
+}
+.footer-links > div > p{
+  margin-bottom: 0px;
+}
