@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Responsive Onepage HTML Template | Multi</title>
+    <title>Homestates</title>
 	<!-- core CSS -->
     <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ url('css/font-awesome.min.css') }}" rel="stylesheet">
@@ -93,14 +93,37 @@
                 </div>
             </div><!--/.item-->
         </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->
+    </section><!--/#main-slider-->  
 
     <br>
 
     <section id="">
         <div class="container wow fadeInDown">
-            <div class="col-md-offset-1 col-md-10 col-xs-12">
-                <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-6 col-xs-12 listing-preview listing-preview-top" style="padding: 5px">
+                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
+                    <div class="overlayer-info">
+                        <h3>ALBION</h3>
+                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 listing-preview listing-preview-top" style="padding: 5px">
+                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt="" />
+                    <div class="overlayer-info">
+                        <h3>ALBION</h3>
+                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10 col-xs-12 listing-preview" style="padding: 5px">
+                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
+                    <div class="overlayer-info">
+                        <h3>ALBION</h3>
+                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -125,7 +148,7 @@
     
     <section id="">
         <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/footer1.jpg') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-12" style="padding: 0px 0px; margin-top: 20px; margin-bottom: 20px;">
+            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
                 <!-- <div style="height:300px;"></div> -->
                 <div class="house-content">
                     <div class="house-overlayer"></div>
@@ -214,8 +237,6 @@
 
 
 </div>
-
-
     <script src="{{ url('js/jquery.js') }}"></script>
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -227,5 +248,17 @@
     <script src="{{ url('js/jquery.inview.min.js') }}"></script>
     <script src="{{ url('js/wow.min.js') }}"></script>
     <script src="{{ url('js/main.js') }}"></script>
+    <script>
+        // listing-preview
+        $( ".listing-preview" ).hover(
+            function() {
+                console.log("yolo");
+                $( this ).find(".overlayer-info").fadeIn( "slow" );
+
+            }, function() {
+                $( this ).find(".overlayer-info").fadeOut( "slow" );
+            }
+        );
+    </script>
 </body>
 </html>

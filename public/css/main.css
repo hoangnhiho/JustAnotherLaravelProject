@@ -439,6 +439,7 @@ ul.nostyle i {
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
+  height: 100%;
 }
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info h3 {
   font-size: 16px;
@@ -1002,3 +1003,45 @@ ul.nostyle i {
 .footer-links > div > p{
   margin-bottom: 0px;
 }
+
+.listing-preview{
+  padding-left:0px;
+  padding-right:0px;
+}
+.overlayer-info{
+  transition: background-color 0.5s ease;
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: rgba(0,0,0,0.5);
+  left: -2px;
+}
+
+.listing-preview-top{
+  max-height:300px; 
+  height:300px; 
+  overflow: hidden;
+}
+.listing-preview-top > img{
+  height: 100%;
+  width:auto;
+  max-height:100%;
+}
+
+.overlayer-info > h3, .overlayer-info > p{
+  position: absolute;
+  color:white;
+  padding-left: 20px;
+  text-transform: capitalize;
+}
+.overlayer-info > h3{
+  bottom: 50px;
+}
+
+.overlayer-info > p{
+  bottom: 20px;
+  border-top: 2px solid #fff;
+}
+
