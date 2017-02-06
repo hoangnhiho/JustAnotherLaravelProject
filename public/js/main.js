@@ -2,7 +2,7 @@ jQuery(function($) {'use strict';
 
 	// Navigation Scroll
 	$(window).scroll(function(event) {
-		Scroll();
+		// Scroll();
 	});
 
 	$('.navbar-collapse ul li a').on('click', function() {  

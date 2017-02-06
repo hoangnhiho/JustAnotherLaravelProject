@@ -16,7 +16,7 @@
 // });
 
 Route::get('/', function () {
-    return view('test');
+    return view('frontend.frontPage');
 });
 
 Auth::routes();
