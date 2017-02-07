@@ -1,0 +1,24 @@
+#button-color{
+	background-color: #800080;
+}
+
+#centering{			/* Centers the stuff*/
+	text-align: center;
+	margin: auto;
+}
+
+#submit{			/* Controls the size of the submit button*/
+	width: 360px;
+	height: 30px;
+	background-color: #800080;
+}
+
+/* Colour of the background */
+body{
+	background-color: #D3D3D3;
+}
+
+/* Colour of the fill in the box */
+.container-white{
+	background-color: white;
+}

@@ -1,8 +1,9 @@
 @extends('layouts.frontendApp')
 @section('content')
+<link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/buy/bg1.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/buy/Image.jpg') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -18,7 +19,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url({{ url('images/buy/bg2.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/buy/Image.jpg') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -35,72 +36,192 @@
                 </div>
             </div><!--/.item-->
         </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->  
+    </section><!--/#main-slider-->
 
-    <br>
-
-    <section id="">
-        <div class="container wow fadeInDown">
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-6 col-xs-12 listing-preview listing-preview-top" id="listing-preview-top-left" style="">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
-                    <div class="overlayer-info">
-                        <h3>ALBION</h3>
-                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12 listing-preview listing-preview-top" id="listing-preview-top-right" style="">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt="" />
-                    <div class="overlayer-info">
-                        <h3>ALBION</h3>
-                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-10 col-xs-12 listing-preview" style="">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
-                    <div class="overlayer-info">
-                        <h3>ALBION</h3>
-                        <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p>
-                    </div>
+    <!-- This is for the area after the slides -->
+    <div class="container container-white">
+        <div class="row">
+            <div class="col-md-offset-1 col-sm-10">
+                <h2 style="text-align: center">
+                    Resedential real estate sales and property marketing services
+                    <br>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div id="centering">
+                    <button class="btn btn-default" id="button-color">
+                        <h3>
+                            <font color="white">
+                                Current Listings
+                            </font>  
+                        </h3>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <br>
+    <div>
+        <br>
+    </div>
 
-    <section id="">
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/world_map.png') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-5 col-xs-12" style="padding: 0px 0px; margin-top: 20px; margin-bottom: 20px;">
-                <!-- <div style="height:300px;"></div> -->
-                <div class="house-content">
-                    <div class="house-text" style="padding: 10px 10px; color:purple">
-                        <h2 style="color:purple">LOCALLY ESTABLISHED GLOBALLY CONNECTED</h2>
-                        <p>Our objective as a client-focused consultancy Group is to link the right investors to the right prperty. We enable businesses, individuals and investors to reach their financial goals, and are committed to acquire and develop quality properties based on realistic values for our clients.</p>
-                    </div>
+    <!-- This is for 3 column part. Enter image here -->
+    <div class="container-fluid container-white">
+        <div class="row">
+            <div class="col-md-offset-1 col-sm-5">
+                <h2>
+                    Marketing
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>
+                    Research
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <h2>
+                    Service
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                 
+            </div>
+            <div class="col-md-offset-1 col-sm-4">
+                <h2>
+                    Talk to a Homestates Agent
+                </h2>
+                <p>
+                    We're here to help seven days a week.
+                    <br>
+                    <br>
+                    What type of home are you looking for?
+                </p>
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown">
+                        <span class="caret" style="color: white"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Castle</a></li>
+                    </ul>
+                </div>
+
+
+                <form action="" method="">
+                        <div class="form-group">
+                            <label for="email">
+                                Email
+                            </label>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone
+                            </label>
+                            <div class="form-group">
+                                <input type="phone" class="form-control" id="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h6>
+                                What can we help you with?
+                            </h6>
+                            <textarea placeholder="Please feel free to ask us a question" class="form-control"></textarea>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-default" id="submit" style="color: white" value="Submit">
+                            </input>
+                            
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+    </div>
+
+    <!-- This is before the final image area -->
+    <div class="container container-white">
+        <div class="row">
+            <div class="col-md-offset-1 col-sm-10">
+                <h2 style="text-align: center;">
+                    Our expertise in the field of property sales
+                </h2>
+                <p style="text-align: center">
+                    View our wide range of property sales services
+                </p>
+                <br>
+                <div>
+                    <h3>
+                        Off-the-Plan
+                    </h3>
+                    <p>
+                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
+                    </p>
+                    <h3>
+                        Established Properties
+                    </h3>
+                    <p>
+                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
+                    </p>
+                    <h3>
+                        Commercial & Business
+                    </h3>
+                    <p>
+                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
+                    </p>
+                    <ul>
+                        <li>Leisure (Hotels, restaurants)</li>
+                        <li>Rental(Shopping malls, rental stores)</li>
+                        <li>Land(Future developments, islands, farms)</li>
+                    </ul>
+                    <h3>
+                        Buyers Agents Services
+                    </h3>
+                    <p>
+                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <br>
-    
-    <section id="">
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/footer1.jpg') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 35px 10px;">
-                        <h4>"We can warmly recommend Homestates to anyone who appreciates high quality properties with the right price - I can assure that Homestates can be trusted in every situation".</h4>
-                        <p>Jasper & Caroline bought this Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 @endsection
 @section('customjs')
     <script>

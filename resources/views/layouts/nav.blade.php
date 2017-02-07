@@ -13,13 +13,13 @@
 			
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class="scroll active"><a href="#home">Buy</a></li>
-                    <li class="scroll"><a href="#features">Sell</a></li>
-                    <li class="scroll"><a href="#services">Rent</a></li>
-                    <li class="scroll"><a href="#portfolio">Projects</a></li>
-                    <li class="scroll"><a href="#about">Migration & Education</a></li>
-                    <li class="scroll"><a href="#meet-team">Press Room</a></li>
-                    <li class="scroll"><a href="#pricing">About Us</a></li>
+                    <li class="scroll"><a href="{{ url('buy') }}">Buy</a></li>
+                    <li class="scroll"><a href="#">Sell</a></li>
+                    <li class="scroll"><a href="#">Rent</a></li>
+                    <li class="scroll"><a href="#">Projects</a></li>
+                    <li class="scroll"><a href="#">Migration & Education</a></li>
+                    <li class="scroll"><a href="#">Press Room</a></li>
+                    <li class="scroll"><a href="#">About Us</a></li>
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
                     <!-- <li class="scroll"><a href="#get-in-touch">Contact</a></li>                         -->
                 </ul>
