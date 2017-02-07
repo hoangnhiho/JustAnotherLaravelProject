@@ -16,25 +16,25 @@
     </div>
 </footer><!--/#footer-->
 
-<div class="container">
+<div class="container" style="margin-top:50px; margin-bottom: 50px">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 footer-img-links">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
-                    <div class="footer-img-info" style="display:block">
-                        <h3>Press Room</h3>
+                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer2.jpg') }}) no-repeat center center; background-size: cover;">
+                    
+                    <div class="footer-img-info" >
+                        <h3>Join Homestates</h3>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 footer-img-links">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
-                    <div class="footer-img-info" style="display:block">
-                        <h3>Press Room</h3>
+                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/house.jpg') }}) no-repeat center center; background-size: cover;">
+                    
+                    <div class="footer-img-info">
+                        <h3>Latest Projects</h3>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 footer-img-links">
-                    <img class="img-responsive" src="{{ url('images/buy/house.jpg') }}" alt=""/>
-                    <div class="footer-img-info" style="display:block">
+                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer3.png') }}) no-repeat center center; background-size: cover;">
+                    
+                    <div class="footer-img-info">
                         <h3>Press Room</h3>
                     </div>
                 </div>

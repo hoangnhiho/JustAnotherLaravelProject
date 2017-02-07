@@ -18,7 +18,9 @@
 Route::get('/', function () {
     return view('frontend.frontPage');
 });
-
+Route::get('/buy', function () {
+    return view('frontend.buy');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
