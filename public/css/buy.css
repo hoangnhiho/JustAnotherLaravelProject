@@ -22,3 +22,24 @@ body{
 .container-white{
 	background-color: white;
 }
+
+/*Size of the button*/
+#button-size{
+	width: 470px;
+	height: 30px;
+	background-color: purple;
+}
+
+/*Size of dropdown menu*/
+#drop-size{
+	width: 470px;
+	height: 30px;
+	text-align: center;
+}
+
+#Vertical{
+	border-right-color: lightgrey;
+	border-right-style: solid;
+	height:700px; 
+	width:100px;
+}
