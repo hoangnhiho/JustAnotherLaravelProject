@@ -41,18 +41,15 @@
     <!-- This is for the area after the slides -->
     <div class="container container-white">
         <div class="row">
-            <div class="col-md-offset-1 col-sm-10">
+            <div class="col-md-offset-1 col-xs-10">
                 <h2 style="text-align: center">
-                    Resedential real estate sales and property marketing services
+                    Residential real estate sales and property marketing services
                     <br>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Property investments, houses and homes remains to be Homstates' focal point of service, with three separate divisions geared to provide a complete coverage of all client's needs.
+                    <br>
+                    Property Sales services the high demand for clients seeking to buy or sell estate-a core operational function of the Group. Backed by a vetted team of experienced property specialists, Homestates offers market-proven strategies to enhance the value of your purchase or sale.
                 </p>
                 <div id="centering">
                     <button class="btn btn-default" id="button-color">
@@ -72,130 +69,129 @@
         <br>
     </div>
 
-    <!-- This is for 3 column part. Enter image here -->
+
     <div class="container-fluid container-white">
         <div class="row">
-            <!-- The three images -->
-            <div class="col-md-offset-1 col-sm-1">
-                <h1>
-                    <br>
-                    <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
-                </h1>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>
-                    <i class="fa fa-flask fa-2x" aria-hidden="true"></i>
-                </h1>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>
-                    <i class="fa fa-flask fa-2x" aria-hidden="true"></i>
-                </h1>
-            </div>    
-            <!-- Left of the form     -->
-            <div class="col-sm-3">
-                <h2>
-                    Marketing
-                </h2>
-                <p>
-                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
-                </p>
-                <br>
-                <br>
-                <hr width="450" size="20" style="color: lightgrey">
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <i class="fa fa-line-chart fa-3x icon-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-9">
+                                <h2>
+                                     Marketing
+                                </h2>
+                                <p>
+                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
+                                </p>
+                            </div>
+                        </div>
 
-                <h2>
-                    Research
-                </h2>
-                <p>
-                    Backed by decisive analysis on resedential property appraisals and thorough market insight, clients can expect a definitive and premium result for their property sales needs.
-                </p>
-                <br>
-                <br>
-                <hr width="450" size="20" style="color: lightgrey">  
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <i class="fa fa-flask fa-3x icon-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-9">
+                                <h2>
+                                     Marketing
+                                </h2>
+                                <p>
+                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
+                                </p>
+                            </div>
+                        </div>
 
-                <h2>
-                    Service
-                </h2>
-                <p>
-                    Our relationships fostered with clients from our principals is one dedicated to achieving financial success, supported by genuine rapport and comprehension of each individual need and requirement.
-                </p>
-            </div>
-            <!-- Vertical Line -->        
-            <div class="col-sm-1">
-                <div id="Vertical-white"></div>
-                <div id="Vertical"></div>
-                <div id="Vertical-white"></div>
-            </div>   
-            <!-- Forms for clients -->
-            <div class="col-sm-4">
-                <h2>
-                    Talk to a Homestates Agent
-                </h2>
-                <p>
-                    We're here to help seven days a week.
-                    <br>
-                    <br>
-                    What type of home are you looking for?
-                </p>
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <i class="fa fa-flask fa-3x icon-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-9">
+                                <h2>
+                                     Marketing
+                                </h2>
+                                <p>
+                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
-                        <span class="caret" style="color: white"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
-                        <li><a href="#">Apartment</a></li>
-                        <li><a href="#">House</a></li>
-                        <li><a href="#">Castle</a></li>
-                    </ul>
 
-                    <!-- <select>
-                        <option value="Apartment">Apartment</option>
-                        <option value="House">House</option>
-                        <option value="Castle">Castle</option>
-                        <option value="" selected>     </option>
-                    </select> -->
+
+                    </div>
+
+                    <div class="col-xs-12 col-md-5" id="line-size">
+                        <h2>
+                            Talk to a Homestates Agent
+                        </h2>
+                        <p>
+                            We're here to help seven days a week.
+    
+                            <br>
+                            <br>
+                            What type of home are you looking for?
+                        </p>
+
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
+                                <span class="caret" style="color: white"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
+                                <li><a href="#">Apartment</a></li>
+                                <li><a href="#">House</a></li>
+                                <li><a href="#">Castle</a></li>
+                            </ul>
+
+                            <!-- <select>
+                                <option value="Apartment">Apartment</option>
+                                <option value="House">House</option>
+                                <option value="Castle">Castle</option>
+                                <option value="" selected>     </option>
+                            </select> -->
+
+                        </div>
+                        <form action="" method="">
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone
+                                </label>
+                                <div class="form-group">
+                                    <input type="phone" class="form-control" id="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h6>
+                                    What can we help you with?
+                                </h6>
+                                <textarea placeholder="Please feel free to ask us a question" class="form-control"></textarea>        
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-default form-control" id="submit" value="Submit">
+                                </input>                
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
-                <form action="" method="">
-                    <div class="form-group">
-                        <label for="email">
-                            Email
-                        </label>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">
-                            Phone
-                        </label>
-                        <div class="form-group">
-                            <input type="phone" class="form-control" id="phone">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <h6>
-                            What can we help you with?
-                        </h6>
-                        <textarea placeholder="Please feel free to ask us a question" class="form-control"></textarea>        
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-default" id="submit" style="color: white" value="Submit">
-                        </input>                
-                    </div>
-                </form>
             </div>
         </div>
+        
     </div>
+
+
+
+
 
     <div>
         <br>
@@ -259,9 +255,14 @@
         <br>
     </div>
     <!-- Last section of buy page -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="col-sm-12">
-            <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
+            <img src="{{ url('images/buy/person2.jpg') }}">
+            <div class="caption">
+                <h1>
+                    LOLOLOL
+                </h1>
+            </div>
         </div>
     </div>
 

@@ -21,6 +21,11 @@ Route::get('/', function () {
 Route::get('/buy', function () {
     return view('frontend.buy');
 });
+
+Route::get('/sell', function () {
+    return view('frontend.sell');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

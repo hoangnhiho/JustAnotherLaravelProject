@@ -8,15 +8,27 @@
 }
 
 #submit{			/* Controls the size of the submit button*/
-	width: 360px;
+	width: 100%;
 	height: 30px;
 	background-color: #800080;
+	color: white;
 }
 
-/* Colour of the background */
-body{
-	background-color: #D3D3D3;
+body {
+    background-color: lightgrey;
 }
+
+#line-size{
+	border-left-color: lightgrey; 
+	border-left-style: solid;
+}
+
+@media screen and (max-width: 1000px) {
+    #line-size{
+        border-left-color: white;
+    }
+}
+
 
 /* Colour of the fill in the box */
 .container-white{
@@ -25,7 +37,7 @@ body{
 
 /*Size of the button*/
 #button-size{
-	width: 470px;
+	width: 100%;
 	height: 30px;
 	background-color: purple;
 }
@@ -53,7 +65,12 @@ body{
 
 .dropdown-menu {
     margin: 0px;
-    width: 470px;
+    width: 100%;
     text-align: center;
 
 }
+
+.icon-icon{
+	margin-top: 35px;
+}
+

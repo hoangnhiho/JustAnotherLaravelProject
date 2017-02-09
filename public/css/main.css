@@ -181,7 +181,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 37px;
-    border-top: 3px solid #45aed6;
+    border-top: 3px solid #784BA7;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -1041,6 +1041,20 @@ ul.nostyle i {
   padding-left: 20px;
   text-transform: capitalize;
 }
+
+.overlayer-info > h1{
+  position: absolute;
+  color:white;
+  text-transform: capitalize;
+  bottom: 120px;
+  width: 100%;
+  text-align: center;
+}
+
+#bigger-overlayer-info > h1{
+  bottom: 270px;
+}
+
 .overlayer-info > h3{
   bottom: 50px;
 }
@@ -1059,7 +1073,7 @@ ul.nostyle i {
   }
 }
 .btn-primary{
-  background:purple !important;
+  background:#784BA7 !important;
   border: none !important;
 }
 
@@ -1087,5 +1101,14 @@ ul.nostyle i {
 @media (min-width: 768px){
   .footer-img-links{
       width: 31.33333333%;
+  }
+}
+@media (max-width: 768px){
+  .social-icons{
+      float: right !important;
+      margin-right: 0px !important;
+  }
+  #listing-preview-top-left{
+    margin-bottom: 30px;
   }
 }

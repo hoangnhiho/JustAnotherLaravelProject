@@ -16,7 +16,7 @@
     </div>
 </footer><!--/#footer-->
 
-<div class="container" style="margin-top:50px; margin-bottom: 50px">
+<div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; background-color: #E7E8EA;">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">
             <div class="row">
@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid" style="background-color: #E7E8EA;">
     <div class="row">
         <div class="col-xs-offset-2 col-xs-8" style="color:black;">
             <div class="row footer-links">

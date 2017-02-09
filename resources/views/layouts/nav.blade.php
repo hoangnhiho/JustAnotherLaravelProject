@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li class="scroll"><a href="{{ url('buy') }}">Buy</a></li>
-                    <li class="scroll"><a href="#">Sell</a></li>
+                    <li class="scroll"><a href="{{ url('sell') }}">Sell</a></li>
                     <li class="scroll"><a href="#">Rent</a></li>
                     <li class="scroll"><a href="#">Projects</a></li>
                     <li class="scroll"><a href="#">Migration & Education</a></li>
