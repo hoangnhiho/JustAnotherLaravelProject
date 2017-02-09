@@ -63,6 +63,7 @@
                         </h3>
                     </button>
                 </div>
+                <br>
             </div>
         </div>
     </div>
@@ -107,7 +108,7 @@
                 </p>
                 <br>
                 <br>
-                <hr width="480" size="20" style="color: lightgrey">
+                <hr width="450" size="20" style="color: lightgrey">
 
                 <h2>
                     Research
@@ -117,7 +118,7 @@
                 </p>
                 <br>
                 <br>
-                <hr width="480" size="20" style="color: lightgrey">  
+                <hr width="450" size="20" style="color: lightgrey">  
 
                 <h2>
                     Service
@@ -126,17 +127,12 @@
                     Our relationships fostered with clients from our principals is one dedicated to achieving financial success, supported by genuine rapport and comprehension of each individual need and requirement.
                 </p>
             </div>
-
-
-
-            <!-- Vertical Line -->
-            <div class="col-md-offset-1 col-sm-1" id="Vertical">
-            
-            </div>
-
-
-
-
+            <!-- Vertical Line -->        
+            <div class="col-sm-1">
+                <div id="Vertical-white"></div>
+                <div id="Vertical"></div>
+                <div id="Vertical-white"></div>
+            </div>   
             <!-- Forms for clients -->
             <div class="col-sm-4">
                 <h2>
@@ -158,6 +154,14 @@
                         <li><a href="#">House</a></li>
                         <li><a href="#">Castle</a></li>
                     </ul>
+
+                    <!-- <select>
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        <option value="Castle">Castle</option>
+                        <option value="" selected>     </option>
+                    </select> -->
+
                 </div>
                 <form action="" method="">
                     <div class="form-group">
@@ -216,6 +220,7 @@
                     <p>
                         Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
                     </p>
+                    <br>
                     <h3>
                         Established Properties
                     </h3>
@@ -223,6 +228,7 @@
                         <!-- Some of the words here may not be correct. It's hard to read from the picture -->
                         The cornerstone of all real estate services established properties refers to the purchasing of a pre-existing home. Selecting established properties gives buyers the chance to inspect the future listings and also the physical side  alongside those currently on the market.
                     </p>
+                    <br>
                     <h3>
                         Commercial & Business
                     </h3>
@@ -235,14 +241,27 @@
                         <li>Rental(Shopping malls, rental stores)</li>
                         <li>Land(Future developments, islands, farms)</li>
                     </ul>
+                    <br>
                     <h3>
                         Buyers Agents Services
                     </h3>
                     <p>
                         Can't find anything you like that's already existing on the market? Our role as Buyers Agents place us at the forefront of the property selection market, enabling us to source the perfect property for you, today.
                     </p>
+                    <br>
+                    <br>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+    </div>
+    <!-- Last section of buy page -->
+    <div class="container">
+        <div class="col-sm-12">
+            <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
         </div>
     </div>
 

@@ -21,7 +21,6 @@
                     <li class="scroll"><a href="#">Press Room</a></li>
                     <li class="scroll"><a href="#">About Us</a></li>
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
-                    <!-- <li class="scroll"><a href="#get-in-touch">Contact</a></li>                         -->
                 </ul>
             </div>
         </div><!--/.container-->
