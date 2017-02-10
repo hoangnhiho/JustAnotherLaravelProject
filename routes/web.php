@@ -26,6 +26,7 @@ Route::get('/sell', function () {
     return view('frontend.sell');
 });
 
+Route::resource('listings', 'ListingsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

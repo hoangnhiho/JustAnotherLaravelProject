@@ -74,6 +74,8 @@
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <div class="row">
+
+                    <!-- Paragraphs next to the forms -->
                     <div class="col-xs-12 col-md-7">
                         <div class="row">
                             <div class="col-xs-2">
@@ -116,11 +118,9 @@
                                 </p>
                             </div>
                         </div>
-
-
-
                     </div>
 
+                    <!-- Horizontal Form -->
                     <div class="col-xs-12 col-md-5" id="line-size">
                         <h2>
                             Talk to a Homestates Agent
@@ -133,22 +133,22 @@
                             What type of home are you looking for?
                         </p>
 
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
+                        <div class="dropdown" style="">
+
+                            <!-- <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
                                 <span class="caret" style="color: white"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
                                 <li><a href="#">Apartment</a></li>
                                 <li><a href="#">House</a></li>
                                 <li><a href="#">Castle</a></li>
-                            </ul>
+                            </ul> -->
 
-                            <!-- <select>
+                            <select style="color: purple">
                                 <option value="Apartment">Apartment</option>
                                 <option value="House">House</option>
                                 <option value="Castle">Castle</option>
-                                <option value="" selected>     </option>
-                            </select> -->
+                            </select>
 
                         </div>
                         <form action="" method="">
@@ -188,10 +188,6 @@
         </div>
         
     </div>
-
-
-
-
 
     <div>
         <br>
@@ -255,16 +251,30 @@
         <br>
     </div>
     <!-- Last section of buy page -->
+
     <div class="container-fluid">
-        <div class="col-sm-12">
-            <img src="{{ url('images/buy/person2.jpg') }}">
-            <div class="caption">
-                <h1>
-                    LOLOLOL
-                </h1>
+        <div class="row">    
+            <div class="col-sm-12">
+                <div class="carousel-content">
+
+                    <div class="house-text" id="reshape">
+                        <h2  id="overlay">"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h2>
+                        <p  id="overlay"><b>Charlie</b> bought with Homestates</p>
+                    </div>
+
+                    <!-- <p id="text-box">
+                        "Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".
+                        <br>
+                        <br>
+                        <b>Charlie</b> bought with Homestates
+                    </p> -->
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="item" style="background-image: url({{ url('images/buy/person2.jpg') }})" id="final-image"> 
+            </div>
+        </div> 
+    </div> 
+
 
 
 @endsection
