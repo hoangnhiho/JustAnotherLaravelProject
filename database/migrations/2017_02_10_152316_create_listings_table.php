@@ -27,7 +27,7 @@ class CreateListingsTable extends Migration
 
             $table->integer('car_no')->unsigned();
             $table->integer('bath_no')->unsigned();
-            $table->integer('room_no')->unsigned();
+            $table->integer('bed_no')->unsigned();
 
             $table->mediumText('img_url')->nullable();
             $table->mediumText('img_urls')->nullable();

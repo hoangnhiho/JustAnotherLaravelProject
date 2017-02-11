@@ -26,6 +26,10 @@ Route::get('/sell', function () {
     return view('frontend.sell');
 });
 
+Route::get('/aboutus', function () {
+    return view('frontend.aboutus');
+});
+
 Route::resource('listings', 'ListingsController');
 Auth::routes();
 

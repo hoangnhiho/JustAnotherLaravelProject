@@ -41,7 +41,7 @@
     <!-- This is for the area after the slides -->
     <div class="container container-white">
         <div class="row">
-            <div class="col-md-offset-1 col-xs-10">
+            <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">
                     Residential real estate sales and property marketing services
                     <br>
@@ -52,12 +52,8 @@
                     Property Sales services the high demand for clients seeking to buy or sell estate-a core operational function of the Group. Backed by a vetted team of experienced property specialists, Homestates offers market-proven strategies to enhance the value of your purchase or sale.
                 </p>
                 <div id="centering">
-                    <button class="btn btn-default" id="button-color">
-                        <h3>
-                            <font color="white">
-                                Current Listings
-                            </font>  
-                        </h3>
+                    <button class="btn btn-primary">
+                        <h3 style="color:white">Current Listings</h3>
                     </button>
                 </div>
                 <br>
@@ -65,12 +61,7 @@
         </div>
     </div>
 
-    <div>
-        <br>
-    </div>
-
-
-    <div class="container-fluid container-white">
+    <div class="container-fluid container-white" style="margin-top: 40px">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <div class="row">
@@ -127,9 +118,8 @@
                         </h2>
                         <p>
                             We're here to help seven days a week.
-    
-                            <br>
-                            <br>
+                        </p>
+                        <p>
                             What type of home are you looking for?
                         </p>
 
@@ -144,7 +134,7 @@
                                 <li><a href="#">Castle</a></li>
                             </ul> -->
 
-                            <select style="color: purple">
+                            <select class="form-control" style="">
                                 <option value="Apartment">Apartment</option>
                                 <option value="House">House</option>
                                 <option value="Castle">Castle</option>
@@ -197,7 +187,7 @@
     <!-- This is before the final image area -->
     <div class="container container-white">
         <div class="row">
-            <div class="col-md-offset-1 col-sm-10">
+            <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center;">
                     Our expertise in the field of property sales
                 </h2>
@@ -247,33 +237,22 @@
         </div>
     </div>
 
-    <div>
-        <br>
-    </div>
+    <br>
     <!-- Last section of buy page -->
 
-    <div class="container-fluid">
-        <div class="row">    
-            <div class="col-sm-12">
-                <div class="carousel-content">
-
-                    <div class="house-text" id="reshape">
-                        <h2  id="overlay">"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h2>
-                        <p  id="overlay"><b>Charlie</b> bought with Homestates</p>
+    <section>
+        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/person2.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
+            <div class="col-sm-offset-1 col-sm-4 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
+                <div class="house-content" style="margin-top: 40px;">
+                    <div class="house-overlayer"></div>
+                    <div class="house-text" style="padding: 55px 10px;">
+                        <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
+                        <p><b>Charlie</b> bought with Homestates</p>
                     </div>
-
-                    <!-- <p id="text-box">
-                        "Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".
-                        <br>
-                        <br>
-                        <b>Charlie</b> bought with Homestates
-                    </p> -->
                 </div>
             </div>
-            <div class="item" style="background-image: url({{ url('images/buy/person2.jpg') }})" id="final-image"> 
-            </div>
-        </div> 
-    </div> 
+        </div>
+    </section>
 
 
 

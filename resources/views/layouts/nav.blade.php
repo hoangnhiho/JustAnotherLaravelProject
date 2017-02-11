@@ -19,7 +19,7 @@
                     <li class="scroll"><a href="#">Projects</a></li>
                     <li class="scroll"><a href="#">Migration & Education</a></li>
                     <li class="scroll"><a href="#">Press Room</a></li>
-                    <li class="scroll"><a href="#">About Us</a></li>
+                    <li class="scroll"><a href="{{ url('aboutus') }}">About Us</a></li>
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
                 </ul>
             </div>

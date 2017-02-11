@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         $lat 	= '-27.4929184';
         $lng 	= '153.0746137';
         $adr 	= '34 seventh ave, St Lucia, Qld, Australia';
-        $desc 	= 'Default Description';
+        $desc 	= 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum';
+        
         $capt 	= 'Default Captions';
         DB::table('users')->insert(array(
             ['name' => 'Hoang Ho', 	'email' => 'hoang@digi.dev',	'role' => 'master_admin', 	'password' => \Hash::make('secret'), 'created_at' => $dt, 'updated_at' => $dt], 
@@ -28,12 +29,16 @@ class DatabaseSeeder extends Seeder
             )
         );
 
-        DB::table('listings')->insert(array(
-            ['title' => 'house 1',	'caption' => $capt,'desc' => $desc,	'prop_type'	=> 'house', 'price' => 100000.00, 'car_no' => 1,'bath_no' => 1,'room_no' => 1, 'img_url' => $dImg, 'img_urls' => $dImgs, 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'created_at' => $dt, 'updated_at' => $dt],
-            ['title' => 'house 1',	'caption' => $capt,'desc' => $desc,	'prop_type'	=> 'house', 'price' => 100000.00, 'car_no' => 2,'bath_no' => 2,'room_no' => 2, 'img_url' => $dImg, 'img_urls' => $dImgs, 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'created_at' => $dt, 'updated_at' => $dt],
-            ['title' => 'house 1',	'caption' => $capt,'desc' => $desc,	'prop_type'	=> 'house', 'price' => 100000.00, 'car_no' => 3,'bath_no' => 3,'room_no' => 3, 'img_url' => $dImg, 'img_urls' => $dImgs, 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'created_at' => $dt, 'updated_at' => $dt]
+        for ($i=0;$i<=30;$i++){
+            DB::table('listings')->insert(['title' => 'House ' . $i,  'caption' => $capt,'desc' => $desc, 'prop_type' => 'house', 'price' => rand(100000,400000), 'car_no' => rand(1,3),'bath_no' => rand(1,3),'bed_no' => rand(1,5), 'img_url' => self::getImg(), 'img_urls' => self::getImgs(), 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'created_at' => $dt, 'updated_at' => $dt]);
+        }
+    }
 
-            ) 
-        );
+    public function getImg(){
+        return 'https://unsplash.it/400/300?image=' . rand(1,999);
+    }
+    
+    public function getImgs(){
+        return json_encode([ self::getImg(),self::getImg(),self::getImg() ]);
     }
 }
