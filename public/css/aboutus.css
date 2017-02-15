@@ -1,0 +1,35 @@
+/* Colour of the fill in the box */
+.container-white{
+	background-color: white;
+}
+
+/*Margin of container*/
+#About{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Margin of container*/
+#Philosophy{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Margin of container*/
+#Management{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Margin of container*/
+#Team{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#team-image {
+    max-width: 100%;
+}

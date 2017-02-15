@@ -25,7 +25,7 @@ class Listing extends Model
      * @var array
      */
     protected $fillable = [
-       'title',  'caption','desc', 'prop_type', 'price', 'car_no','bath_no','room_no' , 'img_url' , 'img_urls', 'address' , 'lat' , 'lng'
+       'title',  'caption','desc', 'prop_type', 'price', 'car_no','bath_no','room_no' , 'img_url' , 'img_urls', 'address' , 'lat' , 'lng', 'type', 'landsize', 'council_rate', 'water_rate'
     ];
 
     /**

@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
         );
 
         for ($i=0;$i<=30;$i++){
-            DB::table('listings')->insert(['title' => 'House ' . $i,  'caption' => $capt,'desc' => $desc, 'prop_type' => 'house', 'price' => rand(100000,400000), 'car_no' => rand(1,3),'bath_no' => rand(1,3),'bed_no' => rand(1,5), 'img_url' => self::getImg(), 'img_urls' => self::getImgs(), 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'created_at' => $dt, 'updated_at' => $dt]);
+            DB::table('listings')->insert(['title' => 'House ' . $i,  'caption' => $capt,'desc' => $desc, 'prop_type' => 'house', 'price' => rand(100000,400000), 'car_no' => rand(1,3),'bath_no' => rand(1,3),'bed_no' => rand(1,5), 'img_url' => self::getImg(), 'img_urls' => self::getImgs(), 'address' => $adr, 'lat' => $lat, 'lng' => $lng, 'landsize' => rand(80,200), 'council_rate' => rand(1000, 1500), 'water_rate' => rand(1000, 1500), 'created_at' => $dt, 'updated_at' => $dt]);
         }
     }
 
