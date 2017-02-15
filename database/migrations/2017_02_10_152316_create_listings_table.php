@@ -54,6 +54,6 @@ class CreateListingsTable extends Migration
      */
     public function down()
     {
-    Schema::dropIfExists('listings');
+        Schema::dropIfExists('listings');
     }
 }

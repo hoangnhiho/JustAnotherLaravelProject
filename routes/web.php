@@ -30,6 +30,7 @@ Route::get('/aboutus', function () {
     return view('frontend.aboutus');
 });
 
+Route::resource('projects', 'ProjectsController');
 Route::resource('listings', 'ListingsController');
 Auth::routes();
 
