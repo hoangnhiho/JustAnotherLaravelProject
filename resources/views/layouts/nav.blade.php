@@ -15,9 +15,9 @@
                 <ul class="nav navbar-nav">
                     <li class="scroll"><a href="{{ url('buy') }}">Buy</a></li>
                     <li class="scroll"><a href="{{ url('sell') }}">Sell</a></li>
-                    <li class="scroll"><a href="#">Rent</a></li>
+                    <li class="scroll"><a href="{{ url('rent') }}">Rent</a></li>
                     <li class="scroll"><a href="{{ url('projects') }}">Projects</a></li>
-                    <li class="scroll"><a href="#">Migration & Education</a></li>
+                    <li class="scroll"><a href="{{ url('migration') }}">Migration & Education</a></li>
                     <li class="scroll"><a href="#">Press Room</a></li>
                     <li class="scroll"><a href="{{ url('aboutus') }}">About Us</a></li>
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 

@@ -47,7 +47,7 @@
     </div>
 
     <!-- About us section -->
-    <div class="container container-white" id="About">
+    <div class="container container-white" id="about">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">About us</h2>
@@ -69,7 +69,7 @@
     </div>
 
     <!-- Philosophy section -->
-    <div class="container container-white" id="Philosophy">
+    <div class="container container-white" id="philosophy">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">Philosophy</h2>
@@ -95,7 +95,7 @@
     </div>
 
     <!-- About us section -->
-    <div class="container container-white" id="Management">
+    <div class="container container-white" id="management">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">Management</h2>
@@ -111,15 +111,14 @@
     </div>
 
     <!-- Homestates team -->
-    <div class="container container-white" id="Team">
+    <div class="container container-white" id="team">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10">
-                <div class="row" style="margin-right: -40px">
-                    <div class="col-xs-3">
-                        <img src="images/aboutus/person1.jpg" id="team-image">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-3">
+                        <img src="images/aboutus/person1.jpg" class="img-responsive">
                     </div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-8" style="padding-left: 0px">
+                    <div class="col-xs-7 col-sm-9" style="padding-left: 0px">
                         <h2 style="text-align: left">Clare Yeaw</h2>
                         <p style="text-align: left">Communication Director</p>
                         <br>

@@ -30,6 +30,18 @@ Route::get('/aboutus', function () {
     return view('frontend.aboutus');
 });
 
+Route::get('/career', function () {
+    return view('frontend.career');
+});
+
+Route::get('/rent', function () {
+    return view('frontend.rent');
+});
+
+Route::get('/migration', function () {
+    return view('frontend.migration');
+});
+
 Route::resource('projects', 'ProjectsController');
 Route::resource('listings', 'ListingsController');
 Auth::routes();
