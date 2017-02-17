@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <!-- About us section -->
+    <!-- Management section -->
     <div class="container container-white" id="management">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">

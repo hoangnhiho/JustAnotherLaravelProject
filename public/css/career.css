@@ -1,0 +1,43 @@
+/* Colour of the fill in the box */
+.container-white{
+	background-color: white;
+}
+
+/*Margin of container*/
+#careers{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.font-grey{
+	color: grey;
+}
+
+/*Margin of container*/
+.margin-box1{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Margin of last container*/
+.margin-box2{
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.left-align{
+	text-align: left;
+}
+
+/* Centers the button*/
+.apply{			
+	text-align: left;
+	margin: auto;
+	padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

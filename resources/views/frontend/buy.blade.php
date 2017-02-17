@@ -124,22 +124,11 @@
                         </p>
 
                         <div class="dropdown" style="">
-
-                            <!-- <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
-                                <span class="caret" style="color: white"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
-                                <li><a href="#">Apartment</a></li>
-                                <li><a href="#">House</a></li>
-                                <li><a href="#">Castle</a></li>
-                            </ul> -->
-
                             <select class="form-control" style="">
                                 <option value="Apartment">Apartment</option>
                                 <option value="House">House</option>
                                 <option value="Castle">Castle</option>
                             </select>
-
                         </div>
                         <form action="" method="">
                             <div class="form-group">

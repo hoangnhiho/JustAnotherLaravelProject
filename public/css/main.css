@@ -1084,7 +1084,8 @@ ul.nostyle i {
 }
 
 .footer-img-info{
-  height: 40vh;
+  /*height: 40vh;*/
+  height: 400px;
   width: 100%;
   background: rgba(0,0,0,0.5);
 }
@@ -1101,7 +1102,9 @@ ul.nostyle i {
   text-transform: capitalize;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 18vh;
+  /*padding-top: 18vh;*/
+  padding-top: 180px;
+
 }
 .listing-img-info > h5, .listing-img-info > p{
   color: white;

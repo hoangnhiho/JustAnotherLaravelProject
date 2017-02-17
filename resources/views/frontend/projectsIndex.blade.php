@@ -3,32 +3,26 @@
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/buy/Image.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/project/bg1.jpg') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>3.5%</span> RENTAL MANAGEMENT FEE FOR THE FIRST FIVE YEARS</h2>
-                                    <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Find out more</a>
+                                    <h2>UNIQUE AND EXCLUSIVE PROJECTS</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--/.item-->
-            <div class="item" style="background-image: url({{ url('images/buy/Image.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/project/bg1.jpg') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>3.5%</span> RENTAL MANAGEMENT FEE FOR THE FIRST FIVE YEARS</h2>
-                                    <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Find out more</a>
+                                    <h2>UNIQUE AND EXCLUSIVE PROJECTS</h2>
                                 </div>
                             </div>
                         </div>
@@ -43,17 +37,13 @@
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">
-                    Residential real estate sales and property marketing services
+                    Off-the-plan developments and projects
                     <br>
                 </h2>
-                <p>
-                    Property investments, houses and homes remains to be Homstates' focal point of service, with three separate divisions geared to provide a complete coverage of all client's needs.
-                    <br>
-                    Property Sales services the high demand for clients seeking to buy or sell estate-a core operational function of the Group. Backed by a vetted team of experienced property specialists, Homestates offers market-proven strategies to enhance the value of your purchase or sale.
-                </p>
+                <p>Property Investment allows clients to tap into Homestates' propiletary database of upcoming property development projects to secure real estate with vetted rental or capital yields. Our collaboration with blue chip real estate developers means we can provide priority access and viewings on unreleased projects, across the globe</p>
                 <div id="centering">
                     <button class="btn btn-primary">
-                        <h3 style="color:white">Current Listings</h3>
+                        <h3 style="color:white; margin-top: 10px">View the Collection</h3>
                     </button>
                 </div>
                 <br>
@@ -70,44 +60,40 @@
                     <div class="col-xs-12 col-md-7">
                         <div class="row">
                             <div class="col-xs-2">
-                                <i class="fa fa-line-chart fa-3x icon-icon" aria-hidden="true"></i>
+                                <i class="fa fa-university fa-3x icon-icon" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-9">
-                                <h2>
-                                     Marketing
-                                </h2>
-                                <p>
-                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
-                                </p>
+                                <h2>Invest</h2>
+                                <p>wFocusing on investor returns and financia growth, projects selected by Homestates boast tangible rental yields and exceptional value in any given market.</p>
+                                <p>Homestates offers quality products backed by reputable developers - the resulting amalgamation is a timeles recipe for strong financial performance and capital growth.</p>
+                                <br>
+                                <hr>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-xs-2">
-                                <i class="fa fa-flask fa-3x icon-icon" aria-hidden="true"></i>
+                                <i class="fa fa-eye fa-3x icon-icon" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-9">
-                                <h2>
-                                     Marketing
-                                </h2>
-                                <p>
-                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
-                                </p>
+                                <h2>Foresight</h2>
+                                <p>Homestates strategically selects projects aligned with prospective infastructure, in addition to the anticipated economic shifts on the property market.</p>
+                                <p>Combined with our methodical approach to market growth and project reports, investors receive a product that has been assessed for its viability, both now and towards the future.</p>
+                                <br>
+                                <hr>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-xs-2">
-                                <i class="fa fa-flask fa-3x icon-icon" aria-hidden="true"></i>
+                                <i class="fa fa-life-ring fa-3x icon-icon" aria-hidden="true"></i>
                             </div>
-                            <div class="col-xs-9">
-                                <h2>
-                                     Marketing
-                                </h2>
-                                <p>
-                                    Developed in-house, Homestates offers exceptional property exposure strategies which have been proven to yield effective marketing results.
-                                </p>
+                            <div class="col-xs-9" style="margin-bottom: 20px">
+                                <h2>Exclusive</h2>
+                                <p>Our strong network of developers provides clients with a platform to access locations, projects offers and incentives exclusivly to Homestates Group.</p>
+                                <p>Receive pre-market release previews of off-the-plan projects, and gain first access to select floorplans of your choice.</p>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -124,16 +110,6 @@
                         </p>
 
                         <div class="dropdown" style="">
-
-                            <!-- <button class="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown" id="button-size">
-                                <span class="caret" style="color: white"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
-                                <li><a href="#">Apartment</a></li>
-                                <li><a href="#">House</a></li>
-                                <li><a href="#">Castle</a></li>
-                            </ul> -->
-
                             <select class="form-control" style="">
                                 <option value="Apartment">Apartment</option>
                                 <option value="House">House</option>
@@ -189,71 +165,124 @@
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center;">
-                    Our expertise in the field of property sales
+                    Our expertise in the field of property investment
                 </h2>
                 <p style="text-align: center">
-                    View our wide range of property sales services
+                    View our wide range of property investment services services.
                 </p>
                 <br>
-                <div>
-                    <h3>
-                        Off-the-Plan
-                    </h3>
-                    <p>
-                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
-                    </p>
+                <div style="margin-bottom: 20px">
+                    <h3>Our Advantage</h3>
+                    <p>Investing with Homestates means you're investing ahead of the curve. Our selection of curated projects are chosen based on established proinciples which are timeless gems for profitability.</p>
                     <br>
-                    <h3>
-                        Established Properties
-                    </h3>
-                    <p>
-                        <!-- Some of the words here may not be correct. It's hard to read from the picture -->
-                        The cornerstone of all real estate services established properties refers to the purchasing of a pre-existing home. Selecting established properties gives buyers the chance to inspect the future listings and also the physical side  alongside those currently on the market.
-                    </p>
+                    <p>Population</p>
+                    <p>An increasing population naturally increases the demand for accommodation. Naturally, governing bodies and developers will collaborate to support the population growth by creating more apartments, townhouses and homes.</p>
                     <br>
-                    <h3>
-                        Commercial & Business
-                    </h3>
-                    <p>
-                        <!-- Some of the words here may not be correct. It's hard to read from the picture -->
-                        Homestates curates a wide selection of business to accomodate for out high-end client's for commercial real estate, namely:
-                    </p>
-                    <ul>
-                        <li>Leisure (Hotels, restaurants)</li>
-                        <li>Rental(Shopping malls, rental stores)</li>
-                        <li>Land(Future developments, islands, farms)</li>
-                    </ul>
+                    <p>Infrastructure</p>
+                    <p>Convenience and quality of life is paramount to everyone, which is why it's essential for investment properties to be situated close to amenities such as schools, shopping centres and recreation hubs</p>
+                    <p>Employment</p>
+                    <p>A short commute to work is highly sought after trait for tenants, a premise which we maintain throughout all our investment projects on offer.</p>
                     <br>
-                    <h3>
-                        Buyers Agents Services
-                    </h3>
-                    <p>
-                        Can't find anything you like that's already existing on the market? Our role as Buyers Agents place us at the forefront of the property selection market, enabling us to source the perfect property for you, today.
-                    </p>
+                    <h3>Investors</h3>
+                    <p>We believe that at its core, wealth creation starts with a thorough understanding of each individual client's requirements for financial success. It's through this understanding that we are able to deliver a fully integrated real estate service that focuses centrally on customer service, and unique investment strategies.</p>
                     <br>
+                    <h3>Overseas Investors</h3>
+                    <p>With our networks covering over 6 countries and territories in Asia. Homestates aims to connect clients to investment and lifestyle opportunities to thrive and proper across the globe. We cater to our strong interest for off-the-0plan projects from overseas investors, with over 55% pf pir c;oemts nased internationally.</p>
                     <br>
+                    <h3>Developers</h3>
+                    <p>We are always open to discussing how we can provide solutions for developers and their real estate requirements. Get in touch with Homestates to see what we can offer for your project today.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <br>
-    <!-- Last section of buy page -->
+    <div class="container-fluid container-white" style="padding-top:50px; padding-bottom: 50px; margin-top: 40px">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <h2 style="text-align: center;">
+                            Our prvious projects
+                        </h2>
+                        <p style="text-align: center">
+                            A selection of our most recent projects sold
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg1.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info" >
+                            <h3>REVERS EDGE</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg2.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>NEW WORLD TOWERS</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg3.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>MARY LANE</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg4.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>SPIRE</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg5.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>IVY</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg6.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>NERO</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg7.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>FV</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg8.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>CORNERSTONE LIVING</h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg9.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>Illumina</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/person2.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
-            <div class="col-sm-offset-1 col-sm-4 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content" style="margin-top: 40px;">
+        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/project/footerImg.jpg') }}) no-repeat center center; background-size: cover;">
+            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
+                <div class="house-content">
                     <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 55px 10px;">
-                        <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
+                    <div class="house-text" style="padding: 35px 10px;">
+                        <h4>"Homestates is one of the most responcible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
                         <p><b>Charlie</b> bought with Homestates</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
 @endsection
