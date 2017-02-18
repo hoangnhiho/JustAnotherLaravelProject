@@ -38,35 +38,19 @@
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
 
-    <div class="container">
-        <div class="col-offset-sm-1 col-sm-11">
-            <div>
-                
-            </div>
-        </div>
-    </div>
-
     <!-- About us section -->
     <div class="container container-white" id="about">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">About us</h2>
                 <p style="text-align: center"><b>Holistic investment services, from start to finish</b></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Homestates is a leading Australian intermediary consultancy providing integrated services including property investments, property sales, property management, and immigration and education services. The group was founded upon the fundamental belief that property and its extension as a home, is a long term process. Meticulously pairing each individual client's needs to their real estate requirements, Homestates successfully contenues to provide client-centric services with a full cycle property outlook.</p>
+                <p>With offices based in Brisbane and Sydney, the Group operates, domestically with extensive partnerships throughout Southest Asia, ensuring that our approach to property, immigration and education considers economic developments on a global scale.</p>
+                <p>Homestates was founded by a multicultural team of various thnic backgrounds, ensuring that your requirments for groth and wealth creation are accurately met.</p>
             </div>
         </div>
     </div>
+
 
     <!-- Philosophy section -->
     <div class="container container-white" id="philosophy">
@@ -74,15 +58,10 @@
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">Philosophy</h2>
                 <p style="text-align: center"><b>What makes us unique</b></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ulla.</p>
+                <p>Homestates supports both Australian and international property investors in building wealth by redfining their requirements in property.</p>
+                <p>Whether clients are seeking to buy, rent, sell, or develop, Homestates offers guidance through a comprehensive understanding of the Australian property market, based on realistic values.</p>
+                <p>With complementary nodes supporting our clients such as intermediary immigration and education services, Homestates strives to achieve a compreshensive full-cycle suite to suit all needs.</p>
+                <p>The cor values of Homestates reflect the premise of our services, in addition to our approach with clients.</p>
                 <ul>
                     <li>Fully integrated estate and property development facilities</li>
                     <li>Unique and individual investment strategies</li>
@@ -100,42 +79,33 @@
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center">Management</h2>
                 <p style="text-align: center"><b>Our division leaders</b></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.proident, sunt in culpa mollit anim id est laborum.</p>
-                <p>Each member of the Homestates team brings a unique combination of specialist skills, experience and perspectives to the table.</p>
+                <p>Homestates is defined by our people and the results yielded from successfully achieving client goals. It is through the cuccess of our people that the Group continues to faster wealth creation and establish strong financial protfolios, unique to each client.</p>
+                <p>Each member of the Homestates team brings a unique combrination of specialist skills, experience and perspectives to the table.</p>
                 <p>Introducing the Homestates team.</p>
             </div>
         </div>
     </div>
 
     <!-- Homestates team -->
-    <div class="container container-white" id="team">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="row">
-                    <div class="col-xs-5 col-sm-3">
-                        <img src="images/aboutus/person1.jpg" class="img-responsive">
-                    </div>
-                    <div class="col-xs-7 col-sm-9" style="padding-left: 0px">
-                        <h2 style="text-align: left">Clare Yeaw</h2>
-                        <p style="text-align: left">Communication Director</p>
-                        <br>
-                        <p>Lorem ipsum dolomco laboris nisi ut aliquip ex ea commodo
-                        consequat.proident, sunt in culpa mollit anim id est laborum.</p>
-                        <p>abore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitabore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis n ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.proident, sunt in culpa mollit animation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.proident, sunt in culpa mollit anim.</p>
-                        <p>abore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ulpa mollit anim.</p>
+    @foreach ($employees as $employee)
+        <div class="container container-white" id="team">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-3">
+                            <img src="{{ $employee->img_url }}" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-sm-9" style="padding-left: 0px">
+                            <h2 style="text-align: left">{{ $employee->name }}</h2>
+                            <p style="text-align: left">{{ $employee->job_title }}</p>
+                            <br>
+                            {!! $employee->desc !!}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    @endforeach
 
 @endsection
 @section('customjs')

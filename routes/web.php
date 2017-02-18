@@ -26,9 +26,8 @@ Route::get('/sell', function () {
     return view('frontend.sell');
 });
 
-Route::get('/aboutus', function () {
-    return view('frontend.aboutus');
-});
+Route::get('/aboutus', 'FrontendController@aboutus');
+
 
 Route::get('/career', function () {
     return view('frontend.career');
