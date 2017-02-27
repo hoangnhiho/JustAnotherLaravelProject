@@ -230,11 +230,11 @@
     <!-- Last section of buy page -->
 
     <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/person2.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
-            <div class="col-sm-offset-1 col-sm-4 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content" style="margin-top: 40px;">
+        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/person2.jpg') }}) no-repeat center center; background-size: cover;">
+            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
+                <div class="house-content">
                     <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 55px 10px;">
+                    <div class="house-text" style="padding: 35px 10px;">
                         <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
                         <p><b>Charlie</b> bought with Homestates</p>
                     </div>
@@ -242,7 +242,6 @@
             </div>
         </div>
     </section>
-
 
 
 @endsection

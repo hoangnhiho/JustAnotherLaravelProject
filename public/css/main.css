@@ -1135,3 +1135,22 @@ body{
   background-color: #E7E8EA;
 }
 
+.btn-primary > h3 {
+  margin-top: 10px;
+}
+.carousel-content > h2 > span{
+  color:#784BA7 !important;
+}
+#main-slider .owl-prev:hover, #main-slider .owl-next:hover {
+    background-color: #784BA7;
+}
+#bar{
+  background:#784BA7;
+}
+
+.container-white{
+  margin-top: 40px;
+}
+#footer a:hover {
+    color: #784BA7;
+}
