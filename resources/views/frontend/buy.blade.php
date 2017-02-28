@@ -168,11 +168,6 @@
         
     </div>
 
-    <div>
-        <br>
-        <br>
-    </div>
-
     <!-- This is before the final image area -->
     <div class="container container-white">
         <div class="row">
@@ -184,43 +179,52 @@
                     View our wide range of property sales services
                 </p>
                 <br>
-                <div>
-                    <h3>
-                        Off-the-Plan
-                    </h3>
-                    <p>
-                        Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.
-                    </p>
-                    <br>
-                    <h3>
-                        Established Properties
-                    </h3>
-                    <p>
-                        <!-- Some of the words here may not be correct. It's hard to read from the picture -->
-                        The cornerstone of all real estate services established properties refers to the purchasing of a pre-existing home. Selecting established properties gives buyers the chance to inspect the future listings and also the physical side  alongside those currently on the market.
-                    </p>
-                    <br>
-                    <h3>
-                        Commercial & Business
-                    </h3>
-                    <p>
-                        <!-- Some of the words here may not be correct. It's hard to read from the picture -->
-                        Homestates curates a wide selection of business to accomodate for out high-end client's for commercial real estate, namely:
-                    </p>
-                    <ul>
-                        <li>Leisure (Hotels, restaurants)</li>
-                        <li>Rental(Shopping malls, rental stores)</li>
-                        <li>Land(Future developments, islands, farms)</li>
-                    </ul>
-                    <br>
-                    <h3>
-                        Buyers Agents Services
-                    </h3>
-                    <p>
-                        Can't find anything you like that's already existing on the market? Our role as Buyers Agents place us at the forefront of the property selection market, enabling us to source the perfect property for you, today.
-                    </p>
-                    <br>
-                    <br>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">Off-the-Plan</h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Off-the-Plan peoperties refer to the purchase of a property prior to its construction. The method of approach is favourable for early adopters as purchases may experience favourable growth in the property market in the form of capital gains.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h4 class="panel-title">Established Properties</h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>The cornerstone of all real estate services established properties refers to the purchasing of a pre-existing home. Selecting established properties gives buyers the chance to inspect the future listings and also the physical side  alongside those currently on the market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <h4 class="panel-title">Commercial & Business</h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                    <p>Homestates curates a wide selection of business to accomodate for out high-end client's for commercial real estate, namely:</p>
+                                    <ul>
+                                        <li>Leisure (Hotels, restaurants)</li>
+                                        <li>Rental(Shopping malls, rental stores)</li>
+                                        <li>Land(Future developments, islands, farms)</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <h4 class="panel-title">Buyers Agents Services</h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Can't find anything you like that's already existing on the market? Our role as Buyers Agents place us at the forefront of the property selection market, enabling us to source the perfect property for you, today.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
