@@ -1154,3 +1154,8 @@ body{
 #footer a:hover {
     color: #784BA7;
 }
+.overlap-img{
+  position: absolute;
+  /*top:0px;*/
+  width:95%;
+}
