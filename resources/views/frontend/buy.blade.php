@@ -182,7 +182,7 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            <h4 class="panel-title">Off-the-Plan</h4>
+                            <h4 class="panel-title">Off-the-Plan<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4> 
                         </div>
                         <div id="collapse1" class="panel-collapse collapse in">
                             <div class="panel-body">
@@ -192,7 +192,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                            <h4 class="panel-title">Established Properties</h4>
+                            <h4 class="panel-title">Established Properties<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -202,7 +202,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                            <h4 class="panel-title">Commercial & Business</h4>
+                            <h4 class="panel-title">Commercial & Business<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -217,7 +217,7 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                            <h4 class="panel-title">Buyers Agents Services</h4>
+                            <h4 class="panel-title">Buyers Agents Services<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
                         </div>
                         <div id="collapse4" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -233,20 +233,44 @@
     <br>
     <!-- Last section of buy page -->
 
-    <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/buy/person2.jpg') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 35px 10px;">
-                        <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
-                        <p><b>Charlie</b> bought with Homestates</p>
+    <section id="footer-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url({{ url('images/buy/person2.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
+                                <div class="house-content">
+                                    <div class="house-overlayer"></div>
+                                    <div class="house-text" style="padding: 35px 10px;">
+                                        <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
+                                        <p><b>Charlie</b> bought with Homestates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
+            </div><!--/.item-->
+            <div class="item" style="background-image: url({{ url('images/buy/Image.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
+                                <div class="house-content">
+                                    <div class="house-overlayer"></div>
+                                    <div class="house-text" style="padding: 35px 10px;">
+                                        <h4>"Homestates is one of the most responsible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
+                                        <p><b>Charlie</b> bought with Homestates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
 
 @endsection
 @section('customjs')

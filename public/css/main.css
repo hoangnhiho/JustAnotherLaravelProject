@@ -1159,3 +1159,75 @@ body{
   /*top:0px;*/
   width:95%;
 }
+#accordion > .panel, .panel-body{
+  border-width: 0px;
+}
+#accordion{
+  border-top-width: 1px !important;
+  border-top-color: #eee;
+}
+.panel-title{
+  font-size: 18px !important;
+}
+
+
+#footer-slider {
+  overflow: hidden;
+}
+#footer-slider .item {
+  height: 558px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#footer-slider .slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+#footer-slider .slider-inner h2 {
+  margin-top: 180px;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+#footer-slider .slider-inner h2 > span {
+  color: #45aed6;
+}
+#footer-slider .slider-inner .btn {
+  margin-top: 10px;
+}
+#footer-slider .owl-prev,
+#footer-slider .owl-next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: -35px;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 5;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+#footer-slider .owl-prev:hover,
+#footer-slider .owl-next:hover {
+  background-color: #45aed6;
+}
+#footer-slider .owl-prev {
+  left: -35px;
+  text-indent: 14px;
+}
+#footer-slider .owl-next {
+  right: -35px;
+  text-indent: -14px;
+}
