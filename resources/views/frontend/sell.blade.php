@@ -34,7 +34,7 @@
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->  
 
-    <div class="container-fluid wow fadeInDown">
+    <div class="container-fluid container-white wow fadeInDown">
         <div class="row">
             <div class="col-xs-offset-2 col-xs-8" style="background-color: white; padding:40px 40px;">
                 <h1>Choosing Homestates to sell your home</h1>
