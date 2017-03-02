@@ -57,6 +57,36 @@ class DatabaseSeeder extends Seeder
         }
 
 
+        DB::table('footer_carousels')->insert(array(
+            ['page_type' => 'frontPage', 'primary' => true, 'body' => '"We can warmly recommend Homestates to anyone who appreciates high quality properties with the right price - I can assure that Homestates can be trusted in every situation".', 'name' => 'Jasper & Caroline', 'caption' => 'bought this Homestates', 'img_url' => url('images/frontpage/footer1.jpg')],
+
+            ['page_type' => 'frontPage', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            ['page_type' => 'buy', 'primary' => true, 'body' => '"Homestates is one of the most responsible real estate companies in Brisbane. They\'ve got the integrity to help clients make sure that their investment journey is smooth and hassle free".', 'name' => 'Charlie', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/person2.jpg')],
+
+            ['page_type' => 'buy', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            ['page_type' => 'sell', 'primary' => true, 'body' => '"Selling my home with Homestates was the best experience I have had with an agency, in my 20 years of owning a home".', 'name' => 'Doughlas', 'caption' => 'sold with Homestates', 'img_url' => url('images/sell/sellImg1.jpg')],
+
+            ['page_type' => 'sell', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            ['page_type' => 'rent', 'primary' => true, 'body' => '"We wanted to take this opportunity to express our most heartfelt gratitude to the Homestates team for their professionalism, diligence and drive. The team was always so kind and provided us with invaluable advice at all times".', 'name' => 'Isabella', 'caption' => 'invested with Homestates', 'img_url' => url('images/rent/footerImg1.jpg')],
+
+            ['page_type' => 'rent', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            ['page_type' => 'projects', 'primary' => true, 'body' => '"Homestates is one of the most responcible real estate companies in Brisbane. They\'ve got the integrity to help clients make sure that their investment journey is smooth and hassle free".', 'name' => 'Charlie', 'caption' => 'bought with Homestates', 'img_url' => url('images/project/footerImg.jpg')],
+
+            ['page_type' => 'projects', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            ['page_type' => 'migration', 'primary' => true, 'body' => '"I would like to acknowledge Homestates as a highly efficient, supportive and prfessional company. I do not hesitate in anyway, to anyone that Homestates has a truly gifted team, who not only focus on getting the best result, but also cares about all the legalities and an outcome".', 'name' => 'Peter', 'caption' => 'invested with Homestates', 'img_url' => url('images/migration/footerImg1.jpg')],
+
+            ['page_type' => 'migration', 'primary' => false, 'body' => '"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."', 'name' => 'John Doe', 'caption' => 'bought with Homestates', 'img_url' => url('images/buy/Image.jpg')],
+
+            )
+        );
+
+
+
     }
 
     public function getImg(){

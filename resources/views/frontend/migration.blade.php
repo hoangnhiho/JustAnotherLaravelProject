@@ -155,11 +155,6 @@
         
     </div>
 
-    <div>
-        <br>
-        <br>
-    </div>
-
     <!-- This is before the final image area -->
     <div class="container container-white">
         <div class="row">
@@ -171,27 +166,42 @@
                     View our wide range of migration services.
                 </p>
                 <br>
-                <div>
-                    <h3>Immigration services</h3>
-                    <p>Investing in property is an extension of investing in you and your family's future. Understanding this necessity for our clients, our Migration & Education services are delivered with an end-to-end model to ensure that your journey to Australia exceeds your expectations</p>
-                    <br>
-                    <p>We cover a wide range of migration visa options, including:</p>
-                    <ul>
-                        <li>Business and Investiment Visa</li>
-                        <li>Skilled and Work Visas</li>
-                        <li>Student Visas</li>
-                        <li>Family Visas</li>
-                    </ul>
-                    <br>
-                    <h3>Education Support</h3>
-                    <p>Access world-class education geared towards your future career goals and part of our commitment to full-cycle service. Connect with ourse and education providers based on your requirements for study, a complementary appraisal service offered to all our clients.</p>
-                    <ul>
-                        <li>IELTS</li>
-                        <li>Primary, Secondary and Tertiary Education</li>
-                        <li>Vocational Education and Training</li>
-                        <li>Higher Education</li>
-                    </ul>
-                    <br>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">Immigration services<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4> 
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Investing in property is an extension of investing in you and your family's future. Understanding this necessity for our clients, our Migration & Education services are delivered with an end-to-end model to ensure that your journey to Australia exceeds your expectations</p>
+                                <br>
+                                <p>We cover a wide range of migration visa options, including:</p>
+                                <ul>
+                                    <li>Business and Investiment Visa</li>
+                                    <li>Skilled and Work Visas</li>
+                                    <li>Student Visas</li>
+                                    <li>Family Visas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h4 class="panel-title">Education Support<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h3>Education Support</h3>
+                                <p>Access world-class education geared towards your future career goals and part of our commitment to full-cycle service. Connect with ourse and education providers based on your requirements for study, a complementary appraisal service offered to all our clients.</p>
+                                <ul>
+                                    <li>IELTS</li>
+                                    <li>Primary, Secondary and Tertiary Education</li>
+                                    <li>Vocational Education and Training</li>
+                                    <li>Higher Education</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,22 +233,6 @@
             </div>
         </div>
     </div>
-
-    <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/migration/footerImg1.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
-            <div class="col-sm-offset-1 col-sm-4 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content" style="margin-top: 40px;">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 55px 10px;">
-                        <h4>"I would like to acknowledge Homestates as a highly efficient, supportive and prfessional company. I do not hesitate in anyway, to anyone that Homestates has a truly gifted team, who not only focus on getting the best result, but also cares about all the legalities and an outcome".</h4>
-                        <p><b>Peter</b> invested with Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
 @endsection
 @section('customjs')

@@ -1,4 +1,29 @@
 
+@if (!empty($footerCarousels))
+<section id="footer-slider">
+    <div class="owl-carousel">
+        @foreach( $footerCarousels as $footerCarousel)
+        <div class="item" style="background-image: url({{ $footerCarousel->img_url }});">
+            <div class="slider-inner">
+                <div class="container" style="height:100%">
+                    <div class="row" style="height:100%">
+                        <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden; height:100%">
+                            <div class="house-content" style="height:100%">
+                                <div class="house-overlayer" style="height:100%"></div>
+                                <div class="house-text" style="padding: 35px 10px;">
+                                    <h4>{{ $footerCarousel->body }}</h4>
+                                    <p><b>{{ $footerCarousel->name }}</b> {{ $footerCarousel->caption }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.item-->
+        @endforeach
+    </div><!--/.owl-carousel-->
+</section><!--/#main-slider-->
+@endif
 <footer id="footer">
     <div class="container" id="footer-container">
         <div class="row" id="footer-row">

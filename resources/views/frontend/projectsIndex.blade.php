@@ -155,11 +155,6 @@
         
     </div>
 
-    <div>
-        <br>
-        <br>
-    </div>
-
     <!-- This is before the final image area -->
     <div class="container container-white">
         <div class="row">
@@ -171,26 +166,53 @@
                     View our wide range of property investment services services.
                 </p>
                 <br>
-                <div style="margin-bottom: 20px">
-                    <h3>Our Advantage</h3>
-                    <p>Investing with Homestates means you're investing ahead of the curve. Our selection of curated projects are chosen based on established proinciples which are timeless gems for profitability.</p>
-                    <br>
-                    <p>Population</p>
-                    <p>An increasing population naturally increases the demand for accommodation. Naturally, governing bodies and developers will collaborate to support the population growth by creating more apartments, townhouses and homes.</p>
-                    <br>
-                    <p>Infrastructure</p>
-                    <p>Convenience and quality of life is paramount to everyone, which is why it's essential for investment properties to be situated close to amenities such as schools, shopping centres and recreation hubs</p>
-                    <p>Employment</p>
-                    <p>A short commute to work is highly sought after trait for tenants, a premise which we maintain throughout all our investment projects on offer.</p>
-                    <br>
-                    <h3>Investors</h3>
-                    <p>We believe that at its core, wealth creation starts with a thorough understanding of each individual client's requirements for financial success. It's through this understanding that we are able to deliver a fully integrated real estate service that focuses centrally on customer service, and unique investment strategies.</p>
-                    <br>
-                    <h3>Overseas Investors</h3>
-                    <p>With our networks covering over 6 countries and territories in Asia. Homestates aims to connect clients to investment and lifestyle opportunities to thrive and proper across the globe. We cater to our strong interest for off-the-0plan projects from overseas investors, with over 55% pf pir c;oemts nased internationally.</p>
-                    <br>
-                    <h3>Developers</h3>
-                    <p>We are always open to discussing how we can provide solutions for developers and their real estate requirements. Get in touch with Homestates to see what we can offer for your project today.</p>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">Our Advantage<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4> 
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Population</p>
+                                <p>An increasing population naturally increases the demand for accommodation. Naturally, governing bodies and developers will collaborate to support the population growth by creating more apartments, townhouses and homes.</p>
+                                <br>
+                                <p>Infrastructure</p>
+                                <p>Convenience and quality of life is paramount to everyone, which is why it's essential for investment properties to be situated close to amenities such as schools, shopping centres and recreation hubs</p>
+                                <p>Employment</p>
+                                <p>A short commute to work is highly sought after trait for tenants, a premise which we maintain throughout all our investment projects on offer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h4 class="panel-title">Investors<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>We believe that at its core, wealth creation starts with a thorough understanding of each individual client's requirements for financial success. It's through this understanding that we are able to deliver a fully integrated real estate service that focuses centrally on customer service, and unique investment strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <h4 class="panel-title">Overseas Investors<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>With our networks covering over 6 countries and territories in Asia. Homestates aims to connect clients to investment and lifestyle opportunities to thrive and proper across the globe. We cater to our strong interest for off-the-0plan projects from overseas investors, with over 55% pf pir c;oemts nased internationally.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <h4 class="panel-title">Overseas Investors<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>We are always open to discussing how we can provide solutions for developers and their real estate requirements. Get in touch with Homestates to see what we can offer for your project today.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,20 +291,6 @@
             </div>
         </div>
     </div>
-
-    <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/project/footerImg.jpg') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 35px 10px;">
-                        <h4>"Homestates is one of the most responcible real estate companies in Brisbane. They've got the integrity to help clients make sure that their investment journey is smooth and hassle free".</h4>
-                        <p><b>Charlie</b> bought with Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 @endsection

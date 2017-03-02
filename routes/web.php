@@ -15,30 +15,17 @@
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('frontend.frontPage');
-});
-Route::get('/buy', function () {
-    return view('frontend.buy');
-});
 
-Route::get('/sell', function () {
-    return view('frontend.sell');
-});
-
+Route::get('/', 'FrontendController@frontPage');
 Route::get('/aboutus', 'FrontendController@aboutus');
-
+Route::get('/buy', 'FrontendController@buy');
+Route::get('/sell', 'FrontendController@sell');
+Route::get('/rent', 'FrontendController@rent');
+Route::get('/migration', 'FrontendController@migration');
+Route::get('/aboutus', 'FrontendController@aboutus');
 
 Route::get('/career', function () {
     return view('frontend.career');
-});
-
-Route::get('/rent', function () {
-    return view('frontend.rent');
-});
-
-Route::get('/migration', function () {
-    return view('frontend.migration');
 });
 
 Route::resource('projects', 'ProjectsController');

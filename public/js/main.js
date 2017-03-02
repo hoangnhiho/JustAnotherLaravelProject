@@ -59,18 +59,18 @@ jQuery(function($) {'use strict';
 	    $("#footer-slider").find('.owl-carousel').owlCarousel({
 	      slideSpeed : 500,
 	      paginationSpeed : 500,
+			autoPlay:true,
 	      singleItem : true,
 	      navigation : true,
 			navigationText: [
 			"<i class='fa fa-angle-left'></i>",
 			"<i class='fa fa-angle-right'></i>"
 			],
-	      afterInit : progressBar,
-	      afterMove : moved,
-	      startDragging : pauseOnDragging,
+
 	      //autoHeight : true,
 	      transitionStyle : "fadeUp"
 	    });	 
+	    
 	    //Init the carousel
 	    $("#main-slider").find('.owl-carousel').owlCarousel({
 	      slideSpeed : 500,

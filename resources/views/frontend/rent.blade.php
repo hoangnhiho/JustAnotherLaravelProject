@@ -155,10 +155,6 @@
         
     </div>
 
-    <div>
-        <br>
-        <br>
-    </div>
 
     <!-- This is before the final image area -->
     <div class="container container-white">
@@ -171,25 +167,42 @@
                     View our wide range of property management services.
                 </p>
                 <br>
-                <div>
-                    <h3>Landlords</h3>
-                    <p>One of our key driving successors in assisting our clients realise their property goals stems from our vetted agents who have a firm finger on the pulse of the local property market. Having a strong team of experience property management agents, we are confident that our methods will deliver promising returns on your investment property.</p>
-                    <br>
-                    <h3>Tenanting with Homestates</h3>
-                    <p>Minor faults can lead to major problems in any rental property. Our property management team puts investors first, understanding the importance of efficiency when it comes to reporting incidents. Receive and make informed decisions based on up to date information we provide for your investments. It's these reasons that makes tenanting with Homestates a breeze.</p>
-                    <br>
-                    <h3>
-                        Commercial Leasing
-                    </h3>
-                    <p>
-                        Homestates curates a wide selection of business to accomodate for out high-end client's for commercial real estate, namely:
-                    </p>
-                    <ul>
-                        <li>Leisure (Hotels, restaurants)</li>
-                        <li>Rental(Shopping malls, rental stores)</li>
-                        <li>Land(Future developments, islands, farms)</li>
-                    </ul>
-                    <br>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">Landlords<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4> 
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>One of our key driving successors in assisting our clients realise their property goals stems from our vetted agents who have a firm finger on the pulse of the local property market. Having a strong team of experience property management agents, we are confident that our methods will deliver promising returns on your investment property.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <h4 class="panel-title">Tenanting with Homestates<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Minor faults can lead to major problems in any rental property. Our property management team puts investors first, understanding the importance of efficiency when it comes to reporting incidents. Receive and make informed decisions based on up to date information we provide for your investments. It's these reasons that makes tenanting with Homestates a breeze.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <h4 class="panel-title">Commercial Leasing<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                    <p>Homestates curates a wide selection of business to accomodate for out high-end client's for commercial real estate, namely:</p>
+                                    <ul>
+                                        <li>Leisure (Hotels, restaurants)</li>
+                                        <li>Rental(Shopping malls, rental stores)</li>
+                                        <li>Land(Future developments, islands, farms)</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,21 +210,6 @@
 
     <br>
     <!-- Last section of buy page -->
-
-    <section>
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/rent/footerImg1.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
-            <div class="col-sm-offset-1 col-sm-4 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content" style="margin-top: 40px;">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 55px 10px;">
-                        <h4>"We wanted to take this opportunity to express our most heartfelt gratitude to the Homestates team for their professionalism, diligence and drive. The team was always so kind and provided us with invaluable advice at all times".</h4>
-                        <p><b>Isabella</b> invested with Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
 @endsection

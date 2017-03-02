@@ -98,20 +98,6 @@
         </div>
 
     <br>
-    
-    <section id="">
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/frontpage/footer1.jpg') }}) no-repeat center center; background-size: cover;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 35px 10px;">
-                        <h4>"We can warmly recommend Homestates to anyone who appreciates high quality properties with the right price - I can assure that Homestates can be trusted in every situation".</h4>
-                        <p>Jasper & Caroline bought this Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 @endsection
 @section('customjs')

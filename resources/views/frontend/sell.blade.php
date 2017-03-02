@@ -110,20 +110,6 @@
     </section>
 
     <br>
-    
-    <section id="">
-        <div class="row wow fadeInDown" style="margin: 0px 0px; background: url({{ url('images/sell/sellImg1.jpg') }}) no-repeat center center; background-size: cover; height: 60vh;">
-            <div class="col-sm-offset-1 col-sm-3 col-xs-10 col-xs-offset-1" style="padding: 0px 0px; overflow:hidden">
-                <div class="house-content">
-                    <div class="house-overlayer"></div>
-                    <div class="house-text" style="padding: 55px 10px;">
-                        <h4>"Selling my home with Homestates was the best experience I have had with an agency, in my 20 years of owning a home".</h4>
-                        <p><b>Doughlas</b> sold with Homestates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 @endsection
 @section('customjs')
