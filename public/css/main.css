@@ -1176,8 +1176,8 @@ body{
 .carousel-content > h2 > span{
   color:#784BA7 !important;
 }
-#main-slider .owl-prev:hover, #main-slider .owl-next:hover {
-    background-color: #784BA7;
+#main-slider .owl-prev:hover, #main-slider .owl-next:hover, .owl-next:hover, .owl-prev:hover{
+    background-color: #784BA7 !important;
 }
 #bar{
   background:#784BA7;
@@ -1272,4 +1272,28 @@ body{
 }
 .house-text{
   height:100%;
+}
+
+.line-vert-right-divider{
+  margin-right: -3px;
+  border-right-color: lightgrey;
+  border-right-style: solid;
+  border-right-width: 3px;
+}
+
+@media screen and (max-width: 993px) {
+    .line-vert-right-divider{
+        border-right-color: white;
+    }
+}
+
+.line-vert-left-divider{
+  border-left-color: lightgrey; 
+  border-left-style: solid;
+}
+
+@media screen and (max-width: 993px) {
+    .line-vert-left-divider{
+        border-left-color: white;
+    }
 }

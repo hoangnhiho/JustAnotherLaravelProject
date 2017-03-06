@@ -57,7 +57,7 @@
                 <div class="row">
 
                     <!-- Paragraphs next to the forms -->
-                    <div class="col-xs-12 col-md-7">
+                    <div class="col-xs-12 col-md-7 line-vert-right-divider">
                         <div class="row">
                             <div class="col-xs-2">
                                 <i class="fa fa-university fa-3x icon-icon" aria-hidden="true"></i>
@@ -98,7 +98,7 @@
                     </div>
 
                     <!-- Horizontal Form -->
-                    <div class="col-xs-12 col-md-5" id="line-size">
+                    <div class="col-xs-12 col-md-5 line-vert-left-divider">
                         <h2>
                             Talk to a Homestates Agent
                         </h2>

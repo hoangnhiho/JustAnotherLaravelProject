@@ -106,7 +106,8 @@
             </div>
         </div>
     @endforeach
-
+    <div class="container container-white">
+    </div>
 @endsection
 @section('customjs')
     <script>

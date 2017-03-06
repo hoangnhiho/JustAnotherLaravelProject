@@ -35,7 +35,7 @@ body {
 	border-left-style: solid;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 993px) {
     #line-size{
         border-left-color: white;
     }
