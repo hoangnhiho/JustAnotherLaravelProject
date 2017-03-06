@@ -1318,3 +1318,9 @@ a{
 .btn-primary{
   color:white !important;
 }
+.social-icons > li > a{
+  color:white !important;
+}
+.social-icons > li > a:hover{
+  color:#784BA7 !important;
+}
