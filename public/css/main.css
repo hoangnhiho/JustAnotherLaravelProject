@@ -995,6 +995,7 @@ ul.nostyle i {
 }
 #footer-bar-text > p{
   margin-bottom: 0px;
+  color:white;
 }
 #footer-bar-icons{
   background: gray;
@@ -1107,7 +1108,7 @@ ul.nostyle i {
   }
 
 .footer-img-info:hover{
-  /*background: rgba(0,0,0,0.5);*/
+  background: rgba(255,255,255,0.5);
 }
 .footer-img-info:hover > h3{
      -webkit-transition: all 1s ease-out;
@@ -1296,4 +1297,24 @@ body{
     .line-vert-left-divider{
         border-left-color: white;
     }
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #784BA7 ;
+    border-color: #784BA7 ;
+}
+
+.pagination > li > a {
+  color: #784BA7;
+}
+
+a{
+  color: #784BA7 !important;
+}
+
+.btn-primary{
+  color:white !important;
 }
