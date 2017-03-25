@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Listing;
 use App\Models\Employee;
 use App\Models\FooterCarousel;
+use App\Models\Project;
 
 class FrontendController extends Controller
 {
@@ -43,6 +44,32 @@ class FrontendController extends Controller
     {
         $footerCarousels = self::getFooterCarousel('migration');
         return view('frontend.migration', compact('footerCarousels'));
+    }
+    public function pressNews()
+    {
+        $press = true;
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.news', compact('footerCarousels', 'press'));
+    }
+    public function pressResearch()
+    {
+        $press = true;
+        $footerCarousels = self::getFooterCarousel('migration');
+        $projects = Project::paginate(5);
+        return view('frontend.press.research', compact('footerCarousels', 'press', 'projects'));
+    }
+    public function pressVideo()
+    {
+        $press = true;
+        $footerCarousels = self::getFooterCarousel('migration');
+        $projects = Project::paginate(9);
+        return view('frontend.press.video', compact('footerCarousels', 'press', 'projects'));
+    }
+    public function pressEvent()
+    {
+        $press = true;
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.event', compact('footerCarousels', 'press'));
     }
 
     public function aboutus()
