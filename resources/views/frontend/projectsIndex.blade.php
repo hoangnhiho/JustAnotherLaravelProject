@@ -66,7 +66,6 @@
                                 <h2>Invest</h2>
                                 <p>wFocusing on investor returns and financia growth, projects selected by Homestates boast tangible rental yields and exceptional value in any given market.</p>
                                 <p>Homestates offers quality products backed by reputable developers - the resulting amalgamation is a timeles recipe for strong financial performance and capital growth.</p>
-                                <br>
                                 <hr>
                             </div>
                         </div>
@@ -79,7 +78,6 @@
                                 <h2>Foresight</h2>
                                 <p>Homestates strategically selects projects aligned with prospective infastructure, in addition to the anticipated economic shifts on the property market.</p>
                                 <p>Combined with our methodical approach to market growth and project reports, investors receive a product that has been assessed for its viability, both now and towards the future.</p>
-                                <br>
                                 <hr>
                             </div>
                         </div>

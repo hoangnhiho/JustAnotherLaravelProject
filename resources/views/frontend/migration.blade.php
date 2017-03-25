@@ -68,7 +68,6 @@
                                     <li>Student Visas</li>
                                     <li>Family Visas</li>
                                 </ul>
-                                <br>
                                 <hr>
                             </div>
                         </div>
@@ -80,7 +79,6 @@
                             <div class="col-xs-9">
                                 <h2>Connected</h2>
                                 <p>Our expansive network of legal and financial bodies across Australia ensures that our client's application to migrate considers all aspects and requirements for their relocation.</p>
-                                <br>
                                 <hr>
                             </div>
                         </div>

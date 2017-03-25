@@ -23,6 +23,10 @@ Route::get('/sell', 'FrontendController@sell');
 Route::get('/rent', 'FrontendController@rent');
 Route::get('/migration', 'FrontendController@migration');
 Route::get('/aboutus', 'FrontendController@aboutus');
+Route::get('/press_news', 'FrontendController@pressNew');
+Route::get('/press_research', 'FrontendController@pressResearch');
+Route::get('/press_video', 'FrontendController@pressVideo');
+Route::get('/press_event', 'FrontendController@pressEvent');
 
 Route::get('/career', function () {
     return view('frontend.career');

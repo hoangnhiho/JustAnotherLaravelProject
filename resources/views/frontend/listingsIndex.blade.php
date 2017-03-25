@@ -85,7 +85,7 @@
                 @foreach ($listings as $listing)
                     <div class="row" style="background-color: white; margin-bottom: 30px">
                         <div class="col-xs-12 col-sm-4" style="padding-left:0px">
-                            <img src="{{ $listing->img_url }}" class="img-responsive" alt="" style="margin: 0 auto;">
+                            <a href="{{ $listing->img_url }}" rel="prettyPhoto" title="{{ $listing->address }}"><img class="img-responsive listing-images" src="{{ $listing->img_url }}" alt="{{ $listing->address }}" /></a>
                         </div>
                         <a href="{{ url('listings/'.$listing->id) }}"><div class="col-xs-12 col-sm-8">
                             <div class="row" style="margin-top: 20px">

@@ -18,7 +18,17 @@
                     <li class="scroll"><a href="{{ url('rent') }}">Rent</a></li>
                     <li class="scroll"><a href="{{ url('projects') }}">Projects</a></li>
                     <li class="scroll"><a href="{{ url('migration') }}">Migration & Education</a></li>
-                    <li class="scroll"><a href="#">Press Room</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Press Room <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url('press_news') }}">News</a></li>
+                            <li><a href="{{ url('press_research') }}">Research & Development</a></li>
+                            <li><a href="{{ url('press_video') }}">Vidoes</a></li>
+                            <li><a href="{{ url('press_event') }}">Events</a></li>
+                        </ul>
+                    </li>
+
                     <li class="scroll"><a href="{{ url('aboutus') }}">About Us</a></li>
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
                 </ul>
