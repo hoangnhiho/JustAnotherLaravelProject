@@ -7,7 +7,7 @@
 
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider">
-        <video poster="" playsinline autoplay muted loop>
+        <video poster="" id="slider-video" playsinline autoplay muted loop>
             <!-- <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"> -->
             <source src="{{ url('video/events.mp4') }}" type="video/mp4">
         </video>
