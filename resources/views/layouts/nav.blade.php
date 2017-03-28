@@ -34,24 +34,7 @@
                 </ul>
             </div>
         </div><!--/.container-->
-
-        @if (isset($press))
-            <div class="container" id="press-nav">
-                <div class="collapse navbar-collapse navbar-left">
-                    <ul class="nav navbar-nav">
-                        <li class=""><a href="{{ url('press_news') }}">News</a></li>
-                        <li class=""><a href="{{ url('press_research') }}">Research</a></li>
-                        <li class=""><a href="{{ url('press_video') }}">Video</a></li>
-                        <li class=""><a href="{{ url('press_event') }}">Events</a></li>
-                    </ul>
-                </div>
-            </div><!--/.container--> 
-            <style>
-            @media only screen and (min-width: 768px){
-                body{padding-top: 140px !important;}
-            }
-            </style>
-        @endif   
+   
     </nav><!--/nav-->
 
 </header><!--/header-->

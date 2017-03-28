@@ -85,7 +85,12 @@ class DatabaseSeeder extends Seeder
             )
         );
 
-
+        for ($i=0;$i<=5;$i++){
+            DB::table('events')->insert(array(
+                ['name' => 'Event '.$i,  'caption' => 'caption ' . $i, 'desc' => $desc, 'img_url' => self::getImg(), 'start_date_time' => $dt]
+                )
+            );
+        }
 
     }
 

@@ -7,6 +7,7 @@ use App\Models\Listing;
 use App\Models\Employee;
 use App\Models\FooterCarousel;
 use App\Models\Project;
+use App\Models\Event;
 
 class FrontendController extends Controller
 {
@@ -68,8 +69,9 @@ class FrontendController extends Controller
     public function pressEvent()
     {
         $press = true;
+        $events = Event::get();
         $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.event', compact('footerCarousels', 'press'));
+        return view('frontend.press.event', compact('footerCarousels', 'press', 'events'));
     }
 
     public function aboutus()

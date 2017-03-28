@@ -1357,3 +1357,34 @@ a{
 .add-reading{
   margin-bottom: 20px;
 }
+
+#event-owl-carousel .owl-prev,
+#event-owl-carousel .owl-next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: -35px;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 5;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+#event-owl-carousel .owl-prev:hover,
+#event-owl-carousel .owl-next:hover {
+  background-color: #784BA7;
+}
+#event-owl-carousel .owl-prev {
+  left: -35px;
+  text-indent: 14px;
+}
+#event-owl-carousel .owl-next {
+  right: -35px;
+  text-indent: -14px;
+}
