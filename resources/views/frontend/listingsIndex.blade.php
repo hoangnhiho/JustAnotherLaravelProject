@@ -118,7 +118,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>{{ $listing->desc }}</p>
+                                    <p>{!! $listing->desc !!}</p>
                                 </div>
                             </div>
                         </div>

@@ -21,22 +21,25 @@ class CreateListingsTable extends Migration
 
             $table->string('prop_type')->default('house');
             $table->string('type')->default('rent');
-            $table->decimal('price',10,2);
+            $table->decimal('price',10,2)->nullable();
+            $table->decimal('bond',10,2);
 
             // $table->integer('company_id')->unsigned();
             // $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             // 'type', 'landsize', 'council_rate', 'water_rate'
 
-            $table->integer('car_no')->unsigned();
-            $table->integer('bath_no')->unsigned();
-            $table->integer('bed_no')->unsigned();
+            $table->integer('car_no')->unsigned()->default(0);
+            $table->integer('bath_no')->unsigned()->default(0);
+            $table->integer('bed_no')->unsigned()->default(0);
 
-            $table->integer('landsize')->unsigned();
-            $table->integer('council_rate')->unsigned();
-            $table->integer('water_rate')->unsigned();
+            $table->integer('landsize')->unsigned()->nullable();
+            $table->integer('council_rate')->unsigned()->nullable();
+            $table->integer('water_rate')->unsigned()->nullable();
 
             $table->mediumText('img_url')->nullable();
             $table->mediumText('img_urls')->nullable();
+
+            $table->mediumText('floor_plan')->nullable();
 
             $table->mediumText('address')->nullable();
             $table->decimal('lng',10,7);

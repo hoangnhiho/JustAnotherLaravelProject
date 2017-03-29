@@ -46,7 +46,7 @@
                 <div class="row" style="margin-top: 20px">
                     <div class="col-xs-12 col-sm-7">
                         <h5>Hightlights</h5>
-                        <p>{{ $listing->desc }}</p>
+                        <p>{!! $listing->desc !!}</p>
                     </div>
                     <div class="col-xs-12 col-sm-5">
                         <h5>For {{ $listing->type }}</h5>
