@@ -72,25 +72,6 @@ class DatabaseSeeder extends Seeder
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/b5d31ba6ecf0bf38962c5bee4c4722ddd7b5755ba0ad00b280631b7ab8008b75/floorplan1.jpg', 
             'address' => '70 Regents Drive, Redbank Plains QLD 4301', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
-        DB::table('listings')->insert(['title' => '70 Regents Drive, Redbank Plains QLD 4301',  'caption' => $capt,
-            'desc' => '<p>BRAND NEW - FIRST WEEK FREE!!!</p><p>FERNBROOKE RIDGE ESTATE</p><p>GJ Gardener Homes. Quality finishes and Fixtures!</p> <ul><li>4 bedrooms</li><li>Main bedroom with walk in robe</li><li>All bedrooms with ceiling fans/lights</li><li>Double car Garage</li><li>2 Bathrooms inc ens</li><li>Large Gas cooker in kitchen</li><li>Walk in Pantry</li><li>Stone top benches</li><li>Air con in living</li><li>Kitchen/living large open plan</li><li>Separate Lounge / Media Room </li><li>Study Nook</li></ul><p>Please email through your availability to view</p>', 
-            'prop_type' => 'house', 'type' => 'rent', 'price' => 400, 'bond' => 1600, 'car_no' => 2,'bath_no' => 2,'bed_no' => 4, 
-            'img_url' => 'https://i1.au.reastatic.net/1530x841/034917541c2cab7bd3ca9930356b954d4ef0c2c48d110abf9089d6134e2d8415/main.jpg', 
-            'img_urls' => json_encode([
-                'https://i2.au.reastatic.net/1530x841/febbd0cae0ee50da0c94b7352fac0922caf4be1041493d4ed4cafb7d797a8d34/image2.jpg',
-                'https://i3.au.reastatic.net/1530x841/295680f4f49fa2f90d8a184a7c9cb972a6e02fd009ee173765c2d9c66b77ac3b/image3.jpg',
-                'https://i4.au.reastatic.net/1530x841/dc5ae2ee2d88ef80199167be8bd4df2aa9619526bef8ccf63d94acc63874b12a/image4.jpg',
-                'https://i1.au.reastatic.net/1530x841/e7e7f57251d9bc66b9bf66522f45edbd2faedd52e9e8b7902e7b50bb21d5dfd6/image5.jpg',
-                'https://i2.au.reastatic.net/1530x841/2378fe49e063aa98d787fc9e3f27dfcd95cab9756de67f6d86c96f500a500389/image6.jpg',
-                'https://i3.au.reastatic.net/1530x841/510bf678a4a1da26d76df11116c380eef58f8ceb7a26e2092d37f8e7a5d4abdf/image7.jpg',
-                'https://i1.au.reastatic.net/1530x841/f42d4a3999e60d28a7259e2e3cf29e8d3c6f3dd2c2de0757433dca529198690e/image9.jpg',
-                'https://i2.au.reastatic.net/1530x841/b6fed7c17d22ae8d83192a5a27fddbd201a2d16b3e2b715b5534c877fa97e64d/image10.jpg',
-                'https://i3.au.reastatic.net/1530x841/45113683af08f790a979f016e8394eeab86be6c73cc8bab5d523839ddefb416b/image11.jpg',
-                'https://i1.au.reastatic.net/1530x841/196eb575e0e32f76a19e1f9611a312a56fd7eb66e5076da9448fd95297828fff/image13.jpg'
-            ]), 
-            'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/b5d31ba6ecf0bf38962c5bee4c4722ddd7b5755ba0ad00b280631b7ab8008b75/floorplan1.jpg', 
-            'address' => '70 Regents Drive, Redbank Plains QLD 4301', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
-
         DB::table('listings')->insert(['title' => '210/501 Adelaide Street, Brisbane CBD QLD 4000',  'caption' => $capt,
             'desc' => '<p>FULLY FURNISHED - LARGE ALLOWANCE OF SERVICES PROVIDED</p><p>CITY LIVING MADE EASY!!</p><p>With close proximity to the city’s best attractions and corporate precinct both the business and leisure traveller will find this location ideal. Public transport is moments away and will have you travelling around the city with ease</p><p>If keeping up your fitness whilst away is a must enjoy the state of the art gym with 24-hour access and heated lap pool, then relax and unwind in the spa and sauna. Take a stroll and enjoy some retail therapy at Queen Street Mall home to leading fashion stores. Discover delicious dining at the ever popular Southbank and perhaps catch a live show at QPAC (Queensland Performing Arts Centre).</p><p>Please email through your availability to view</p>', 
             'prop_type' => 'house', 'type' => 'rent', 'price' => 430, 'bond' => 1720, 'car_no' => 0,'bath_no' => 1,'bed_no' => 1, 
@@ -179,7 +160,7 @@ class DatabaseSeeder extends Seeder
                 'https://i4.au.reastatic.net/1530x797/a096e09871e958cd2737316d2657150a296863020c000918129ae2ebed810857/image16.jpg'
             ]), 
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1594-resize,r=33,g=40,b=46/96af9a3d0a715dcf4ffbee06daf63902c0776d6a6eee956c52d6f18d5b56abf3/floorplan1.jpg', 
-            'address' => '20904/37D Harbour Road , Hamilton CBD QLD 4007', 'lat' => $lat, 'lng' => $lng, 'landsize' => 276, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+            'address' => '10/102 Parkside Circuit, Hamilton QLD 4007', 'lat' => $lat, 'lng' => $lng, 'landsize' => 276, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
         
 
         DB::table('listings')->insert(['title' => '26 Hanover Drive, Pimpama QLD 4209',  'caption' => $capt,
@@ -201,6 +182,128 @@ class DatabaseSeeder extends Seeder
             'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/4d97b2bac923407e403ee2f90ba8055778c59a4a51969b655e35ec1f7866d920/floorplan1.jpg', 
             'address' => '26 Hanover Drive, Pimpama QLD 4209', 'lat' => $lat, 'lng' => $lng, 'landsize' => 600, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
+        DB::table('listings')->insert(['title' => '33 Lewis Place, Calamvale QLD 4116',  'caption' => $capt,
+            'desc' => '<p>This house is bigger than you think! If you are looking for space, this is it! This lovely 4 - 5-bedroom home sits on flat 532m2 is waiting for a new owner. Spacious and newly painted, this home is ideally located close to local transport, shops, Calamvale College, Child care, local parks and playgrounds, grocery stores and restaurants. Master bedroom with en-suite and ceiling fan, other 3 – 4 bedrooms with built-in-wardrobes and floating wooden floor boards. Living, dining and Kitchen is spacious and sleek. Well equipped kitchen featuring, electric oven and cook top, range hood, dishwasher and low maintenance tile splashback. This property needs to been seen, as it has endless potential for a family or investor looking to get into the very highly demanded Calamvale suburb.</p><ul><li>4 bedrooms all with built-in-wardrobes and ceiling fans</li><li>2-3km approx. from Pimpama Primary and Pimpama state high schools</li><li>3-5km from Ormeau and Coomera train stations</li><li>13 minutes from Helensvale Westfield mall</li><li>7 minutes from Dream world and 11 minutes from Movie world</li><li>2 bathrooms with en-suite and separate toilet</li><li>Open plan living and dining area</li><li>Universal room that you can use as a 5th bedroom, office or rumpus room</li><li>Possibility to revert to a remote double lock-up garage.</li><li>At the end of a cul-de-sac </li><li>Quiet neighbourhood</li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 539000, 'bond' => null, 'car_no' => 2,'bath_no' => 2,'bed_no' => 5, 
+            'img_url' => 'https://i1.au.reastatic.net/1530x841/b39f9722441a0ac5821a62499da74a7e5c1f27442eb1f021204a0e72d62a1cc9/main.jpg', 
+            'img_urls' => json_encode([
+                'https://i2.au.reastatic.net/1530x841/53f07c7ac251af70bfc5e458e5ec11c5d695c628646cbc8c0062dc4991a1322c/image2.jpg',
+                'https://i3.au.reastatic.net/1530x841/6442358648171ade126289e33a860f746015fafc8de86a66dd3cddf6d909cc6e/image3.jpg',
+                'https://i4.au.reastatic.net/1530x841/9acf7f68d0c458ba709201e46dc3b48b9eb3ea2c44dcdf6612ccb14279258daa/image4.jpg',
+                'https://i2.au.reastatic.net/1530x841/ad1455b9524d89b2bf766417a4aa4239e6b0ccfaaea2922f3f6e0d5c01073f66/image6.jpg',
+                'https://i3.au.reastatic.net/1530x841/1852bf2941893eb482bfec835cb65cfc88e6fffc195ddf838dcfeb15c4f9b811/image7.jpg',
+                'https://i4.au.reastatic.net/1530x841/499e52a8c7d5ff2c233dead85066eadab2e125020c9c1da07dc45c17b5a8063e/image8.jpg',
+                'https://i1.au.reastatic.net/1530x841/6bd0ea4b4c4dede3bca1d3e8a8c96329dc93bf476a157747bf1d887baed6be04/image9.jpg',
+                'https://i2.au.reastatic.net/1530x841/ad21025552582ceb563663d1604574b31d4c441b1fdaea06531d5fb63db624d2/image10.jpg',
+                'https://i3.au.reastatic.net/1530x841/bac1e1b02db8aeb22b330e7b400a1ce96b279c383c483562b28b56517f54cc9e/image11.jpg',
+                'https://i4.au.reastatic.net/1530x841/c2425bb390c2da7bac699b8bcec22823e7f94a887c9981c54e55a7a600a5d4bc/image12.jpg'
+            ]), 
+            'floor_plan' => '', 
+            'address' => '33 Lewis Place, Calamvale QLD 4116', 'lat' => $lat, 'lng' => $lng, 'landsize' => 532, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('listings')->insert(['title' => '40 Alan Crescent, Eight Mile Plains QLD 4113',  'caption' => $capt,
+            'desc' => '<p>Perfect for any type of buyer whether you are a first home buyer, family or investor, this property is incredibly low maintenance and is an affordable lifestyle choice or excellent investment.</p><p>This solid brick lowset home is situated on a 677m2, opposite Raymond Road Park which is never to be developed, in the very sought after suburb of Eight Miles Plains. The street is line with lush greenery, stylish present homes, in a safe and friendly neighbourhood. Your new home features three generous size bedrooms with sliding built-in-wardrobes, master bedroom with lavish walk-in-wardrobe and full en-suite with air-conditioning. Well positioned galley kitchen with timber veneer cabinetry and quality appliance all integrated including dishwasher, range hood, electric oven and gas stove. Polished tiles throughout the house for low maintenance living, abundance of natural light complimenting the colour palette of the home, with views of the garden. Main bathroom with full size bath tub, separate toilet, internal laundry with access to the rear yard, double lock up garage with remote, water tank and security screens and blinds. It will be hard not to picture yourself in this home, close to all amenities including but not limited to local shops, schools and highways. </p><ul><li>• Three bedrooms</li><li>Main bathroom and en-suite</li><li>Fully tiles</li><li>Gallery style kitchen with gas stove, electric oven, range hood and dish washer</li><li>Double lock up garage</li><li>Fully fenced yard</li><li>Security screens and doors</li><li>Large back yard</li><li>Previously rented for $500 p/w</li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => null, 'bond' => null, 'car_no' => 2,'bath_no' => 2,'bed_no' => 3, 
+            'img_url' => 'https://i1.au.reastatic.net/1530x841/938e6613454c8d5d99f1f724fb5eea78cbde97f4f5389aff3936e04711e1099c/main.jpg', 
+            'img_urls' => json_encode([
+                'https://i2.au.reastatic.net/1530x841/49d1fafb37644f557b4a97ed6590612c9b57e11a7cea415d637181d8e177b072/image2.jpg',
+                'https://i3.au.reastatic.net/1530x841/fc3648939d2becae6eee378c05961f3e6ddf9390d2bfffeb86af09413f809759/image3.jpg',
+                'https://i4.au.reastatic.net/1530x841/fc387675cc883108c344e9b0c934baef9dd1a5dfeff19414069d17774cb3ee7d/image4.jpg'
+            ]), 
+            'floor_plan' => 'https://i1.au.reastatic.net/3060x1682/527a2ea2d3198405784bdc1291592b2b8b2680a5baad1d6b6ab53469c0fabc55/floorplan1.jpg', 
+            'address' => '40 Alan Crescent, Eight Mile Plains QLD 4113', 'lat' => $lat, 'lng' => $lng, 'landsize' => 677, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+
+        DB::table('listings')->insert(['title' => '63 Ludwick Street, Cannon Hill QLD',  'caption' => $capt,
+            'desc' => '<p>What a position! Approximately six kilometres to the CBD, “The Cannon” Boutique Apartments are in the heart of Cannon Hill. It is all about the convenience and value for money.</p><p>You\'ll just love coming home to your own brand new stylish apartment, with contemporary open plan living and quality fixtures and fittings. High ceilings and air-conditioning these apartments are ideal for entertainers and those who appropriated relaxed yet stylish living. </p><p>Hurry as Brisbane\'s first 18-hole Golf course is coming at your doorstep. A sportsman\'s mecca right at the door for leisure, dining and lifestyle. Act now to benefit from the attractive price of the final apartments and the $20k First Home Owners Grant. Their are only a hand full left, so give us a call now because THEY WON\'T LAST LONG! </p><ul><li>1, 2, 3 Bedrooms apartments, master rooms with en-suite</li><li>Split system air-conditioning in the living area and each bedroom</li><li>The huge size of balcony for entertaining and relaxing</li><li>Remote securer car space, lift and entry intercom</li><li>Diversity interior designs for choosing - Each bedroom with built in or walk in robe</li><li>European design Kitchen with stainless steel appliances</li><li>Two-Pac paint on kitchen cupboards, stone bench tops with quality tile splashback</li><li>All bedroom floors are laid with high quality fire rating carpet.</li><li>Each unit includes dishwasher, dryer and LED lighting</li><li>Rooftop communal BBQ area.</li><li>Bus and shops at your doorstep</li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 539000, 'bond' => null, 'car_no' => 1,'bath_no' => 2,'bed_no' => 2, 
+            'img_url' => 'https://i1.au.reastatic.net/1530x841/cb9bf48521998a346df79c4394c3919e82500aa59c3fa56199a886372eb7373c/main.jpg', 
+            'img_urls' => json_encode([
+                'https://i2.au.reastatic.net/1530x841/19fc163bfdf0ee81248fe5b6d86e6c96cff886b85b56588f37bd5c557eabb3f9/image2.jpg',
+                'https://i4.au.reastatic.net/1530x841/1bf926f02784607c91bd5bdab337cef97b104daea118043424730a6a21a7450c/image4.jpg',
+                'https://i1.au.reastatic.net/1530x841/516cd5606077120212fcad8543f5bfca91145ab9561b31672ce8e300bc1072a8/image5.jpg',
+                'https://i2.au.reastatic.net/1530x841/e03c0fb05c1a39146cd37b0c8e801f996e9a48989a6413a1c9dd7449f2ae3408/image6.jpg',
+                'https://i3.au.reastatic.net/1530x841/74957a3c569740009bba084e91c69b1a9f96ee0f839b81ec22d24b365a4c12ac/image7.jpg',
+                'https://i4.au.reastatic.net/1530x841/e77a2a347cc4d90fb0a1bed3fb23ec4bd10d73209c59b040a7fc2d016338c410/image8.jpg',
+                ''
+            ]), 
+            'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/af75a151df78acf924dedd7e4c8a6daa40a054907c8d1653e30cf5edcf1748b7/floorplan1.jpg', 
+            'address' => '63 Ludwick Street, Cannon Hill QLD', 'lat' => $lat, 'lng' => $lng, 'landsize' => 79, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('listings')->insert(['title' => '212/18 Thorn Street, Kangaroo Point QLD 4169',  'caption' => $capt,
+            'desc' => '<p>On the Fringe of Brisbane CBD in vibrant Kangaroo Point</p><p>Peninsula Apartments are in the heart of vibrant Kangaroo point, surrounded by cafes, shops, pubs, restaurants and grocery stores.</p><p>This apartment bought as an investment property was previously rented out for $500.00 per week but now vacant.</p><p>Near new two bedrooms, two bathrooms, one car park apartment located in the Peninsula Apartment Complex with countless lifestyle attractions and features.</p><ul><li>Master with built-in-wardrobe and en-suite and assess to main balcony</li><li>Extensive living and balcony area</li><li>Sleek new kitchen with dishwasher, stove and oven</li><li>Built-in-fridge with ample storage space</li><li>Ducted air-condition throughout the apartment</li><li>Security intercom, secure car parking</li><li>Walking distance to shops and public transport </li><li>Apartment complex features, pool, gym and BBQ area</li><li>Walking distance to Mowbray Park City Cat stop</li></ul><p>Kangaroo Point is vibrant and highly sought-after location; this apartment is most deserving of an inspection.</p>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 495000, 'bond' => null, 'car_no' => 1,'bath_no' => 2,'bed_no' => 2, 
+            'img_url' => 'https://i1.au.reastatic.net/1530x841d/7e5ec4494ed1d0dc2b1770cb165234c7869e3dac644276c7debbb464a2c4c188/main.jpg', 
+            'img_urls' => json_encode([
+                'https://i2.au.reastatic.net/1530x841/10586e9fa48a0b069398a075ffa23ea22d1030a81224d7edabb1044eafd9c51d/image2.jpg',
+                'https://i3.au.reastatic.net/1530x841/7ed73c6d69141d5d478b6c6e02df8bd57758ab51fe22a18ccaca877161f9dad8/image3.jpg',
+                'https://i4.au.reastatic.net/1530x841/e336cb10006a7ac22e52627d2b6a098c6309e7662f9cb26aca6a3705e45e82a6/image4.jpg',
+                'https://i1.au.reastatic.net/1530x841/cd01687e22e1b26d51382e4ae0b6cf28376eda4c8016224cb4ff5b5ed44c1c9e/image5.jpg',
+                'https://i2.au.reastatic.net/1530x841/7cf5cfbae2a12293a4becff5bd8843e5d881440164706cb38169ca6f291969b0/image6.jpg',
+                'https://i3.au.reastatic.net/1530x841/7dbf876f599dabef937c5476dd3bcfbee6141ff3dcbc24da787886b5e150de02/image7.jpg',
+                'https://i4.au.reastatic.net/1530x841/fb932aacbde6d0d4fa29b6b6fc1e51af2060b6c4f79be98f2931a652e35bc832/image8.jpg',
+                'https://i1.au.reastatic.net/1530x841/6619fe80fa621ef4805853f48008e9e736dd1a3314df0bc0a91a4f5f713bfee7/image9.jpg',
+                'https://i4.au.reastatic.net/1530x841/d63ccc6b42b98b59630841f7558ff8063a598691bb1a2a3f8a94873dde52daa8/image12.jpg'
+            ]), 
+            'floor_plan' => 'https://i1.au.reastatic.net/3060x1682/212a9fc84d5161f4c034494ad613dc683d72296288c8f3e41244b546a64aad42/floorplan1.jpg', 
+            'address' => '212/18 Thorn Street, Kangaroo Point QLD 4169', 'lat' => $lat, 'lng' => $lng, 'landsize' => 80, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('listings')->insert(['title' => '271/30 Macossan Street, Brisbane CBD QLD 4000',  'caption' => $capt,
+            'desc' => '<p>This is your exclusive opportunity to buy in Brisbane CBD.</p><p>Not often does an apartment of this quality and size come on the market with endless potential for owner occupiers or investors. </p><p>This seamless apartment is located 10 meters from the Brisbane River, 10 minutes’ walk to Queens street mall and restaurant districts or 5 minutes’ drive, 20 meters to Eagle Street Pier CityCat or City Hopper ferry service.</p><p>With views down the river from your balcony to your left and city view from your balcony to your right, this apartment will make the perfect spot to view Riverfire in September plus enjoy Brisbane’s superb weather all year around.</p><p>Boasting three bedrooms, two bathrooms and effortless combine living, dining and lounge area that opens to your designer kitchen and entertainer’s balcony. Master bedroom incorporates light and low maintenance living with en-suite and walk-through wardrobe.</p><ul><li>Incredible chef’s kitchen</li><li>Sleek master bedroom with, en-suite and walk through wardrobe</li><li>Two addition bedrooms with built-in-wardrobes</li><li>Immaculate main bathroom</li><li>Separate laundry</li><li>Ducted air-conditioning throughout</li><li>Minutes’ to public transport</li><li>Stone’s throw away from restaurants, cafés and shops</li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 799000, 'bond' => null, 'car_no' => 1,'bath_no' => 2,'bed_no' => 3, 
+            'img_url' => 'https://i4.au.reastatic.net/1530x797,r=33,g=40,b=46/a267b53713fa9a2ecb919396defc4c2c3ffac7297f7c5e322b24b7adb370202e/image4.jpg', 
+            'img_urls' => json_encode([
+                'https://i1.au.reastatic.net/1530x797-,extend/97a8ac8c2d10c30436ef96cf360307743d385d0a6a1f954b20db64fadfa15d66/image5.jpg',
+                'https://i2.au.reastatic.net/1530x797-r=33,g=40,b=46/2c87474cf5b347c1c45c5526043d9bd5ae3da383c1d2aa9fd2f455c2d3b447ad/image6.jpg',
+                'https://i3.au.reastatic.net/1530x797-46/6799bf765c8a6508538a24d4af8ec22df6c12905ba230880dfa0bda1a1bade66/image7.jpg',
+                'https://i4.au.reastatic.net/1530x797-resiz46/34675ce74b0eec5efac839b5755f1d9b6b8383c344d43a1585614e9f8d24b1d3/image8.jpg',
+                'https://i1.au.reastatic.net/1530x797-res,r=33,g=40,b=46/32a956f472f030ffaf8901205c36c773a5643acc9c1b2ea72890fdc4c0ccf9c8/image9.jpg',
+                'https://i2.au.reastatic.net/1530x797-resi40,b=46/8df0f9be006f40ee69a46b241fd19503ddf36f844bb0724de86dea48d2f5eaf3/image10.jpg',
+                'https://i3.au.reastatic.net/1530x797-resiz40,b=46/b6948a4ac1a549c2d6eeb4f494fba0331c8e008dddbe51af8cb39fef1b920f24/image11.jpg',
+                'https://i4.au.reastatic.net/1530x797/629ad48e388ed396a16150fa33de099b1667d4f9cbff0615f2d5a4bda8af79e4/image12.jpg',
+                'https://i1.au.reastatic.net/1530x797/6af287656fafff20a3b7263bc19e4f55247655b7ecbad0a119aacf472666fedb/image13.jpg',
+                'https://i2.au.reastatic.net/1530x797/4277480c724d2b927ea11ad2fec63642e073a52e40f0209062728cdd3082c3b3/image14.jpg'
+            ]), 
+            'floor_plan' => 'https://i3.au.reastatic.net/3060x1594-ree,r=33,g=40,b=46/dad97529dcbea5ee8c1aa16168804114707690d1e2b3f0cbb275eb1e49b09ed7/floorplan1.jpg', 
+            'address' => '271/30 Macossan Street, Brisbane CBD QLD 4000', 'lat' => $lat, 'lng' => $lng, 'landsize' => 134, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+
+        DB::table('listings')->insert(['title' => '512/113 Commercial Road, Teneriffe QLD 4005',  'caption' => $capt,
+            'desc' => '<p>Sleek and well-designed this apartment is in the heart of Tenerife in prime position. Located at walking distance to everything you need Restaurants, Lifestyle, Shops, Grocery’s and Entertainment, your every want is right here. </p><p>Fusing stylish and contemporary appointments, this apartment’s layout is enhanced by sleek white tones, high ceiling, and large windows. Light soaked alfresco balcony which complements living in Queensland and enjoying the lifestyle. </p><p>This exclusive boutique complex features an impressive rooftop garden space which overlooks the surrounding district providing a vibrant backdrop when entertaining friends and family around the BBQ facilities.</p><ul><li>Two bedrooms, both with carpet and built-in-wardrobes</li><li>En-suite with his and hers vanities</li><li>Main bathroom with full size bath tube</li><li>Large outdoor balcony</li><li>Sleek and practical kitchen with glass splashback and electric appliance</li><li>Open plan living, dining and kitchen with glass sliding doors to balcony</li><li>DoubleOne 3 Apartments </li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 799000, 'bond' => null, 'car_no' => 1,'bath_no' => 2,'bed_no' => 2, 
+            'img_url' => 'https://i1.au.reastatic.net/1530x841/a620744a00c99a062564c338d6d3f9a81b0f9eb642984c8be2ff75d7271529ac/main.jpg', 
+            'img_urls' => json_encode([
+                'https://i2.au.reastatic.net/1530x841/8d5ef63c58b9b12904888cb308f07f72d40ca5bf081e3e155a35bcac9ae89626/image2.jpg',
+                'https://i4.au.reastatic.net/1530x841/2c8aec4f26a82a4b8190c4d8b4b00248771247712e04bc589e1c66c943b3cc58/image4.jpg',
+                'https://i1.au.reastatic.net/1530x841/560b8dcd68153b9f143b7ca12d57e8472e3f0ecd45d7fc7f28164ef3942a6f9e/image5.jpg',
+                'https://i2.au.reastatic.net/1530x841/ca46d6fa090a236db54a0f6d88d3ecb9951fb3d777e3ce750d795a1fd92c9e63/image6.jpg',
+                'https://i3.au.reastatic.net/1530x841/4e18d700d6aececd586c37f2cb67e27f93f2278c2f4ca223a844987efc29d964/image7.jpg',
+                'https://i4.au.reastatic.net/1530x841/1a1dcef1badfc3f2a8e6b2d4622ac0bef3c850c2f9304700e8a431c9ba6ef979/image8.jpg',
+                'https://i1.au.reastatic.net/1530x841/91753ab1c90f5f7c0f580dc7677742791fe8ebd2b875cca43338075eff43aec7/image9.jpg',
+                'https://i2.au.reastatic.net/1530x841/82221040082c9922cfd8056b6122023d5e63f9cd25502ff4ff0b4df65d1b49df/image10.jpg',
+                'https://i3.au.reastatic.net/1530x841/c97682602c757a16ae5c6819a88e92e988cb89ddb57a50bf318356d8aa48269c/image11.jpg',
+                'https://i2.au.reastatic.net/1530x841/152e21e742278039eec0f5eecdba659670637763a50ccc05f16a036edac7cbdd/image14.jpg'
+            ]), 
+            'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/67a7a20b4936fc532fe98e1f503c9ac416473947ba79ce0ed88dca668f179eec/floorplan1.jpg', 
+            'address' => '512/113 Commercial Road, Teneriffe QLD 4005', 'lat' => $lat, 'lng' => $lng, 'landsize' => 101, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('listings')->insert(['title' => '605/8 Kyabra Street, Newstead QLD 4006',  'caption' => $capt,
+            'desc' => '<p>With a contemporary urban style, Hopscotch Apartments is setting the standard for vibrant and elegant apartment living in Newstead. The whole apartment wraps itself around an open living design to engage not only indoor living but also the best of the outdoor living in Brisbane. </p><pFeaturing two bedrooms, the master contains built-in-wardrobes and en-suite, coupled with floor-to-ceiling glass sliding doors which lead out to an undercover balcony, perfect for your morning coffee. </p><p>Second bedroom also has built-in-wardrobe and access to the second bathroom with built-in laundry. The abundance of natural light throughout the whole apartment compliments the stainless steel appliances in the kitchen, with an added feature of charcoal tiled splashback, white two pack painted lower cupboards and wooden finishing for the top cupboards, makes this apartment unique in style and very versatile. </p><p>Split systems heating and cooling, single car-park space with access to visitor car-park and a brand new car waiting for you, rooftop BBQ area: Nothing has been spared in the communal areas. Built-in BBQ facilities with bench-tops, sink and dining tables and chair with sunbed to relax and take in the views to the west of Brisbane, as you entertain your guests in Brisbane’s tropical weather. </p><p>Low Body Corporate Fees, minutes to fine dining, cafes, gym, shopping at Gasworks, James Street or CBD, your opportunity is now to ‘Seize the day’. </p><ul><li>Two Bedrooms</li><li>Two bathrooms including en-suite of the master</li><li>Split heating and cooling</li><li>Pet Apartment Complex</li><li>Low Body Corporate Fees</li><li>SS security screens doors</li><li>Internal intercom system</li><li>Brand New Car & Furniture Package Available</li><li>Carpet through soft living areas e.g. bedroom and living</li><li>Fine dining, shopping, cafes and gym all at a stone throw away </li><li>Secure basement parking with lift access and visitor car-park facilities</li><li>Stunning rooftop entertaining areas with built in BBQ facilities with views to the west</li><li>Brisbane CBD, Gasworks, James Street, Emporium all at walking distance</li><li>Hopscotch can qualify some buyers for the $20,000 First Home Owner Grant</li></ul>', 
+            'prop_type' => 'house', 'type' => 'resale', 'price' => 599000, 'bond' => null, 'car_no' => 1,'bath_no' => 2,'bed_no' => 2, 
+            'img_url' => 'https://i4.au.reastatic.net/1530x841/443723a056c4f602308f1db98b7b2f8fe19a3c271a4ea9768d7fb4353db973b1/image4.jpg', 
+            'img_urls' => json_encode([
+                'https://i3.au.reastatic.net/1530x841/6cc0e076b3c5a34b53669842ebfc77975c24fabc7f48902a1e94210527d5d636/image3.jpg',
+                'https://i1.au.reastatic.net/1530x841/4e2de716f3ab75ffd21b5e24db994c1f1b29de14ac3f769fd2f9f9d776537824/main.jpg',
+                'https://i2.au.reastatic.net/1530x841/2ece66d690c69b5f6db552113f08b97c38c0f11d970d8e03c8c6776de0310a55/image2.jpg',
+                'https://i3.au.reastatic.net/1530x841/638dfc702eda1d45412a2a737310d3f730575b754fd54733330195f9d0cd7e27/image7.jpg',
+                'https://i1.au.reastatic.net/1530x841/7a314e42b67c88d4acfbbe5dec697cb1b0763aff56a90342f5fd21b77ec84dce/image9.jpg',
+                'https://i4.au.reastatic.net/1530x841/530c62b8c35995db07359cc3d8e551eab5555a16d54c00069f045c0ca29c243d/image12.jpg',
+                'https://i1.au.reastatic.net/1530x841/3a7da9c0b1e66714545509219ccafe991a5d7624f74cb0c8ef0640af1eee5719/image13.jpg',
+                'https://i2.au.reastatic.net/1530x841/4597e22aff0dd2c2cf4c557354eae7360e6ddf52fea5c3bbb239e6206ab42b2a/image14.jpg',
+                'https://i3.au.reastatic.net/1530x841/8653840b16dbf757ccfdd2f95401413b490545e0e13b324f1da82498c090eb2e/image15.jpg'
+            ]), 
+            'floor_plan' => '', 
+            'address' => '605/8 Kyabra Street, Newstead QLD 4006', 'lat' => $lat, 'lng' => $lng, 'landsize' => 100, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
 
         //<ul><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li></ul>
