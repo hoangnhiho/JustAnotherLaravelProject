@@ -10,4 +10,11 @@
 <script src="{{ url('js/jquery.inview.min.js') }}"></script>
 <script src="{{ url('js/wow.min.js') }}"></script>
 <script src="{{ url('js/main.js') }}"></script>
+<script type="text/javascript">
+	$('#pressDropBtn').click(function(){
+		console.log('clicked');
+		window.location = "{{ url('press_news') }}";
+	});
+
+</script>
 

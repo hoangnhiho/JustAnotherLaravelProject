@@ -45,24 +45,30 @@
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer2.jpg') }}) no-repeat center center; background-size: cover;">
-                    
-                    <div class="footer-img-info" >
-                        <h3>Join Homestates</h3>
+                <a href="{{ url('login') }}">
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer2.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info" >
+                            <h3>Join Homestates</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/house.jpg') }}) no-repeat center center; background-size: cover;">
-                    
-                    <div class="footer-img-info">
-                        <h3>Latest Projects</h3>
+                </a>
+                <a href="{{ url('projects') }}">
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/house.jpg') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>Latest Projects</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer3.png') }}) no-repeat center center; background-size: cover;">
-                    
-                    <div class="footer-img-info">
-                        <h3>Press Room</h3>
+                </a>
+                <a href="{{ url('press_room') }}">
+                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer3.png') }}) no-repeat center center; background-size: cover;">
+                        
+                        <div class="footer-img-info">
+                            <h3>Press Room</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

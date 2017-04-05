@@ -24,6 +24,14 @@
         </div>
 
         <div class="row">
+            <div class="col-xs-12 add-reading">
+                <div class="" style="background: url({{ url('images/press/events.JPG') }}) no-repeat center center; background-size: cover;"> 
+                <div class="news-banner-img-info"><h3>Events</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-xs-6 col-sm-3 add-reading">
                 <div class="" style="background: url({{ url('images/press/market.JPG') }}) no-repeat center center; background-size: cover;"> 
                 <div class="footer-img-info"><h3>Market Insights</h3></div>
@@ -47,13 +55,6 @@
             <hr>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 add-reading">
-                <div class="" style="background: url({{ url('images/press/events.JPG') }}) no-repeat center center; background-size: cover;"> 
-                <div class="footer-img-info"><h3>Events</h3></div>
-                </div>
-            </div>
-        </div>
     </div>
 @endsection
 @section('customjs')

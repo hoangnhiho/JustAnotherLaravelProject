@@ -27,6 +27,7 @@ Route::get('/press_news', 'FrontendController@pressNews');
 Route::get('/press_research', 'FrontendController@pressResearch');
 Route::get('/press_video', 'FrontendController@pressVideo');
 Route::get('/press_event', 'FrontendController@pressEvent');
+Route::get('/press_room', 'FrontendController@pressRoom');
 
 Route::get('/career', function () {
     return view('frontend.career');

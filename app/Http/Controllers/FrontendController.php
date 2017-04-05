@@ -46,6 +46,12 @@ class FrontendController extends Controller
         $footerCarousels = self::getFooterCarousel('migration');
         return view('frontend.migration', compact('footerCarousels'));
     }
+
+    public function pressRoom()
+    {
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.room', compact('footerCarousels'));
+    }
     public function pressNews()
     {
         $press = true;
