@@ -13,56 +13,59 @@
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 text-center">
                 <h1>Talk to a local Homestates agent</h1>
                 <p>Request a complementary listing consultation for your home</p>
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
-                        <div class="form-group">
-                            <label for="usr">Street Address, postcode, suburb:</label>
-                            <input type="text" class="form-control" id="usr">
+                <form action="{{ url('listings') }}" method="get">
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                            <div class="form-group">
+                                <label for="usr">Street Address, postcode, suburb:</label>
+                                <input type="text" class="form-control" id="usr" name="search" value="@if (isset($params->search)) $params->search @endif">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-2">
-                        <div class="form-group">
-                            <label for="usr">Property</label>
-                                <select class="form-control" id="sel1">
-                                    <option value="all">All</option>
-                                    <option value="apartment">Apartment</option>
-                                    <option value="house">House</option>
-                                    <option value="land">Land</option>
-                                </select>                        
+                    
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-2">
+                            <div class="form-group">
+                                <label for="usr">Property</label>
+                                    <select class="form-control" id="sel1" name="prop_type">
+                                        <option value="all" @if ($params->prop_type == 'all') selected @endif>All</option>
+                                        <option value="apartment"  @if ($params->prop_type == 'apartment') selected @endif>Apartment</option>
+                                        <option value="house"  @if ($params->prop_type == 'house') selected @endif>House</option>
+                                        <option value="land"  @if ($params->prop_type == 'land') selected @endif>Land</option>
+                                    </select>                        
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
-                        <div class="form-group">
-                            <label for="usr">Bedroom</label>
-                            <input type="number" class="form-control" id="usr" min="0">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
+                            <div class="form-group">
+                                <label for="usr">Bedroom</label>
+                                <input type="number" class="form-control" id="usr" min="0" name="bed" value="{{ $params->bed }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
-                        <div class="form-group">
-                            <label for="usr">Bathroom</label>
-                            <input type="number" class="form-control" id="usr" min="0">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
+                            <div class="form-group">
+                                <label for="usr">Bathroom</label>
+                                <input type="number" class="form-control" id="usr" min="0" name="bath" value="{{ $params->bath }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
-                        <div class="form-group">
-                            <label for="usr">Min Price</label>
-                            <input type="text" class="form-control" id="usr">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
+                            <div class="form-group">
+                                <label for="usr">Min Price</label>
+                                <input type="text" class="form-control" id="usr" name="min_price" value="{{ $params->min_price }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
-                        <div class="form-group">
-                            <label for="usr">Max Price</label>
-                            <input type="text" class="form-control" id="usr">
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2">
+                            <div class="form-group">
+                                <label for="usr">Max Price</label>
+                                <input type="text" class="form-control" id="usr" name="max_price" value="{{ $params->max_price }}">
+                            </div>
                         </div>
-                    </div>
+                        {{ csrf_field() }}
+                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-1" style="margin-top:30px">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
 
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-1" style="margin-top:30px">
-                        <button type="button" class="btn btn-primary">Search</button>
                     </div>
-
-                </div>
+                </form>
 
             </div>
         </div>
