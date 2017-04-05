@@ -19,7 +19,7 @@
                     <li class="scroll"><a href="{{ url('projects') }}">Projects</a></li>
                     <li class="scroll"><a href="{{ url('migration') }}">Migration & Education</a></li>
 
-                    <li class="dropdown" href="{{ url('press_news') }}" id="pressDropBtn">
+                    <li class="dropdown" id="pressDropBtn">
                         <a href="{{ url('press_news') }}" class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">Press Room <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ url('press_news') }}">News</a></li>

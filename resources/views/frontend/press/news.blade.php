@@ -37,21 +37,25 @@
                 <div class="footer-img-info"><h3>Market Insights</h3></div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 add-reading">
-                <div class="" style="background: url({{ url('images/press/news.jpg') }}) no-repeat center center; background-size: cover;"> 
-                <div class="footer-img-info"><h3>Urban News</h3></div>
+            <a href="{{ url('press_news') }}">
+                <div class="col-xs-6 col-sm-3 add-reading">
+                    <div class="" style="background: url({{ url('images/press/news.jpg') }}) no-repeat center center; background-size: cover;"> 
+                    <div class="footer-img-info"><h3>Urban News</h3></div>
+                    </div>
                 </div>
-            </div>
+            </a>
             <div class="col-xs-6 col-sm-3 add-reading">
                 <div class="" style="background: url({{ url('images/press/magz.png') }}) no-repeat center center; background-size: cover;"> 
                 <div class="footer-img-info"><h3>Homestates Magazine</h3></div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 add-reading">
-                <div class="" style="background: url({{ url('images/press/rnd.jpg') }}) no-repeat center center; background-size: cover;"> 
-                <div class="footer-img-info"><h3>R&D</h3></div>
+            <a href="{{ url('press_research') }}">
+                <div class="col-xs-6 col-sm-3 add-reading">
+                    <div class="" style="background: url({{ url('images/press/rnd.jpg') }}) no-repeat center center; background-size: cover;"> 
+                    <div class="footer-img-info"><h3>R&D</h3></div>
+                    </div>
                 </div>
-            </div>
+            </a>
             <hr>
         </div>
 
