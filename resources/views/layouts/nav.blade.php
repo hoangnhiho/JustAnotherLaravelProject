@@ -29,7 +29,14 @@
                         </ul>
                     </li>
 
-                    <li class="scroll"><a href="{{ url('aboutus') }}">About Us</a></li>
+                    <li class="dropdown" >
+                        <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url('aboutus') }}">About us</a></li>
+                            <li><a href="{{ url('career') }}">Careers</a></li>
+                        </ul>
+                    </li>
+
                     <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
                 </ul>
             </div>

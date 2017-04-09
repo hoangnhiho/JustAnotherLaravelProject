@@ -367,6 +367,18 @@ class DatabaseSeeder extends Seeder
             );
         }
 
+        $role = '<p>Homestates is seeking an energetic and committed Property Investment Executive to join our rapidly expanding team.</p><p>Based in Brisbane (Head Office) and Sydney, Homestates specialises in property investment and management, with a focus on long term growth and wealth creation.</p><p>Work alongside a fully supportive back office team and receive exclusive tutorial training to successfully achieve your goals. With your own exclusive prospecting locations in Brisbane, this is a unique position perfect for individuals who want to operate independently on a commision-based structure.</p><p>Expand your real estate credentials and profile with our unique approach to service. We are seeking someone who</p>';
+        $qual = '<li>Holds a current Real Estate Certificate of Registration</li><li>Holds Driver\'s License</li>';
+        $skills = '<li>Understands the importance of exceptional communication skills in the real estate industry</li><li>Exceedingly motivated and eager to succeed in a highly competitive industry</li>';
+
+
+        DB::table('careers')->insert(array(
+            ['name' => 'Property Investment Executive', 'caption' => 'Brisbane', 'role' => $role, 'qual' => $qual, 'skills' => $skills],
+            ['name' => 'Property Consultant',           'caption' => 'Brisbane', 'role' => $role, 'qual' => $qual, 'skills' => $skills],
+            )
+        );
+
+
     }
 
     public function getImg(){

@@ -29,12 +29,10 @@ Route::get('/press_video', 'FrontendController@pressVideo');
 Route::get('/press_event', 'FrontendController@pressEvent');
 Route::get('/press_room', 'FrontendController@pressRoom');
 
-Route::get('/career', function () {
-    return view('frontend.career');
-});
 
 Route::resource('projects', 'ProjectsController');
 Route::resource('listings', 'ListingsController');
+Route::resource('career', 'CareersController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

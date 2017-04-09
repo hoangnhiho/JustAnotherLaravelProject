@@ -50,84 +50,42 @@
         </div>
     </div>
 
-    <!-- Property Investment Executive -->
+    <!--  Careers -->
+    @foreach ($careers as $career)
     <div class="container container-white margin-box1">
         <div class="row">
             <div class="col-xs-12">
                 <div class="row" style="padding-bottom: 20px">
                     <div class="col-xs-12 col-sm-4">
-                        <h3>Property Investment Executive</h3>
-                        <p class="font-grey">Brisbane</p>
+                        <h3>{{ $career->name }}</h3>
+                        <p class="font-grey">{{ $career->caption }}</p>
                     </div>
                     <div class="col-xs-12 col-sm-8" style="padding-left: 20px">
                         <h2 class="left-align">Role</h2>
-                        <p class="left-align">Homestates is seeking an energetic and committed Property Investment Executive to join our rapidly expanding team.</p>
-                        <p class="left-align">Based in Brisbane (Head Office) and Sydney, Homestates specialises in property investment and management, with a focus on long term growth and wealth creation.</p>
-                        <p class="left-align">Work alongside a fully supportive back office team and receive exclusive tutorial training to successfully achieve your goals.</p>
-                        <p class="left-align">This is a unique position perfect for individuals who want to operate independently on a commision-based structure.</p>
-                        <p class="left-align">Expand your real estate credentials and profile with our unique approach to service. We are seeking someone who</p>
+                        {!! $career->role !!}
                         <br>
                         <h3 class="left-align">Qualifications</h3>
                         <ul>
-                            <li>Holds a current Real Estate Certificate of Registration</li>
-                            <li>Holds Driver's License</li>
+                            {!! $career->qual !!}
                         </ul>
                         <h3 class="left-align">Skills</h3>
                         <ul>
-                            <li>Understands the importance of exceptional communication skills in the real estate industry</li>
-                            <li>Exceedingly motivated and eager to succeed in a highly competitive industry</li>
+                            {!! $career->skills !!}
                         </ul>
                         <br>
                         <br>
                         <div class="apply">
-                            <button class="btn btn-primary">
+                            <a class="btn btn-primary" href="{{ url('career/' . $career->id) }}">
                                 <h4 style="color:white">APPLY NOW</h4>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
 
-    <!-- Property Consultant -->
-    <div class="container container-white margin-box2">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="row" style="padding-bottom: 20px">
-                    <div class="col-xs-12 col-sm-4">
-                        <h3>Property Consultant</h3>
-                        <p class="font-grey">Brisbane</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-8" style="padding-left: 20px">
-                        <h2 class="left-align">Role</h2>
-                        <p class="left-align">Homestates is seeking an energetic and committed Property Investment Executive to join our rapidly expanding team.</p>
-                        <p class="left-align">Based in Brisbane (Head Office) and Sydney, Homestates specialises in property investment and management, with a focus on long term growth and wealth creation.</p>
-                        <p class="left-align">Work alongside a fully supportive back office team and receive exclusive tutorial training to successfully achieve your goals. With your own exclusive prospecting locations in Brisbane, this is a unique position perfect for individuals who want to operate independently on a commision-based structure.</p>
-                        <p class="left-align">Expand your real estate credentials and profile with our unique approach to service. We are seeking someone who</p>
-                        <br>
-                        <h3 class="left-align">Qualifications</h3>
-                        <ul>
-                            <li>Holds a current Real Estate Certificate of Registration</li>
-                            <li>Holds Driver's License</li>
-                        </ul>
-                        <h3 class="left-align">Skills</h3>
-                        <ul>
-                            <li>Understands the importance of exceptional communication skills in the real estate industry</li>
-                            <li>Exceedingly motivated and eager to succeed in a highly competitive industry</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <div class="apply">
-                            <button class="btn btn-primary">
-                                <h4 style="color:white">APPLY NOW</h4>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
 @section('customjs')
     <script>
