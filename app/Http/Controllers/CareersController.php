@@ -38,13 +38,7 @@ class CareersController extends Controller
     {
         $input = $request->all();
         $career = Career::find($careerId);
-
-        // $cvFile = Request::file('cv_file');
-
-        // // This would be used for the payload
-        // $cvFilePath = $cvFile->getPathName() . 'pdf';
-
-
+        
         // Send Mail
         $mailData['input']=(object)$input;
         Mail::send('emails.job', $mailData, function ($message) use ($input,$request){
