@@ -40,59 +40,46 @@
     <div class="container container-white margin-box1">
         <div class="row">
             <div class="col-xs-12">
-                <form>
+                <form action="{{ url('career/'.$career->id) }}" method="post" enctype='multipart/form-data'>
+                    {{ csrf_field() }}
                     <div class="form-group">
-                        <label>Email address:</label>
-                        <input type="email" class="form-control" name="email">
+                        <label>Job Title*</label>
+                        <input type="text" class="form-control" name="job_name" value="{{ $career->name }}">
                     </div>
                     <div class="form-group">
-                        <label>Name:</label>
-                        <input type="text" class="form-control" name="name">
+                        <label>Name*</label>
+                        <input type="text" class="form-control" name="name" required>
                     </div>
-                    
+                    <div class="form-group">
+                        <label>Email address*</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone*</label>
+                        <input type="text" class="form-control" name="phone" required>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>Resume</label>
+                        <input type="file" class="form-control" name="resume">
+                    </div>
+                    <div class="form-group">
+                        <label>Cover Letter</label>
+                        <input type="file" class="form-control" name="cv_file">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="cv"></textarea> 
+                    </div>
+                    <hr>
                     <div class="checkbox">
-                        <label><input type="checkbox">I am no a robot</label>
+                        <label><input type="checkbox" required>I am not a robot</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-
-    <!--  Careers -->
-    <div class="container container-white margin-box1">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="row" style="padding-bottom: 20px">
-                    <div class="col-xs-12 col-sm-4">
-                        <h3>{{ $career->name }}</h3>
-                        <p class="font-grey">{{ $career->caption }}</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-8" style="padding-left: 20px">
-                        <h2 class="left-align">Role</h2>
-                        {!! $career->role !!}
-                        <br>
-                        <h3 class="left-align">Qualifications</h3>
-                        <ul>
-                            {!! $career->qual !!}
-                        </ul>
-                        <h3 class="left-align">Skills</h3>
-                        <ul>
-                            {!! $career->skills !!}
-                        </ul>
-                        <br>
-                        <br>
-                        <div class="apply">
-                            <a class="btn btn-primary" href="{{ url('career/' . $career->id) }}">
-                                <h4 style="color:white">APPLY NOW</h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<br>
 @endsection
 @section('customjs')
     <script>

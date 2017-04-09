@@ -32,6 +32,7 @@ Route::get('/press_room', 'FrontendController@pressRoom');
 
 Route::resource('projects', 'ProjectsController');
 Route::resource('listings', 'ListingsController');
+Route::post('career/{careerId}', 'CareersController@store');
 Route::resource('career', 'CareersController');
 Auth::routes();
 
