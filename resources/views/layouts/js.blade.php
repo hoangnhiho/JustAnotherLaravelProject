@@ -9,6 +9,7 @@
 <script src="{{ url('js/jquery.isotope.min.js') }}"></script>
 <script src="{{ url('js/jquery.inview.min.js') }}"></script>
 <script src="{{ url('js/wow.min.js') }}"></script>
+<script src="{{ url('js/jquery.nicefileinput.min.js') }}"></script>
 <script src="{{ url('js/main.js') }}"></script>
 <script type="text/javascript">
 	$('#pressDropBtn').click(function(){

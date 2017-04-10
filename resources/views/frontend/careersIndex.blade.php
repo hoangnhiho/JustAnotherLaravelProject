@@ -86,6 +86,7 @@
     </div>
     @endforeach
 
+    <br>
 @endsection
 @section('customjs')
     <script>
