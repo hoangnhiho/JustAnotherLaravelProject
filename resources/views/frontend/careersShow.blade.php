@@ -129,7 +129,6 @@
                         </div>
                         <hr>
                         <div class='col-xs-12'>
-                            <label><input type="checkbox" required>I am not a robot</label>
                             <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 5px;padding: 10px 12px;">Submit</button>
                         </div>
 
