@@ -35,44 +35,40 @@
             <div id="event-owl-carousel">
                 @foreach ($events as $event)
                     <div class="event-car-item" data-link="event-panel-{{ $event->id }}" style="background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;"> 
-                        <div class="footer-img-info"><h3>{{ $event->name }}</h3></div>
+                        <div class="footer-img-info"><h3 class="event-name">{{ $event->name }}</h3></div>
+                        <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
+                        <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
                     </div>
                 @endforeach
             </div>
             <hr>
         </div>
     </div>
-    <div class="container container-white" style="margin-bottom: 30px;margin-top: 0px; overflow-x: hidden">
-        <div class="row">
-            <div class="col-xs-12">
-                @foreach ($events as $event)
-    
-        
-    
 
-                <div class="panel event-panel" id="event-panel-{{ $event->id }}" style="@if (!$loop->first) display:none; @endif">
-                    <div class="panel-heading"><h4>{{ $event->name }}</h4></div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <a href="{{ $event->img_url }}" rel="prettyPhoto" title="{{ $event->caption }}">
-                                    <img class="img-responsive" src="{{ $event->img_url }}"/>
-                                </a>
-                            </div>
-                            <div class="col-xs-9">
-                                <p>{{ $event->desc }}</p>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-                @endforeach
+<!-- Modal -->
+<div id="eventModal" class="modal fade" role="dialog" >
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="modal-e-title">Modal Header</h4>
             </div>
-
+            <div class="modal-body row ">
+                <div class="col-xs-8 col-xs-offset-2" style="height:80vh; overflow-y: hidden;">
+                <p id="modal-e-desc">Some text in the modal.</p>
+                <img class="img-responsive" style="margin: 0 auto;" id="modal-e-img" src=""/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
         </div>
 
-
     </div>
+</div>
 @endsection
 @section('customjs')
     <script>
@@ -88,9 +84,12 @@
         })
 
         $('.event-car-item').click(function() {
-            var eventId = $(this).attr('data-link');
-            $('.event-panel').fadeOut("slow");
-            $('#'+eventId).delay( 500 ).fadeIn("slow");
+
+            $('#modal-e-title').html($(this).find('.event-name').html());
+            $('#modal-e-desc').html($(this).find('.event-desc').html());
+            $('#modal-e-img').attr('src', $(this).find('.event-img').html());
+            $('#eventModal').modal('show'); 
+
         });
     </script>
 @endsection

@@ -17,6 +17,7 @@ class CreateListingsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('caption');            
+            $table->mediumText('mini_desc')->nullable();
             $table->mediumText('desc')->nullable();
 
             $table->string('prop_type')->default('house');

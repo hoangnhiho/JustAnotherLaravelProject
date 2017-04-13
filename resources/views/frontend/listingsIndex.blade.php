@@ -121,7 +121,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>{!! $listing->desc !!}</p>
+                                    <p>{!! $listing->mini_desc !!}</p>
                                 </div>
                             </div>
                         </div>

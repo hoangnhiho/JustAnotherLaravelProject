@@ -47,16 +47,34 @@ class FrontendController extends Controller
         return view('frontend.migration', compact('footerCarousels'));
     }
 
+
+
+    public function pressMarket()
+    {
+        $press = true;
+        $events = Event::get();
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.market', compact('footerCarousels', 'events'));
+    }
+    public function pressMag()
+    {
+        $press = true;
+        $events = Event::get();
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.mag', compact('footerCarousels', 'events'));
+    }
     public function pressRoom()
     {
+        $press = true;
         $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.room', compact('footerCarousels'));
+        return view('frontend.press.main', compact('footerCarousels', 'press'));
     }
     public function pressNews()
     {
         $press = true;
+        $events = Event::get();
         $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.news', compact('footerCarousels', 'press'));
+        return view('frontend.press.news', compact('footerCarousels', 'events'));
     }
     public function pressResearch()
     {
@@ -79,6 +97,9 @@ class FrontendController extends Controller
         $footerCarousels = self::getFooterCarousel('migration');
         return view('frontend.press.event', compact('footerCarousels', 'press', 'events'));
     }
+
+
+
 
     public function aboutus()
     {

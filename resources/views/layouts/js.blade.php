@@ -14,7 +14,7 @@
 <script type="text/javascript">
 	$('#pressDropBtn').click(function(){
 		console.log('clicked');
-		window.location = "{{ url('press_news') }}";
+		window.location = "{{ url('press_room') }}";
 	});
 
 </script>

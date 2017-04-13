@@ -1,3 +1,4 @@
+d
 <?php
 
 use Illuminate\Database\Seeder;
@@ -50,6 +51,7 @@ class DatabaseSeeder extends Seeder
                 'https://i4.au.reastatic.net/1530x841/578646f9a2fe70168fd5063d7f1651b73b655bfdc9acc0ed9649f1b1021843fc/image12.jpg',
                 'https://i1.au.reastatic.net/1530x841/1030c9c70ea19e3d977483268e8ecd167d8cc41edfc4ddc0e70055d611c590a6/image13.jpg'
             ]), 
+            'mini_desc'=>'<p>BRAND NEW - FIRST WEEK FREE!!!</p><p>FERNBROOKE RIDGE ESTATE</p><p>GJ Gardener Homes. Quality finishes and Fixtures!</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/66b1222dfdb065774721285558930b4d1531aeba2f342a1fec35c6a41a4e7429/floorplan1.jpg', 
             'address' => '68 Regents Drive, Redbank Plains QLD 4301', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -69,6 +71,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x841/45113683af08f790a979f016e8394eeab86be6c73cc8bab5d523839ddefb416b/image11.jpg',
                 'https://i1.au.reastatic.net/1530x841/196eb575e0e32f76a19e1f9611a312a56fd7eb66e5076da9448fd95297828fff/image13.jpg'
             ]), 
+            'mini_desc'=>'<p>BRAND NEW - FIRST WEEK FREE!!!</p><p>FERNBROOKE RIDGE ESTATE</p><p>GJ Gardener Homes. Quality finishes and Fixtures!</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/b5d31ba6ecf0bf38962c5bee4c4722ddd7b5755ba0ad00b280631b7ab8008b75/floorplan1.jpg', 
             'address' => '70 Regents Drive, Redbank Plains QLD 4301', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -84,6 +87,7 @@ class DatabaseSeeder extends Seeder
                 'https://i2.au.reastatic.net/1530x841/2378fe49e063aa98d787fc9e3f27dfcd95cab9756de67f6d86c96f500a500389/image6.jpg',
                 'https://i3.au.reastatic.net/1530x841/510bf678a4a1da26d76df11116c380eef58f8ceb7a26e2092d37f8e7a5d4abdf/image7.jpg'
             ]), 
+            'mini_desc'=>'<p>FULLY FURNISHED - LARGE ALLOWANCE OF SERVICES PROVIDED</p><p>CITY LIVING MADE EASY!!</p><p>With close proximity to the city’s best attractions and corporate precinct both the business and leisure traveller will find this location ideal. Public transport is moments away and will have you travelling around the city with ease</p>',
             'floor_plan' => 'https://i4.au.reastatic.net/3060x1682/dbb796742d9b11656409c752ce9dc9a8def1d9a8ac8dcd1340f03be5285ece90/floorplan1.jpg', 
             'address' => '210/501 Adelaide Street, Brisbane CBD QLD 4000', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -103,6 +107,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x841/75d9b9bddc0ed058e4abb2639bf44761344ed4c9534c083572cbe832cb7f2fea/image11.jpg',
                 'https://i4.au.reastatic.net/1530x84/8ee309ab92e67b9a1a05f141a2a46874798dbef957fd62c4a20eb2c478eb02b9/image12.jpg'
             ]), 
+            'mini_desc'=>'<p>Everything Lifestyle can offer AT YOUR FEET!</p><p>There are two retail floors located within M on Mary, featuring the Hanwoori Korean Restaurant, Madison Bar Club & Karaoke, Cafe M70 and the Davinci Health Club. Further bar on premises, gymnasium, sauna, lift/elevator, sauna, spa, steam room land electronic swipe-card security (doors & lifts)</p>',
             'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/70e63da77d079338b4a5b1901a0701b82c8bb6b6524971331ad1fb6ece8378db/floorplan1.jpg', 
             'address' => '1507/70 Mary Street, Brisbane CBD QLD 4000', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
         
@@ -122,6 +127,7 @@ class DatabaseSeeder extends Seeder
                 'https://i4.au.reastatic.net/1530x841/2fda02f1d9c61128f52fecf526f0c191b739abdc7ee42dd77d72f71d3763c625/image12.jpg',
                 'https://i1.au.reastatic.net/1530x841/f70447761d8f8e5076c91e5be5014f4a698751e71c2e59ce3225cab9523f0960/image13.jpg'
             ]), 
+            'mini_desc'=>'<p>GORGEOUS 1 bedroom apartment available NOW!!</p><p>Plenty of storage in the apartment with quality finishing’s, a well thought out floor plan and some river and City views from your bedroom and your balcony!</p><p>There is gas cooking, ducted air, Built-in robes with shelving and draws, tile and carpet thought out. Large common pool, BBQ and Gym facilities.</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/99c83d79aabae2fd396f3a994daed77d65c94d1307b64978ecd7f41570120854/floorplan1.jpg', 
             'address' => '5303/18 Parkside Cct, Hamilton CBD QLD 4007', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);      
 
@@ -141,6 +147,7 @@ class DatabaseSeeder extends Seeder
                 'https://i2.au.reastatic.net/1530x841/78e9fcc28bacc499cba4936cd0175e23296e4d80e42b40032cb3106092e450a0/image10.jpg',
                 'https://i3.au.reastatic.net/1530x841/40d07f1ed0037bb9cc05072a66478d7b3881eee3c5a3d89bdedb13a1bff0f3ae/image11.jpg'
             ]), 
+            'mini_desc'=>'<p>Waterfront Apartment</p><p>Spectacular opportunity for you to rent right on the water at Hamilton Portside in the newly finished apartment complex Pinnacle.</p><p>Spacious fully furnished 3 bedroom, 2 bathroom, 2 car park apartment featuring 2 balconies overlooking river and city views.</p>',
             'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/c01be241e27685d8089b3a784b9b409a5a5d44ef82d1818d94e103cfffff87ff/floorplan1.jpg', 
             'address' => '20904/37D Harbour Road , Hamilton CBD QLD 4007', 'lat' => $lat, 'lng' => $lng, 'landsize' => null, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
         
@@ -159,6 +166,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x797/ceb2b82322a06a9ef280b881e3a90cbd039dd3d2e89c417444a1e4ae21055c2f/image15.jpg',
                 'https://i4.au.reastatic.net/1530x797/a096e09871e958cd2737316d2657150a296863020c000918129ae2ebed810857/image16.jpg'
             ]), 
+            'mini_desc'=>'<p>Three bedrooms over four level, finished using high-end materials and designed with space and privacy in mind.</p><p>Riverside living at its finest, top floor opens to spectacular views out to the Brisbane River, living and dining areas flow from a spacious and well equipped kitchen that has beautiful stone bench tops and Miele appliances including coffee machine, microwave, dishwasher, two ovens, five burner gas cooktop and built in double door fridge and freezer. A butler\'s pantry provides an additional preparation area and contains sink, dishwasher and storage cupboards. This kitchen is a chef’s paradise!</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1594-resize,r=33,g=40,b=46/96af9a3d0a715dcf4ffbee06daf63902c0776d6a6eee956c52d6f18d5b56abf3/floorplan1.jpg', 
             'address' => '10/102 Parkside Circuit, Hamilton QLD 4007', 'lat' => $lat, 'lng' => $lng, 'landsize' => 276, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
         
@@ -178,7 +186,8 @@ class DatabaseSeeder extends Seeder
                 'https://i1.au.reastatic.net/1530x841/f932c325ff66190b77ec9c326231e5f770dc87cec7cba3d497caf656f4b63de2/image9.jpg',
                 'https://i2.au.reastatic.net/1530x841/d9c3d81de44ea49d019170433e670b4f7b798449bada4db32d35003cd6279233/image10.jpg',
                 'https://i1.au.reastatic.net/1530x841/65ba8fb94f4f68f123d84cafce6f2268589aff634f1106cfad4305d0ee6278fa/image13.jpg'
-            ]), 
+            ]),
+            'mini_desc'=>'<p>Situated in the \'Waverley Views Estate\' Pimpama, it is a property you don’t want to miss out on. This open plan four bedroom home is perfect as a family home or investment property. This spacious air-conditioned living room opens effortlessly on to outdoor entertaining area, which flows through to the 600m2 fully fenced yard.</p>', 
             'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/4d97b2bac923407e403ee2f90ba8055778c59a4a51969b655e35ec1f7866d920/floorplan1.jpg', 
             'address' => '26 Hanover Drive, Pimpama QLD 4209', 'lat' => $lat, 'lng' => $lng, 'landsize' => 600, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -198,6 +207,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x841/bac1e1b02db8aeb22b330e7b400a1ce96b279c383c483562b28b56517f54cc9e/image11.jpg',
                 'https://i4.au.reastatic.net/1530x841/c2425bb390c2da7bac699b8bcec22823e7f94a887c9981c54e55a7a600a5d4bc/image12.jpg'
             ]), 
+            'mini_desc'=>'<p>This house is bigger than you think! If you are looking for space, this is it! This lovely 4 - 5-bedroom home sits on flat 532m2 is waiting for a new owner.</p>',
             'floor_plan' => '', 
             'address' => '33 Lewis Place, Calamvale QLD 4116', 'lat' => $lat, 'lng' => $lng, 'landsize' => 532, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -210,6 +220,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x841/fc3648939d2becae6eee378c05961f3e6ddf9390d2bfffeb86af09413f809759/image3.jpg',
                 'https://i4.au.reastatic.net/1530x841/fc387675cc883108c344e9b0c934baef9dd1a5dfeff19414069d17774cb3ee7d/image4.jpg'
             ]), 
+            'mini_desc'=>'<p>Perfect for any type of buyer whether you are a first home buyer, family or investor, this property is incredibly low maintenance and is an affordable lifestyle choice or excellent investment.</p>',
             'floor_plan' => 'https://i1.au.reastatic.net/3060x1682/527a2ea2d3198405784bdc1291592b2b8b2680a5baad1d6b6ab53469c0fabc55/floorplan1.jpg', 
             'address' => '40 Alan Crescent, Eight Mile Plains QLD 4113', 'lat' => $lat, 'lng' => $lng, 'landsize' => 677, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -227,6 +238,7 @@ class DatabaseSeeder extends Seeder
                 'https://i4.au.reastatic.net/1530x841/e77a2a347cc4d90fb0a1bed3fb23ec4bd10d73209c59b040a7fc2d016338c410/image8.jpg',
                 ''
             ]), 
+            'mini_desc'=>'<p>What a position! Approximately six kilometres to the CBD, “The Cannon” Boutique Apartments are in the heart of Cannon Hill. It is all about the convenience and value for money.</p><p>You\'ll just love coming home to your own brand new stylish apartment, with contemporary open plan living and quality fixtures and fittings. High ceilings and air-conditioning these apartments are ideal for entertainers and those who appropriated relaxed yet stylish living.</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1682/af75a151df78acf924dedd7e4c8a6daa40a054907c8d1653e30cf5edcf1748b7/floorplan1.jpg', 
             'address' => '63 Ludwick Street, Cannon Hill QLD', 'lat' => $lat, 'lng' => $lng, 'landsize' => 79, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -245,6 +257,7 @@ class DatabaseSeeder extends Seeder
                 'https://i1.au.reastatic.net/1530x841/6619fe80fa621ef4805853f48008e9e736dd1a3314df0bc0a91a4f5f713bfee7/image9.jpg',
                 'https://i4.au.reastatic.net/1530x841/d63ccc6b42b98b59630841f7558ff8063a598691bb1a2a3f8a94873dde52daa8/image12.jpg'
             ]), 
+            'mini_desc'=>'<p>On the Fringe of Brisbane CBD in vibrant Kangaroo Point</p><p>Peninsula Apartments are in the heart of vibrant Kangaroo point, surrounded by cafes, shops, pubs, restaurants and grocery stores.</p><p>This apartment bought as an investment property was previously rented out for $500.00 per week but now vacant.</p><p>Near new two bedrooms, two bathrooms, one car park apartment located in the Peninsula Apartment Complex with countless lifestyle attractions and features.</p>',
             'floor_plan' => 'https://i1.au.reastatic.net/3060x1682/212a9fc84d5161f4c034494ad613dc683d72296288c8f3e41244b546a64aad42/floorplan1.jpg', 
             'address' => '212/18 Thorn Street, Kangaroo Point QLD 4169', 'lat' => $lat, 'lng' => $lng, 'landsize' => 80, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -264,6 +277,7 @@ class DatabaseSeeder extends Seeder
                 'https://i1.au.reastatic.net/1530x797/6af287656fafff20a3b7263bc19e4f55247655b7ecbad0a119aacf472666fedb/image13.jpg',
                 'https://i2.au.reastatic.net/1530x797/4277480c724d2b927ea11ad2fec63642e073a52e40f0209062728cdd3082c3b3/image14.jpg'
             ]), 
+            'mini_desc'=>'<p>This is your exclusive opportunity to buy in Brisbane CBD.</p><p>Not often does an apartment of this quality and size come on the market with endless potential for owner occupiers or investors. </p><p>This seamless apartment is located 10 meters from the Brisbane River, 10 minutes’ walk to Queens street mall and restaurant districts or 5 minutes’ drive, 20 meters to Eagle Street Pier CityCat or City Hopper ferry service.</p>',
             'floor_plan' => 'https://i3.au.reastatic.net/3060x1594-ree,r=33,g=40,b=46/dad97529dcbea5ee8c1aa16168804114707690d1e2b3f0cbb275eb1e49b09ed7/floorplan1.jpg', 
             'address' => '271/30 Macossan Street, Brisbane CBD QLD 4000', 'lat' => $lat, 'lng' => $lng, 'landsize' => 134, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -284,6 +298,7 @@ class DatabaseSeeder extends Seeder
                 'https://i3.au.reastatic.net/1530x841/c97682602c757a16ae5c6819a88e92e988cb89ddb57a50bf318356d8aa48269c/image11.jpg',
                 'https://i2.au.reastatic.net/1530x841/152e21e742278039eec0f5eecdba659670637763a50ccc05f16a036edac7cbdd/image14.jpg'
             ]), 
+            'mini_desc'=>'<p>Sleek and well-designed this apartment is in the heart of Tenerife in prime position. Located at walking distance to everything you need Restaurants, Lifestyle, Shops, Grocery’s and Entertainment, your every want is right here. </p><p>Fusing stylish and contemporary appointments, this apartment’s layout is enhanced by sleek white tones, high ceiling, and large windows. Light soaked alfresco balcony which complements living in Queensland and enjoying the lifestyle. </p>',
             'floor_plan' => 'https://i2.au.reastatic.net/3060x1682/67a7a20b4936fc532fe98e1f503c9ac416473947ba79ce0ed88dca668f179eec/floorplan1.jpg', 
             'address' => '512/113 Commercial Road, Teneriffe QLD 4005', 'lat' => $lat, 'lng' => $lng, 'landsize' => 101, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 
@@ -302,6 +317,7 @@ class DatabaseSeeder extends Seeder
                 'https://i2.au.reastatic.net/1530x841/4597e22aff0dd2c2cf4c557354eae7360e6ddf52fea5c3bbb239e6206ab42b2a/image14.jpg',
                 'https://i3.au.reastatic.net/1530x841/8653840b16dbf757ccfdd2f95401413b490545e0e13b324f1da82498c090eb2e/image15.jpg'
             ]), 
+            'mini_desc'=>'<p>With a contemporary urban style, Hopscotch Apartments is setting the standard for vibrant and elegant apartment living in Newstead. The whole apartment wraps itself around an open living design to engage not only indoor living but also the best of the outdoor living in Brisbane. </p>',
             'floor_plan' => '', 
             'address' => '605/8 Kyabra Street, Newstead QLD 4006', 'lat' => $lat, 'lng' => $lng, 'landsize' => 100, 'council_rate' => null, 'water_rate' => null, 'created_at' => $dt, 'updated_at' => $dt]);
 

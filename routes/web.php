@@ -23,6 +23,8 @@ Route::get('/sell', 'FrontendController@sell');
 Route::get('/rent', 'FrontendController@rent');
 Route::get('/migration', 'FrontendController@migration');
 Route::get('/aboutus', 'FrontendController@aboutus');
+Route::get('/press_market', 'FrontendController@pressMarket');
+Route::get('/press_mag', 'FrontendController@pressMag');
 Route::get('/press_news', 'FrontendController@pressNews');
 Route::get('/press_research', 'FrontendController@pressResearch');
 Route::get('/press_video', 'FrontendController@pressVideo');
