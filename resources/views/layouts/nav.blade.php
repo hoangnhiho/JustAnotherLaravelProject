@@ -28,6 +28,7 @@
                             <li><a href="{{ url('press_research') }}">Research & Development</a></li>
                             <li><a href="{{ url('press_video') }}">Vidoes</a></li>
                             <li><a href="{{ url('press_event') }}">Events</a></li>
+                            <li><a href="{{ url('press_promo') }}">Promotions</a></li>
                         </ul>
                     </li>
 

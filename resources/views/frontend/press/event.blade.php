@@ -14,10 +14,39 @@
 </style>
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider">
-        <video poster="" id="slider-video" playsinline autoplay muted loop>
-            <!-- <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"> -->
-            <source src="{{ url('video/events.mp4') }}" type="video/mp4">
-        </video>
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
+                                <div class="carousel-content" style="color: black">
+                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                                    <p>January 2, 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+
+            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
+                                <div class="carousel-content" style="color: black">
+                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                                    <p>January 2, 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
 
 

@@ -14,10 +14,39 @@
 </style>
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider">
-        <video poster="" id="slider-video" playsinline autoplay muted loop>
-            <!-- <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"> -->
-            <source src="{{ url('video/events.mp4') }}" type="video/mp4">
-        </video>
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
+                                <div class="carousel-content" style="color: black">
+                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                                    <p>January 2, 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+
+            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
+                                <div class="carousel-content" style="color: black">
+                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                                    <p>January 2, 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
 
 
@@ -33,11 +62,12 @@
 
         <div class="row">
             <div id="event-owl-carousel">
-                @foreach ($events as $event)
+                @foreach ($mags as $event)
                     <div class="event-car-item" data-link="event-panel-{{ $event->id }}" style="background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;"> 
                         <div class="footer-img-info"><h3 class="event-name">{{ $event->name }}</h3></div>
                         <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
                         <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
+                        <div class="footer-img-info" style="display: none;"><h3 class="event-pdf">{{ $event->pdf_url }}</h3></div>
                     </div>
                 @endforeach
             </div>
@@ -60,6 +90,7 @@
                 <div class="col-xs-8 col-xs-offset-2" style="height:80vh; overflow-y: hidden;">
                 <p id="modal-e-desc">Some text in the modal.</p>
                 <img class="img-responsive" style="margin: 0 auto;" id="modal-e-img" src=""/>
+                <a id="modal-e-pdf" href="" class="btn btn-primary" style="margin-top: 5px">Download Magazine</a>
                 </div>
             </div>
             <div class="modal-footer">
@@ -88,6 +119,7 @@
             $('#modal-e-title').html($(this).find('.event-name').html());
             $('#modal-e-desc').html($(this).find('.event-desc').html());
             $('#modal-e-img').attr('src', $(this).find('.event-img').html());
+            $('#modal-e-pdf').attr('href', $(this).find('.event-pdf').html());
             $('#eventModal').modal('show'); 
 
         });

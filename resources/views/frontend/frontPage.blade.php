@@ -2,32 +2,31 @@
 @section('content')
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/frontpage/bg1.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/frontpage/frontheader1.JPG') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>3.5%</span> RENTAL MANAGEMENT FEE FOR THE FIRST FIVE YEARS</h2>
-                                    <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Find out more</a>
+                                    <h2>SONGKRAN FESTIVAL</h2>
+                                    <h2 style="margin-top: 2px">HOMESTATES TOURING DATES</h2>
+                                    <p>Find out where Homesteates is touring in Australia in celebreation of the Thai New Year.</p>
+                                    <a class="btn btn-primary btn-lg" href="{{ url('press_event') }}">Find out more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url({{ url('images/frontpage/bg2.jpg') }});">
+            <div class="item" style="background-image: url({{ url('images/press/promo.jpg') }});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>3.5%</span> RENTAL MANAGEMENT FEE FOR THE FIRST FIVE YEARS</h2>
-                                    <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Find out more</a>
+                                    <h2 style="text-align: left; padding-top: 70px">WELCOME TO OUR<br>NEW WEBSITE</h2>
+                                    <p>HELP US FIND WHAT WE MISSED FOR YOUR CHANCE TO WIN</p>
+                                    <a class="btn btn-primary btn-lg" href="{{ url('press_promo') }}">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -46,14 +45,14 @@
                     <img class="img-responsive" src="https://i3.au.reastatic.net/1530x841/6cc0e076b3c5a34b53669842ebfc77975c24fabc7f48902a1e94210527d5d636/image3.jpg" alt=""/>
                     <div class="overlayer-info">
                         <h3>Newstead QLD</h3>
-                        <!-- <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p> -->
+                        <p><b>2</b> BED <b>2</b> BATH <b>1</b> CAR</p>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-12 listing-preview listing-preview-top" id="listing-preview-top-right" style="">
                     <img class="img-responsive" src="https://i2.au.reastatic.net/1530x841/19fc163bfdf0ee81248fe5b6d86e6c96cff886b85b56588f37bd5c557eabb3f9/image2.jpg" alt="" />
                     <div class="overlayer-info">
                         <h3>Cannon Hill QLD</h3>
-                        <!-- <p><b>3</b> BED <b>2</b> BATH <b>1</b> CAR</p> -->
+                        <p><b>2</b> BED <b>2</b> BATH <b>1</b> CAR</p>
                     </div>
                 </div>
             </div>

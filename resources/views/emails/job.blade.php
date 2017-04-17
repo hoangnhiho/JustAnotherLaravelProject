@@ -298,7 +298,7 @@
                         <hr>
                         <p><strong>Cover Letter:</strong> {{ $input->cv }}</p>
 
-                        <p>If you have any questions or would like to ask us how we can help implement Homestates please <a href="mailto:support@fleetapp.com.au" >contact us</a></p>
+                        <p>If you have any questions or would like to ask us how we can help implement Homestates please <a href="mailto:frank.law@homestates.com.au" >contact us</a></p>
                         <p>Regards,</p><br>
                         {{ config('app.name', 'BoW') }}</i></p>
                       </td>

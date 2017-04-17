@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        $dPdfUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/pdfs/mags/';
+        $dImgUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/';
         $dImg 	= 'http://larics.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
         $dImgs	= json_encode([$dImg,$dImg,$dImg,$dImg]);
         $dt 	= Carbon::now()->toDateString();
@@ -382,6 +384,24 @@ class DatabaseSeeder extends Seeder
                 )
             );
         }
+
+        DB::table('mags')->insert(array(
+            ['name' => 'August 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/August2016.jpg', 'pdf_url' => $dPdfUrl . 'August2016.pdf', 'created_at' => '2016-08-01 00:00:00'],
+            ['name' => 'December 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/December2016.jpg', 'pdf_url' => $dPdfUrl . 'December2016.pdf', 'created_at' => '2016-12-01 00:00:00'],
+            ['name' => 'February 2017',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/February2017.jpg', 'pdf_url' => $dPdfUrl . 'February2017.pdf', 'created_at' => '2017-02-01 00:00:00'],
+            ['name' => 'July 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/July2016.jpg', 'pdf_url' => $dPdfUrl . 'July2016.pdf', 'created_at' => '2016-07-01 00:00:00'],
+            ['name' => 'June 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/June2016.jpg', 'pdf_url' => $dPdfUrl . 'June2016.pdf', 'created_at' => '2016-06-01 00:00:00'],
+            ['name' => 'March 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/March2016.jpg', 'pdf_url' => $dPdfUrl . 'March2016.pdf', 'created_at' => '2016-03-01 00:00:00'],
+            ['name' => 'March 2017',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/March2017.jpg', 'pdf_url' => $dPdfUrl . 'March2017.pdf', 'created_at' => '2017-03-01 00:00:00'],
+            ['name' => 'May 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/May2016.jpg', 'pdf_url' => $dPdfUrl . 'May2016.pdf', 'created_at' => '2016-05-01 00:00:00'],
+            ['name' => 'November 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/November2016.jpg', 'pdf_url' => $dPdfUrl . 'November2016.pdf', 'created_at' => '2016-11-01 00:00:00'],
+            ['name' => 'October 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/October2016.jpg', 'pdf_url' => $dPdfUrl . 'October2016.pdf', 'created_at' => '2016-10-01 00:00:00'],
+            ['name' => 'September 2016',  'caption' => 'caption', 'desc' => $desc, 'img_url' => $dImgUrl . 'mags/September2016.jpg', 'pdf_url' => $dPdfUrl . 'September2016.pdf', 'created_at' => '2016-09-01 00:00:00'],
+
+            )
+        );
+
+
 
         $role = '<p>Homestates is seeking an energetic and committed Property Investment Executive to join our rapidly expanding team.</p><p>Based in Brisbane (Head Office) and Sydney, Homestates specialises in property investment and management, with a focus on long term growth and wealth creation.</p><p>Work alongside a fully supportive back office team and receive exclusive tutorial training to successfully achieve your goals. With your own exclusive prospecting locations in Brisbane, this is a unique position perfect for individuals who want to operate independently on a commision-based structure.</p><p>Expand your real estate credentials and profile with our unique approach to service. We are seeking someone who</p>';
         $qual = '<li>Holds a current Real Estate Certificate of Registration</li><li>Holds Driver\'s License</li>';

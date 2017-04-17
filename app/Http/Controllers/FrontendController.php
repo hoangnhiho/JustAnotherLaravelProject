@@ -8,6 +8,8 @@ use App\Models\Employee;
 use App\Models\FooterCarousel;
 use App\Models\Project;
 use App\Models\Event;
+use App\Models\Mag;
+use Mail;
 
 class FrontendController extends Controller
 {
@@ -59,9 +61,9 @@ class FrontendController extends Controller
     public function pressMag()
     {
         $press = true;
-        $events = Event::get();
+        $mags = Mag::orderBy('created_at', 'asc')->get();
         $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.mag', compact('footerCarousels', 'events'));
+        return view('frontend.press.mag', compact('footerCarousels', 'mags'));
     }
     public function pressRoom()
     {
@@ -96,6 +98,26 @@ class FrontendController extends Controller
         $events = Event::get();
         $footerCarousels = self::getFooterCarousel('migration');
         return view('frontend.press.event', compact('footerCarousels', 'press', 'events'));
+    }
+    public function pressPromo()
+    {
+        $press = true;
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.promo', compact('footerCarousels', 'press'));
+    }
+    public function emailPressPromo(Request $request)
+    {
+        $input = $request->all();
+        
+        // Send Mail
+        $mailData['input']=(object)$input;
+        Mail::send('emails.promo', $mailData, function ($message) use ($input,$request){
+            $message->to('frank.law@homestates.com.au')->subject('Promo Application');
+        });
+        //
+        $message = 'Thank You';
+        $caption = 'Your Promo application has been sent.';
+        return view('frontend.message', compact('message', 'caption'));
     }
 
 

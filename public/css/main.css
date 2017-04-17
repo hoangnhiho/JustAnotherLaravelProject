@@ -1436,8 +1436,8 @@ li.dropdown:hover > .dropdown-menu {
   white-space: nowrap;
   /* top left corner */
   position: absolute;
-  left: -50px;
-  top: 40px;
+    left: -30px;
+    top: 15px;
   /* 45 deg ccw rotation */
   -webkit-transform: rotate(-45deg);
      -moz-transform: rotate(-45deg);
