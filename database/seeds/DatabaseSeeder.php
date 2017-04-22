@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         $dPdfUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/pdfs/mags/';
         $dImgUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/';
-        $dImg 	= 'http://larics.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
+        $dImg   = 'http://larics.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
+        $dImgPath 	= 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/project/pastprojects/';
         $dImgs	= json_encode([$dImg,$dImg,$dImg,$dImg]);
         $dt 	= Carbon::now()->toDateString();
         $lat 	= '-27.4929184';
@@ -326,9 +327,97 @@ class DatabaseSeeder extends Seeder
 
         //<ul><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li><li>QQQ</li></ul>
 
-        for ($i=0;$i<=9;$i++){
-            DB::table('projects')->insert(['title' => 'Project ' . $i,  'caption' => $capt,'desc' => $desc, 'img_url' => self::getImg(), 'created_at' => $dt, 'updated_at' => $dt]);
-        }
+        // for ($i=0;$i<=9;$i++){
+        //     DB::table('projects')->insert(['title' => 'Project ' . $i,  'caption' => $capt,'desc' => $desc, 'img_url' => self::getImg(), 'created_at' => $dt, 'updated_at' => $dt]);
+        // }
+
+
+        DB::table('projects')->insert(['title' => 'Arbour',  'caption' => 'Arbour',
+            'mini_desc' => '<p>The enormously successful Arbour on Charlotte in Chermside positions buyers perfectly to capitalise on the benefits of owning property in one of Brisbane\'s top 10 suburbs for economic growth.</p>',
+            'desc' => '<p>The enormously successful Arbour on Charlotte in Chermside positions buyers perfectly to capitalise on the benefits of owning property in one of Brisbane\'s top 10 suburbs for economic growth.</p><p>Arbour stage two comprises an eight storey architecturally gracious building, offering spacious one and two bedroom apartments with liveable outdoor terraces and basement car spaces, plus motorcycle parking.</p><p>Located within a short 10-minute walk of one of Queensland\'s largest retail centres, Chermside Shopping Centre, and the major bus interchange, is the epitome of convenience. It is what the young, professional and white-collar workforce is seeking from this suburb - a walkable, connected and amenity rich address.</p><p>The combination of timeless design, quality in materials, sound planning and the robust research underpinning the development ensures that Arbour will deliver long-term value for both investors and owner-occupiers.</p>', 
+            'img_url' => $dImgPath . 'arbour/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath . 'arbour/AdditionalPhotos/img1.jpg',
+                $dImgPath . 'arbour/AdditionalPhotos/img1.jpg'
+            ]), 
+            'floor_plan' => $dImgPath . 'arbour/Floorplans/img1.pdf', 
+            'sold' => true,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Hamilton',  'caption' => 'Hamilton',
+            'mini_desc' => '<p>Dare to compare with Atria at Hamilton Reach.</p><p>Apartments and terrace homes with more space, more inclusions, more value and more opportunity.</p><p>Perfectly located within Hamilton Reach, in the prestigious suburb of Hamilton, the final release at Atria offers a value proposition like no other.</p><p>Thoughtfully designed to echo our unique Queensland lifestyle, Atria contains calm, subtropical spaces that maximise natural light and infuse gentle breezes throughout.</p>',
+            'desc' => '<p>Dare to compare with Atria at Hamilton Reach.</p><p>Apartments and terrace homes with more space, more inclusions, more value and more opportunity.</p><p>Perfectly located within Hamilton Reach, in the prestigious suburb of Hamilton, the final release at Atria offers a value proposition like no other.</p><p>Thoughtfully designed to echo our unique Queensland lifestyle, Atria contains calm, subtropical spaces that maximise natural light and infuse gentle breezes throughout.</p><p>Beautifully nestled amongst 2.5 hectares of pristine parkland, overlooking 530 metres of river frontage and adjoining the Royal Queensland Golf Club, Hamilton Reach offers a welcome change of pace from city life. Enjoy a welcome reprieve with a walk around the RiverWalk and beach, or sit back and relax with a coffee at the Northshore Riverside Cafe conveniently located on your doorstep. Or jump on a CityCat at the nearby Northshore Hamilton CityCat terminal providing direct connectivity with the Brisbane CBD, cultural and entertainment precincts, universities and picturesque riverside suburbs. Hamilton Reach is part of Brisbane’s largest urban renewal precinct, Northshore Hamilton.When complete, the Northshore Hamilton vision is to deliver a vibrant, mixed-use masterplanned community of over 15,000 residents and 15,000 office workers, integrated with innovative urban design and world-class infrastructure.</p>', 
+            'img_url' => $dImgPath . 'hamilton/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath . 'hamilton/AdditionalPhotos/img1.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img2.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img3.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img4.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img5.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img6.jpg',
+                $dImgPath . 'hamilton/AdditionalPhotos/img7.jpg',
+            ]), 
+            'sold' => true,
+            'floor_plan' => $dImgPath . 'hamilton/Floorplans/img1.pdf', 
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Mango Hill',  'caption' => 'Mango Hill',
+            'mini_desc' => '<p>Capestone, Mango Hill’s newest community offers contemporary designer homes surrounded by wide streetscapes, spacious shaded landscapes, cooling bay breezes,a future 13 hectare lake and vibrant town and business centre. Capestone promises to be lakeside living the way it should be.</p>',
+            'desc' => '<p>Capestone, Mango Hill’s newest community offers contemporary designer homes surrounded by wide streetscapes, spacious shaded landscapes, cooling bay breezes,a future 13 hectare lake and vibrant town and business centre. Capestone promises to be lakeside living the way it should be.</p><ul><li>Easy access to Capestone Boulevard to surrounding amenities and facilities.</li><li>A variety of homesites from 216sqm – 707sqm.</li><li>Level allotments.</li><li>Local park on your doorstep offering landscaped gardens, outdoor space with shade structure to enjoy cool breezes.</li><li>Conveniently located to St Benedict’s Catholic College.</li><li>Only 35 minutes to Brisbane CBD.</li><li>Future Mango Hill Rail Station is just a short walk away</li></ul>', 
+            'img_url' => $dImgPath . 'mangohill/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath . 'mangohill/AdditionalPhotos/img1.jpg',
+                $dImgPath . 'mangohill/AdditionalPhotos/img1.jpg'
+            ]), 
+            'sold' => true,
+            'floor_plan' => $dImgPath . 'mangohill/Floorplans/img1.bmp', 
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Nero',  'caption' => 'Nero',
+            'mini_desc' => '<p>Combining the refined opulence of a five star hotel with exceptional facilities and a prime location, Nero presents nine levels of contemporary apartment living in a striking architectural form.</p>',
+            'desc' => '<p>Combining the refined opulence of a five star hotel with exceptional facilities and a prime location, Nero presents nine levels of contemporary apartment living in a striking architectural form.</p><p>Designed by multi-award winning Brisbane firm Ellivo Architects, Nero makes a dramatic visual statement with high contrasts and emphatic horizontal flourishes. Capturing both classic style and contemporary punch, the elegant tiered edifice accommodates 107 luxury apartments, a remarkable range of public spaces designed to deliver a true community atmosphere, and dense sub-tropical landscaping that welcomes you to a sense of privacy and sanctuary</p><p>Step inside a remarkable entry space. With dappled light filtering from the adjacent garden, the Nero Reception and Lobby area provides an inviting and stylish entry and the adjacent stunning lounge/library provides a relaxing comfortable retreat area with access to facilities such as a meeting room and expresso machine. Street-facing apartment courtyards, driveway and essential services complement and activate the Doggett St frontage. With four levels of resident and visitor parking, and an astonishing suite of superbly landscaped, north-facing recreational facilities on level 3, enjoy an outstanding level of in-house amenity.</p>', 
+            'img_url' => $dImgPath . 'nero/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath . 'nero/AdditionalPhotos/img1.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img2.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img3.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img4.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img5.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img6.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img7.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img8.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img9.jpg',
+                $dImgPath . 'nero/AdditionalPhotos/img10.jpg'
+            ]),
+            'sold' => true, 
+            'floor_plan' => $dImgPath . 'nero/Floorplans/img1.pdf', 
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Soko',  'caption' => 'Soko',
+            'mini_desc' => '<p>SOKO Waterfront Apartments are located in West End, Brisbane’s most dynamic new urban environment. Only 2km from the Brisbane CBD and 1.5km from Brisbane’s iconic South Bank with access to an abundance of renowned restaurant, bar, retail and transport options. South Bank is also Queensland’s premier arts and entertainment centre including GOMA (Gallery of Modern Art) and the QPAC (Queensland Performing Arts).</p>',
+            'desc' => '<p>SOKO Waterfront Apartments are located in West End, Brisbane’s most dynamic new urban environment. Only 2km from the Brisbane CBD and 1.5km from Brisbane’s iconic South Bank with access to an abundance of renowned restaurant, bar, retail and transport options. South Bank is also Queensland’s premier arts and entertainment centre including GOMA (Gallery of Modern Art) and the QPAC (Queensland Performing Arts).</p><p>Located on a prestigious riverfront site, SOKO Waterfront Apartments delivers an impressive array of features including an expansive rooftop retreat, luxurious pool with wet edge seating, outdoor kitchen and entertaining spaces. All with unparalleled access to river and city views. Encompassing only 120 contemporary residences offering a choice of thoughtfully planned one, two and three bedroom options all bathed in sophistication, style and class.</p><p>Each residence is designed to incorporate the spacious balconies seamlessly into the living area. Glass balustrades allow for an uninterrupted view, taking full advantage of the Brisbane River and city vistas. Each kitchen boasts state of the art European stainless steel appliances, stone bench tops, contemporary cabinetry with soft close drawers, gas cook-tops and energy efficient ovens and dishwasher. Three Bedroom apartments also offer a wok burner, luxurious wine fridges, built-in coffee machines and microwaves, integrated fridge and filtered water supply along with upgrades in flooring and finishes. While top floor residences embrace the extensive city and river views, ground floor apartments incorporate river views and private, beautifully landscaped courtyards</p><ul><li>Canoe storage</li><li>Rooftop swimming pool</li><li>Rooftop sauna</li><li>Rooftop BBQ outdoor kitchen</li><li>Rooftop outdoor cinema</li><li>Bike racks</li><li>Car Number Plate Recognition System</li><li>Security CCTV system</li><li>Intercom with visual to the lobby entry and the visitor parking boom gate</li><li>Larger Apartment entry doors</li><li>Gas point on balcony</li><li>Gas reticulation.</li></ul>', 
+            'img_url' => $dImgPath . 'soko/HeroPhotos/img1.jpeg', 
+            'img_urls' => json_encode([
+                $dImgPath . 'soko/AdditionalPhotos/img1.jpeg',
+                $dImgPath . 'soko/AdditionalPhotos/img2.jpeg',
+                $dImgPath . 'soko/AdditionalPhotos/img3.jpeg',
+                $dImgPath . 'soko/AdditionalPhotos/img4.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img5.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img6.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img7.jpeg',
+                $dImgPath . 'soko/AdditionalPhotos/img8.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img9.jpeg',
+                $dImgPath . 'soko/AdditionalPhotos/img10.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img11.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img12.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img13.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img14.jpg',
+                $dImgPath . 'soko/AdditionalPhotos/img15.jpg'
+            ]), 
+            'sold' => true,
+            'floor_plan' => $dImgPath . 'soko/Floorplans/img1.pdf', 
+            'created_at' => $dt, 'updated_at' => $dt]);
+
 
         $employeeListName = ['Stephen Tam', 'Nicole Tam', 'Clare Yeaw', 'Johan Halim', 'Cassidy Shorland', 'Renaye Wisse'];
 

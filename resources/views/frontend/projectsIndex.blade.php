@@ -230,64 +230,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg1.jpg') }}) no-repeat center center; background-size: cover;">
-                        <div class="footer-img-info" >
-                            <h3>REVERS EDGE</h3>
-                        </div>
-                        <div class="sold-banner">
-                            <a>Sold</a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg2.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>NEW WORLD TOWERS</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg3.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>MARY LANE</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg4.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>SPIRE</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg5.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>IVY</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg6.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>NERO</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg7.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>FV</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg8.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>CORNERSTONE LIVING</h3>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/project/projectImg9.jpg') }}) no-repeat center center; background-size: cover;">
-                        
-                        <div class="footer-img-info">
-                            <h3>Illumina</h3>
-                        </div>
-                    </div>
-
+                    @foreach ($projects as $project)
+                        <a href="{{ url('projects/'.$project->id) }}">
+                            <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ $project->img_url  }}) no-repeat center center; background-size: cover;">
+                                <div class="footer-img-info" >
+                                    <h3>{{ $project->title }}</h3>
+                                </div>
+                                @if ($project->sold == true)
+                                    <div class="sold-banner">
+                                        <a>Sold</a>
+                                    </div>
+                                @endif
+                            </div>
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>

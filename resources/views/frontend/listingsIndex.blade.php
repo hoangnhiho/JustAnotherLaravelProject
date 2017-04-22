@@ -18,7 +18,11 @@
                         <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
                             <div class="form-group">
                                 <label for="usr">Street Address, postcode, suburb:</label>
-                                <input type="text" class="form-control" id="usr" name="search" value="@if (isset($params->search)) $params->search @endif">
+                                @if (isset($params->search))
+                                    <input type="text" class="form-control" id="usr" name="search" value="{{ $params->search }}">
+                                @else
+                                    <input type="text" class="form-control" id="usr" name="search" value="">
+                                @endif
                             </div>
                         </div>
                     </div>

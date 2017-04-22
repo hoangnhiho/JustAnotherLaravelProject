@@ -41,8 +41,10 @@ class FrontendController extends Controller
     public function projects()
     {
         $footerCarousels = self::getFooterCarousel('projects');
-        return view('frontend.projectsIndex', compact('footerCarousels'));
+        $projects = Project::limit(6)->get();
+        return view('frontend.projectsIndex', compact('projects','footerCarousels'));
     }
+
     public function migration()
     {
         $footerCarousels = self::getFooterCarousel('migration');

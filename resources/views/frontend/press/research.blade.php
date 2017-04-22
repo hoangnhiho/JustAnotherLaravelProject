@@ -49,8 +49,8 @@
                 <div class="col-xs-12 col-sm-6">
                     <h4>{{ $project->title }}</h4>
                     <p>{{ $project->caption }}</p>
-                    <p>{{ $project->desc }}</p>
-                    <a class="btn btn-primary" href="#">View Project ></a>
+                    <p>{!! $project->mini_desc !!}</p>
+                    <a class="btn btn-primary" href="{{ url('projects/'.$project->id) }}">View Project ></a>
                 </div>
             </div>
         @endforeach

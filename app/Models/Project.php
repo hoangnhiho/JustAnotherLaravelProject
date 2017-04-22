@@ -25,7 +25,7 @@ class Project extends Model
      * @var array
      */
     protected $fillable = [
-       'title',  'caption','desc', 'img_url'
+       'title',  'caption','desc', 'img_url', 'img_urls', 'floor_plan','sold','show','mini_desc'
     ];
 
     /**

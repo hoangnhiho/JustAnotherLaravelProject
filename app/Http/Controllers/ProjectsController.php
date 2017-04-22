@@ -26,7 +26,9 @@ class ProjectsController extends Controller
      */
     public function show($projectId)
     {
-        $project = Project::find($listingId);
+        $project = Project::find($projectId);
+        if (!isset($project)) return 'Something went wrong. Please contact admin.';
+
         return view('frontend.projectsShow', compact('project'));
     }
 

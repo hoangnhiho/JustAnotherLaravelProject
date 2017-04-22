@@ -24,6 +24,7 @@ class CreateListingsTable extends Migration
             $table->string('type')->default('rent');
             $table->decimal('price',10,2)->nullable();
             $table->decimal('bond',10,2)->nullable();
+            $table->boolean('sold')->default(false);   
 
             // $table->integer('company_id')->unsigned();
             // $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
