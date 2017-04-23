@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $dPdfUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/pdfs/mags/';
         $dImgUrl   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/';
         $dImg   = 'http://larics.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
-        $dImgPath 	= 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/project/pastprojects/';
+        $dImgPath   = 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/project/pastprojects/';
+        $dImgPath1 	= 'http://ec2-54-86-237-65.compute-1.amazonaws.com/images/project/currentProjects/';
         $dImgs	= json_encode([$dImg,$dImg,$dImg,$dImg]);
         $dt 	= Carbon::now()->toDateString();
         $lat 	= '-27.4929184';
@@ -417,6 +418,147 @@ class DatabaseSeeder extends Seeder
             'sold' => true,
             'floor_plan' => $dImgPath . 'soko/Floorplans/img1.pdf', 
             'created_at' => $dt, 'updated_at' => $dt]);
+
+
+        DB::table('projects')->insert(['title' => 'Alton',  'caption' => 'Alton',
+            'mini_desc' => '<p>Combining functionality with contemporary architectural design, Azure’s latest edition of terrace homes is a thoughtful new approach to meticulously planned suburban living in the heart of Richlands.</p>',
+            'desc' => '<p>Combining functionality with contemporary architectural design, Azure’s latest edition of terrace homes is a thoughtful new approach to meticulously planned suburban living in the heart of Richlands.</p><p>A harmonious blend of contemporary architecture is showcased in Alton Edition\'s three distinctive terrace designs.Every home’s living space flows to a private outdoor alfresco courtyard featuring manicured turf, a feature tree with glimpses beyond to the hedging and jacaranda trees planted in common open areas. The bespoke architectural design and careful orientation of this collection of 58 terraces showcases the fundamental elements of liveability.</p><p>Just 10 minutes away in Greater Springfield, discover the expansive green heartland of Robelle Domain. Explore shaded paths, enjoy water cascades and interactive play areas, admire public art, experience community events and refresh yourself at Orion Lagoon.</p><p>Alton is only a short stroll away from Richlands Plaza with a Woolworths supermarket, cafés and gymnasium. Just 5 minutes’ drive away, Forest Lake Village Shopping Centre has a tempting range of boutiques, beauty salons and other pleasures to discover.</p><ul><li>Surrounded by extensive manicured gardens</li><li>Private outdoor alfresco courtyards</li><li>An intimate neighbourhood-scale form, softened and enriched by a superb architectural</li><li>landscape plan</li><li>Visitor car parking</li></ul>', 
+            'img_url' => $dImgPath1 . 'altonRichlands/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img5.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img6.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img7.jpg',
+                $dImgPath1 . 'altonRichlands/AdditionalPhotos/img8.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'altonRichlands/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+
+        DB::table('projects')->insert(['title' => 'Auriance',  'caption' => 'Sunnybank Hills',
+            'mini_desc' => '<p>No description</p>',
+            'desc' => '<p>No description</p>', 
+            'img_url' => $dImgPath1 . 'aurianceSunnybankHills/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img5.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img6.jpg',
+                $dImgPath1 . 'aurianceSunnybankHills/AdditionalPhotos/img7.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'aurianceSunnybankHills/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Cornerstone Living',  'caption' => 'Coopers Plains',
+            'mini_desc' => '<p>Cornerstone Living is located in Sunnybank on Brisbane’s south-side, adjoining Banoon Railway Station and benefiting from proximity to numerous schools, Griffith University, hospitals and the employment nodes of Sunnybank and Archerfield/Acacia Ridge.</p><p>To be delivered over a variety of stages, Cornerstone Living will integrate a range of affordable apartment and town home options with public green open spaces and local amenities. A small convenience-based retail centre will be incorporated as part of the latter stages of development.</p>',
+            'desc' => '<p>Cornerstone Living is located in Sunnybank on Brisbane’s south-side, adjoining Banoon Railway Station and benefiting from proximity to numerous schools, Griffith University, hospitals and the employment nodes of Sunnybank and Archerfield/Acacia Ridge.</p><p>To be delivered over a variety of stages, Cornerstone Living will integrate a range of affordable apartment and town home options with public green open spaces and local amenities. A small convenience-based retail centre will be incorporated as part of the latter stages of development.</p><p>Cornerstone Living offers well-connected transport links to Brisbane’s CBD and the Gold Coast, Cornerstone Living provides unbeatable convenience. Cornerstone Living is a project of substantial significance and is the largest suburban renewal to take place in Queensland, delivering a 10-hectare residential community over a 10 year period.</p><ul><li>12km to Brisbane CBD</li><li>Short walk to Banoon Train Station</li><li>Primary schools (2 mins)</li><li>Sunnybank Plaza (3 mins)</li><li>Griffith University (5 mins)</li><li>QEII Hospital (2mins)</li><li>M1 Motorway (7 mins)</li><li>Sunnybank Community and Sports Club (5 mins)</li><li>Westfield Garden City (8 mins)</li><li>Toohey Forest Park (5 mins)</li></ul>', 
+            'img_url' => $dImgPath1 . 'CornerstoneLivingCoopersPlains/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'CornerstoneLivingCoopersPlains/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'CornerstoneLivingCoopersPlains/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'CornerstoneLivingCoopersPlains/AdditionalPhotos/img3.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'CornerstoneLivingCoopersPlains/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Eve',  'caption' => 'South Brisbane',
+            'mini_desc' => '<p>The edges of this stunning residential tower are softened with lush plantings, from the upper-level balconies to the cascading greenery of the street façade. The intelligent landscaping of the podium recreation deck then creates an inviting resort-style atmosphere, with an enticing interplay of light, shade and water.</p>',
+            'desc' => '<p>The edges of this stunning residential tower are softened with lush plantings, from the upper-level balconies to the cascading greenery of the street façade. The intelligent landscaping of the podium recreation deck then creates an inviting resort-style atmosphere, with an enticing interplay of light, shade and water.</p><p>With easy access to the city, to Southbank\'s many cultural and recreational attractions and to the cosmopolitan buzz of the West End, the one and two-bedroom apartments at Eve offer the astute purchaser the ultimate in quality, convenience and style.</p><p>Contemporary lines, cool tones and polished timber floors make this an elegant and tranquil retreat, inviting you to add your own decorator touches. At Eve it\'s all about letting the outside in. Large picture windows provide an unimpeded outlook from your spacious open-plan living area.</p>', 
+            'img_url' => $dImgPath1 . 'EveSouthBrisbane/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img5.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img6.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img7.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img8.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img9.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img10.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img11.jpg',
+                $dImgPath1 . 'EveSouthBrisbane/AdditionalPhotos/img12.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'EveSouthBrisbane/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Ivy',  'caption' => 'South Brisbane',
+            'mini_desc' => '<p>Location – the most important word in real estate. Ivy is located on Merivale Street in the heart of South Brisbane, the cultural and dining extension of the Brisbane CBD. Attracting 11 million visitors and hosting more than 150 events each year, South Brisbane is the premier precinct for a relaxed and comfortable CBD lifestyle.</p>',
+            'desc' => '<p>Location – the most important word in real estate. Ivy is located on Merivale Street in the heart of South Brisbane, the cultural and dining extension of the Brisbane CBD. Attracting 11 million visitors and hosting more than 150 events each year, South Brisbane is the premier precinct for a relaxed and comfortable CBD lifestyle.</p><p>Ivy expresses all that’s best about this dynamic city’s sub-tropical lifestyle. With easy access to the city, to Southbank’s many cultural and recreational attractions and to the cosmopolitan buzz of the West End, the one and two-bedroom apartments at Ivy offer the astute purchaser the ultimate in quality, convenience and style.</p><p>The edges of this stunning residential tower are softened with lush plantings, from the upper-level balconies to the cascading greenery of the street façade. The intelligent landscaping of the podium recreation deck then creates an inviting resort-style atmosphere, with an enticing interplay of light, shade and water.</p><ul><li>750m from Brisbane CBD in the emerging South Brisbane.</li><li>The leader in facilities offered for exclusive use by residents:</li><li>Infinity lap pool</li><li>Pool bar</li><li>Outdoor spa </li><li>Bookable private beach house</li><li>state-of-the-art indoor gymnasium</li><li>Yoga studio</li><li>6 private dining rooms</li><li>Private bar area</li><li>Games and billiards room</li><li>Resident’s only outdoor cinema</li><li>IT pods</li><li>Teppanyaki grill dining and recreation space</li><li>Pizza oven along with BBQ facilities</li></ul>', 
+            'img_url' => $dImgPath1 . 'IvySouthBrisbane/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img5.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img6.jpg',
+                $dImgPath1 . 'IvySouthBrisbane/AdditionalPhotos/img7.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'IvySouthBrisbane/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'New World Towers',  'caption' => 'South Brisbane',
+            'mini_desc' => '<p>Overlooking the city lights on the corner of Peel and Cordelia Streets, South Brisbane’s highest point, New World Towers ushers in a new era in lifestyle convenience, connectivity and future-focused design. Embodying an entirely new realm of inner city luxury, New World Towers features innovative architecture and world-class onsite facilities, interwoven into a dynamic community, which captures the effervescent spirit of adventure Brisbane is fast becoming known for.</p>',
+            'desc' => '<p>Overlooking the city lights on the corner of Peel and Cordelia Streets, South Brisbane’s highest point, New World Towers ushers in a new era in lifestyle convenience, connectivity and future-focused design. Embodying an entirely new realm of inner city luxury, New World Towers features innovative architecture and world-class onsite facilities, interwoven into a dynamic community, which captures the effervescent spirit of adventure Brisbane is fast becoming known for.</p><p>New World Towers offers world class amenities which include a gym, sauna, spa, infinity edge pool, cinema, rooftop recreation deck with landscaping, private day beds, alfresco dining areas and ground floor retail conveniences, residents’ business lounge and the Explorers Lounge.</p><p>Bathed in subtropical light, these bright, energising living spaces feature exceptional high-end ceramic tiles, cool stone and carpet. A range of chic, designer colour palettes are available, all of which offer a timeless appeal.</p>', 
+            'img_url' => $dImgPath1 . 'MagellanSouthBrisbane/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'MagellanSouthBrisbane/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'MagellanSouthBrisbane/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'MagellanSouthBrisbane/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'MagellanSouthBrisbane/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'MagellanSouthBrisbane/AdditionalPhotos/img5.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'MagellanSouthBrisbane/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        DB::table('projects')->insert(['title' => 'Springfield Lakes',  'caption' => 'Springfield Lakes',
+            'mini_desc' => '<p>Springfield Lakes is a modern suburb of distinct residential villages and leafy streets nestled amongst a greenspace network of parks and lakes. Springfield Lakes makes the most of its topography and green setting to exploit views and celebrate slope-responsive housing.</p>',
+            'desc' => '<p>Springfield Lakes is a modern suburb of distinct residential villages and leafy streets nestled amongst a greenspace network of parks and lakes. Springfield Lakes makes the most of its topography and green setting to exploit views and celebrate slope-responsive housing.</p><p>A choice of housing types, from traditional detached homes to contemporary attached housing, ensures a diverse demographic mix and allows the project to respond to a changing market. Springfield Lakes is easy and safe to get around, whether by walking, cycling, driving or on public transport. A lively and memorable public realm active with people walking, neighbours talking and children playing demonstrates the high levels of community interaction. Springfield Lakes demonstrates best practice in design and sets a new benchmark for the region.</p><ul><li><b>Location and Transport</b></li><li>Brisbane CBD 28km</li><li>Ipswich CBD 17km</li><li>Gold Coast 81km</li><li>Services by rail and road</li><li><b>Open Space</b></li><li>120 hectares of open space</li><li>28 parks</li><li>Three lakes spanning 23 hectares</li><li><b>Parks</b></li><li>Robelle Domain</li><li>Grande Park</li><li>Discovery Park</li><li>Orion Lagoon</li><li><b>Education</b></li><li>Quality childcare and preschools</li><li>Public and private primary and secondary schools</li><li>University of South Queensland Springfield Campus</li><li>Bremer Institute of TAFE</li><li><b>Shopping and Lifestyle</b></li><li>Three neighborhood centres (Springfield Fair, Springlake Metro & Springlake Village)</li><li>Orion Springfield Town Centre</li><li>Cafes and restaurants</li><li>Brookwater Gold Club</li><li><b>Medical</b></li><li>Mater Private Hospital</li><li>Local dentists, doctors & allied professionals</li></ul>', 
+            'img_url' => $dImgPath1 . 'SpringfieldLakesSpringfield/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'SpringfieldLakesSpringfield/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'SpringfieldLakesSpringfield/AdditionalPhotos/img2.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'SpringfieldLakesSpringfield/Floorplans/img1.png', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        
+
+        DB::table('projects')->insert(['title' => 'Water Point',  'caption' => 'Springfield Lakes',
+            'mini_desc' => '<p>When designing and creating WaterPoint Residences\' landscaping, entertainment and health facilities, particular attention has been given to the many details. True character shows only through absolute integrity. Wherever you turn at WaterPoint Residences, the lasting impression is: someone thought about that, too. Such is the essence of style.</p>',
+            'desc' => '<p>When designing and creating WaterPoint Residences\' landscaping, entertainment and health facilities, particular attention has been given to the many details. True character shows only through absolute integrity. Wherever you turn at WaterPoint Residences, the lasting impression is: someone thought about that, too. Such is the essence of style.</p><p>With the colourful landscaping, cobblestone paving, cascading waterfall and lighting the entry statement is sure to welcome and impress. WaterPoint\'s gatehouse provides optimal security and safety at all hours. The secure undercover car park and common areas are monitored, and guests are welcomed and announced. Peace of mind.</p><ul><li>HealthPoint – Massage Room, Indoor Pool, Work Out Room, Gymnasium, Sauna, Steam Room and Spa.</li><li>SocialPoint – Gold Class Cinema, Celebration Lounge, Games Room and Library.</li><li>DockPoint – Jetties, Fishing, Kayaking and Broadwater Cruiser.</li><li>Secure Basement Car Parking, BBQ Areas, Outdoor Swimming Pools, Residents Lounge and Gated Community with On-site Security.</li><li>Tranquil Landscape Gardens.</li><li>Rooftop Entertaining-Ocean views, BBQ areas, tables, chairs and sun lounges .</li></ul>', 
+            'img_url' => $dImgPath1 . 'WaterpointGoldCoast/HeroPhotos/img1.jpg', 
+            'img_urls' => json_encode([
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img1.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img2.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img3.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img4.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img5.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img6.jpg',
+                $dImgPath1 . 'WaterpointGoldCoast/AdditionalPhotos/img7.jpg'
+            ]), 
+            'floor_plan' => $dImgPath1 . 'WaterpointGoldCoast/Floorplans/img1.pdf', 
+            'sold' => false,
+            'created_at' => $dt, 'updated_at' => $dt]);
+
+        
+
+        //
+
+        //<ul><li>HealthPoint – Massage Room, Indoor Pool, Work Out Room, Gymnasium, Sauna, Steam Room and Spa.</li><li>SocialPoint – Gold Class Cinema, Celebration Lounge, Games Room and Library.</li><li>DockPoint – Jetties, Fishing, Kayaking and Broadwater Cruiser.</li><li>Secure Basement Car Parking, BBQ Areas, Outdoor Swimming Pools, Residents Lounge and Gated Community with On-site Security.</li><li>Tranquil Landscape Gardens.</li><li>Rooftop Entertaining-Ocean views, BBQ areas, tables, chairs and sun lounges .</li></ul>
 
 
         $employeeListName = ['Stephen Tam', 'Nicole Tam', 'Clare Yeaw', 'Johan Halim', 'Cassidy Shorland', 'Renaye Wisse'];
