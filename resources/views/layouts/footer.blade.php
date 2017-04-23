@@ -45,7 +45,7 @@
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">
             <div class="row">
-                <a href="{{ url('login') }}">
+                <a href="{{ url('career') }}">
                     <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url({{ url('images/footer/footer2.jpg') }}) no-repeat center center; background-size: cover;">
                         
                         <div class="footer-img-info" >
@@ -79,42 +79,42 @@
         <div class="col-xs-offset-2 col-xs-8" style="color:black;">
             <div class="row footer-links">
                 <div class="col-xs-3">
-                    <p><b>Buy</b></p>
+                    <a href="{{ url('/buy') }}"><p style="color:black"><b>Buy</b></p></a>
                     <p>Choosing Homestates</p>
-                    <p>Current Listings</p>
+                    <a href="{{ url('/listings') }}"><p style="color:black">Current Listings</p></a>
                 </div>
                 <div class="col-xs-3">
-                    <p><b>Sell</b></p>
-                    <p>Our Strategy</p>
-                    <p>Research</p>
+                    <a href="{{ url('/sell') }}"><p style="color:black"><b>Sell</b></p></a>
+                    <a href="{{ url('/sell') }}"><p style="color:black">Our Strategy</p></a>
+                    <a href="{{ url('/press_research') }}"><p style="color:black">Research</p></a>
                 </div>
                 <div class="col-xs-3">
-                    <p><b>Rent</b></p>
-                    <p>Renting with Homestates</p>
-                    <p>Current Listings</p>
+                    <a href="{{ url('/rent') }}"><p style="color:black"><b>Rent</b></p></a>
+                    <a href="{{ url('/rent') }}"><p style="color:black">Renting with Homestates</p></a>
+                    <a href="{{ url('/rent') }}"><p style="color:black">Current Listings</p></a>
                 </div>
                 <div class="col-xs-3">
-                    <p><b>Projects</b></p>
-                    <p>Our Advantage</p>
-                    <p>Off-the-Plan Listings</p>
+                    <a href="{{ url('/projects') }}"><p style="color:black"><b>Projects</b></p></a>
+                    <a href="{{ url('/projects') }}"><p style="color:black">Our Advantage</p></a>
+                    <a href="{{ url('/projects') }}"><p style="color:black">Off-the-Plan Listings</p></a>
                 </div>
             </div>
             <div class="row footer-links">
                 <div class="col-xs-3">
-                    <p><b>Migration & Education</b></p>
-                    <p>Immigration Services</p>
-                    <p>Education Support</p>
+                    <a href="{{ url('/migration') }}"><p style="color:black"><b>Migration & Education</b></p></a>
+                    <a href="{{ url('/migration') }}"><p style="color:black">Immigration Services</p></a>
+                    <a href="{{ url('/migration') }}"><p style="color:black">Education Support</p></a>
                 </div>
                 <div class="col-xs-3">
-                    <p><b>Press Room</b></p>
-                    <p>Media Release</p>
-                    <p>Homestates</p>
+                    <a href="{{ url('/press_room') }}"><p style="color:black"><b>Press Room</b></p></a>
+                    <a href="{{ url('/press_room') }}"><p style="color:black">Media Release</p></a>
+                    <a href="{{ url('/press_room') }}"><p style="color:black">Homestates</p></a>
                 </div>
                 <div class="col-xs-3">
-                    <p><b>About Us</b></p>
-                    <p>Pilosophy</p>
-                    <p>Careers</p>
-                    <p>FAQ</p>
+                    <a href="{{ url('/aboutus') }}"><p style="color:black"><b>About Us</b></p></a>
+                    <a href="{{ url('/aboutus') }}"><p style="color:black">Pilosophy</p></a>
+                    <a href="{{ url('/career') }}"><p style="color:black">Careers</p></a>
+                    <a href="{{ url('/aboutus') }}"><p style="color:black">FAQ</p></a>
                 </div>
             </div>
         </div>

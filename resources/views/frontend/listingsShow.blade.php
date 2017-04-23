@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-5">
                         <h5>For {{ $listing->type }}</h5>
-                        <p>${{ $listing->price }} per week</p>
+                        <p>${{ $listing->price }} @if ($listing->type == 'rent') per week @endif</p>
                         <hr>
                         <h5>Property information</h5>
                         <p>Land size <span class="pull-right">{{ $listing->landsize }} sqm</span></p>
