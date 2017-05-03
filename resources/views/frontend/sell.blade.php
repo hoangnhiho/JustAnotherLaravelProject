@@ -53,6 +53,7 @@
                 <h1>Talk to a local Homestates agent</h1>
                 <p>Request a complementary listing consultation for your home</p>
                 <div class="row">
+                    <!--
                     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6">
                         <div class="form-group">
                             <label for="usr">Street Address:</label>
@@ -70,6 +71,57 @@
                     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-2" style="margin-top:30px">
                         <button type="button" class="btn btn-primary">Next</button>
                     </div>
+                    -->
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <form action="{{ url('submit_enquiry') }}" method="POST">
+                            {{ csrf_field() }}
+                            <div class="dropdown" style="">
+                                <select class="form-control" style="" name="type">
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="House">House</option>
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="email">
+                                    Name
+                                </label>
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone
+                                </label>
+                                <div class="form-group">
+                                    <input type="phone" name="phone" class="form-control" id="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h6>
+                                    What can we help you with?
+                                </h6>
+                                <textarea name="enquiry" placeholder="Please feel free to ask us a question" class="form-control"></textarea>        
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary form-control" id="submit" value="Submit">
+                                </input>                
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>

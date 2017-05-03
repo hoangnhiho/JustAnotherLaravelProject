@@ -122,6 +122,21 @@ class FrontendController extends Controller
         return view('frontend.message', compact('message', 'caption'));
     }
 
+    public function submitEnquiry(Request $request)
+    {
+        $input = $request->all();
+        
+        // Send Mail
+        $mailData['input']=(object)$input;
+        Mail::send('emails.enquiry', $mailData, function ($message) use ($input,$request){
+            $message->to('frank.law@homestates.com.au')->subject('Homestate Enquiry');
+        });
+        
+        $message = 'Thank You';
+        $caption = 'Your enquiry has been sent.';
+        return view('frontend.message', compact('message', 'caption'));
+    }
+
 
 
 

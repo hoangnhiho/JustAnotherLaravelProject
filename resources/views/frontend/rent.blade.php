@@ -108,22 +108,30 @@
                         <p>
                             What type of home are you looking for?
                         </p>
+                        <form action="{{ url('submit_enquiry') }}" method="POST">
+                            {{ csrf_field() }}
+                            <div class="dropdown" style="">
+                                <select class="form-control" style="" name="type">
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="House">House</option>
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="email">
+                                    Name
+                                </label>
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="email">
+                                </div>
+                            </div>
 
-                        <div class="dropdown" style="">
-                            <select class="form-control" style="">
-                                <option value="Apartment">Apartment</option>
-                                <option value="House">House</option>
-                                <option value="Castle">Castle</option>
-                            </select>
-
-                        </div>
-                        <form action="" method="">
                             <div class="form-group">
                                 <label for="email">
                                     Email
                                 </label>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" name="email" class="form-control" id="email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -131,7 +139,7 @@
                                     Phone
                                 </label>
                                 <div class="form-group">
-                                    <input type="phone" class="form-control" id="phone">
+                                    <input type="phone" name="phone" class="form-control" id="phone">
                                 </div>
                             </div>
 
@@ -139,11 +147,11 @@
                                 <h6>
                                     What can we help you with?
                                 </h6>
-                                <textarea placeholder="Please feel free to ask us a question" class="form-control"></textarea>        
+                                <textarea name="enquiry" placeholder="Please feel free to ask us a question" class="form-control"></textarea>        
                             </div>
 
                             <div class="form-group">
-                                <input type="submit" class="btn btn-default form-control" id="submit" value="Submit">
+                                <input type="submit" class="btn btn-primary form-control" id="submit" value="Submit">
                                 </input>                
                             </div>
                         </form>

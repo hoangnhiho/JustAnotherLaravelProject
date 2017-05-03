@@ -32,6 +32,7 @@ Route::get('/press_event', 'FrontendController@pressEvent');
 Route::get('/press_room', 'FrontendController@pressRoom');
 Route::get('/press_promo', 'FrontendController@pressPromo');
 Route::post('/press_promo', 'FrontendController@emailPressPromo');
+Route::post('/submit_enquiry', 'FrontendController@submitEnquiry');
 
 
 Route::resource('projects', 'ProjectsController');

@@ -50,8 +50,8 @@
         /*max-width: 580px;*/
         padding: 10px;
         width: auto !important;
-        /*width: 580px; */
-      }
+        /*width: 580px;*/
+         }
 
       /* This should also be a block element, so that it will fill 100% of the .container */
       .content {
@@ -288,20 +288,20 @@
                   <table border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="width:100%;text-align: center;"><h1>Job Application</h1></div>
+                        <div style="width:100%;text-align: center;"><h1>Enquiry Details</h1></div>
                         <hr>
-                        <h3>Job Application Details</h3>
+                        <h3>Enquiry Details</h3>
                         <hr>
-                        <p><strong>Job Name:</strong> {{ $input->job_name }}</p>
                         <p><strong>Name:</strong> {{ $input->name }}</p>
                         <p><strong>Email:</strong> {{ $input->email }}</p>
                         <p><strong>Phone:</strong> {{ $input->phone }}</p>
+                        <p><strong>Type:</strong> {{ $input->type }}</p>
                         <hr>
-                        <p><strong>Cover Letter:</strong> {{ $input->cv }}</p>
+                        <p><strong>Enquiry:</strong> {{ $input->enquiry }}</p>
 
                         <p>If you have any questions or would like to ask us how we can help implement Homestates please <a href="mailto:frank.law@homestates.com.au" >contact us</a></p>
                         <p>Regards,</p><br>
-                        {{ config('app.name', 'BoW') }}</i></p>
+                        {{ config('app.name', 'Homestates') }}</i></p>
                       </td>
                     </tr>
                   </table>
