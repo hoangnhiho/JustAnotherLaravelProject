@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ url('press_mag') }}">
+            <a href="{{ url('homestatesmagazine') }}">
                 <div class="col-xs-6 col-sm-3 add-reading">
                     <div class="" style="background: url({{ url('images/press/magz.png') }}) no-repeat center center; background-size: cover;"> 
                     <div class="footer-img-info"><h3>Homestates Magazine</h3></div>

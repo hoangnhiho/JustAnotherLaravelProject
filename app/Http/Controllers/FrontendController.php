@@ -51,6 +51,30 @@ class FrontendController extends Controller
         return view('frontend.migration', compact('footerCarousels'));
     }
 
+    public function contact()
+    {
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.contact', compact('footerCarousels'));
+    }
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function contactStore(Request $request)
+    {
+        $input = $request->all();
+        
+        // Send Mail
+        $mailData['input']=(object)$input;
+        Mail::send('emails.contact', $mailData, function ($message) use ($input,$request){
+            $message->to('frank.law@homestates.com.au')->subject('Contact Form');
+        });
+
+        $message = 'Thank You';
+        $caption = 'Your contact applcation has been sent.';
+        return view('frontend.message', compact('message', 'caption'));
+    }
 
 
     public function pressMarket()

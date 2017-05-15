@@ -18,6 +18,17 @@ class ProjectsController extends Controller
         $projects = Project::get();
 
         return view('frontend.projectsIndex', compact('projects'));
+    }    
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function upcoming()
+    {
+        $projects = Project::where('upcoming',true)->get();
+
+        return view('frontend.projectsUpcoming', compact('projects'));
     }
     /**
      * Show the application dashboard.

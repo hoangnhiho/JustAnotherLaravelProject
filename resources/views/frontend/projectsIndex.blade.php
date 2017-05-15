@@ -43,7 +43,7 @@
                 <p>Property Investment allows clients to tap into Homestates' propiletary database of upcoming property development projects to secure real estate with vetted rental or capital yields. Our collaboration with blue chip real estate developers means we can provide priority access and viewings on unreleased projects, across the globe</p>
                 <div id="centering">
                     <button class="btn btn-primary">
-                        <a data-scroll href="#projectsList"><h3 style="color:white; margin-top: 10px">View the Collection</h3></a>
+                        <a href="{{ url('projects/upcoming') }}"><h3 style="color:white; margin-top: 10px">View the Collection</h3></a>
                     </button>
                 </div>
                 <br>
@@ -162,7 +162,7 @@
     </div>
 
     <!-- This is before the final image area -->
-    <div class="container container-white">
+    <div class="container container-white" id="expertiseSection">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center;">
@@ -230,7 +230,7 @@
                 <div class="row">
                     <div class="col-xs-offset-1 col-xs-10">
                         <h2 style="text-align: center;">
-                            Our prvious projects
+                            Our previous projects
                         </h2>
                         <p style="text-align: center">
                             A selection of our most recent projects sold

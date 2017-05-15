@@ -224,7 +224,8 @@ ul.nostyle i {
   overflow: hidden;
 }
 #main-slider .item {
-  height: 558px;
+  height: 420px;
+  /*height: 558px;*/
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -238,7 +239,7 @@ ul.nostyle i {
   color: #fff;
 }
 #main-slider .slider-inner h2 {
-  margin-top: 180px;
+  margin-top: 100px;
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
@@ -1026,7 +1027,7 @@ ul.nostyle i {
 
 .listing-preview-top{
   max-height:300px; 
-  height:300px; 
+  height:250px; 
   overflow: hidden;
 }
 .listing-preview-top > img{
@@ -1058,6 +1059,7 @@ ul.nostyle i {
 
 .overlayer-info > h3{
   bottom: 50px;
+  font-size: 20px
 }
 
 .overlayer-info > p{
@@ -1098,7 +1100,7 @@ ul.nostyle i {
 
 .footer-img-info{
   /*height: 40vh;*/
-  height: 400px;
+  height: 350px;
   width: 100%;
    -webkit-transition: all 1s ease-out;
    -moz-transition: all 1s ease-out;
@@ -1139,7 +1141,8 @@ ul.nostyle i {
   margin-top: 0px;
   margin-bottom: 0px;
   /*padding-top: 18vh;*/
-  padding-top: 180px;
+  padding-top: 150px;
+  font-size: 25px;
 
 }
 .listing-img-info > h5, .listing-img-info > p{
@@ -1193,6 +1196,7 @@ body{
 .overlap-img{
   position: absolute;
   /*top:0px;*/
+  height:550px;
   width:95%;
 }
 #accordion > .panel, .panel-body{
@@ -1211,7 +1215,7 @@ body{
   overflow: hidden;
 }
 #footer-slider .item {
-  height: 558px;
+  height: 450px;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -1312,9 +1316,16 @@ body{
 }
 
 a{
+  color: black !important;
+}
+.scroll > a {
+  color: #784BA7 !important;
+}.dropdown > a {
   color: #784BA7 !important;
 }
-
+.dropdown-menu > li > a {
+  color: #784BA7 !important;
+}
 .btn-primary{
   color:white !important;
 }
@@ -1460,4 +1471,14 @@ li.dropdown:hover > .dropdown-menu {
   text-decoration: none;
   /* shadow */
   text-shadow: 0 0 5px #444;
+}
+
+.footer-links > div > a :hover {
+  color:#784BA7 !important;
+}
+#final-footer-links > div  > a :hover {
+  color:#784BA7 !important;
+}
+#progressBar{
+  display:none!important;
 }

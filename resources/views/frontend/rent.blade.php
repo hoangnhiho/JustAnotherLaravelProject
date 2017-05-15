@@ -48,9 +48,9 @@
                 </h2>
                 <p>Property Management is a core node of rental support offered by Homestates to ensure your property remains occupied with quality tenants. Backed by extensive local knowledge of the shifting property market, our management services remain competitive and comprehensive, for your peace of mind.</p>
                 <div id="centering">
-                    <button class="btn btn-primary">
-                        <h3 style="color:white; margin-top: 10px;">Current Listings</h3>
-                    </button>
+                    <a class="btn btn-primary" href="{{ url('listings') }}">
+                        <h3 style="color:white">Current Listings</h3>
+                    </a>
                 </div>
                 <br>
             </div>
@@ -165,7 +165,7 @@
 
 
     <!-- This is before the final image area -->
-    <div class="container container-white">
+    <div class="container container-white" id="expertiseSection">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center;">

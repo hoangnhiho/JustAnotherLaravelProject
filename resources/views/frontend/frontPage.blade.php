@@ -46,7 +46,7 @@
                         <img class="img-responsive" src="https://i3.au.reastatic.net/1530x841/6cc0e076b3c5a34b53669842ebfc77975c24fabc7f48902a1e94210527d5d636/image3.jpg" alt=""/>
                         <div class="overlayer-info">
                             <h3>Newstead QLD</h3>
-                            <p><b>2</b> BED <b>2</b> BATH <b>1</b> CAR</p>
+                            <p>2 BED 2 BATH 1 CAR</p>
                         </div>
                     </div>
                 </a>
@@ -55,7 +55,7 @@
                         <img class="img-responsive" src="https://i2.au.reastatic.net/1530x841/19fc163bfdf0ee81248fe5b6d86e6c96cff886b85b56588f37bd5c557eabb3f9/image2.jpg" alt="" />
                         <div class="overlayer-info">
                             <h3>Cannon Hill QLD</h3>
-                            <p><b>2</b> BED <b>2</b> BATH <b>1</b> CAR</p>
+                            <p>2 BED 2 BATH 1 CAR</p>
                         </div>
                     </div>
                 </a>
@@ -77,29 +77,29 @@
 
     <br>
 
-        <div class="container wow fadeInDown" style="height: 400px;">
-            <div class="row wow fadeInDown overlap-img animated" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/worldmap.png') }}) no-repeat center center; background-size: cover;">
-                <div class="col-sm-offset-1 col-sm-5 col-xs-12" style="padding: 0px 0px; margin-top: 20px; margin-bottom: 20px;">
+        <div class="container-fluid wow fadeInDown" style="height: 550px;">
+            <div class="row wow fadeInDown overlap-img animated" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/worldmap.png') }}) no-repeat center center; background-size: cover;">
+                <div class="col-sm-offset-1 col-sm-4 col-xs-10" style="padding: 0px 0px; margin-top: 50px; margin-bottom: 20px;">
                     <!-- <div style="height:300px;"></div> -->
                     <div class="house-content">
-                        <div class="house-text" style="padding: 10px 10px; color:purple">
-                            <h2 style="color:purple">LOCALLY ESTABLISHED GLOBALLY CONNECTED</h2>
+                        <div class="house-text" style="padding: 10px 10px; color:#542D6C">
+                            <h2 style="color:#542D6C">LOCALLY ESTABLISHED GLOBALLY CONNECTED</h2>
                             <p>Our objective as a client-focused consultancy Group is to link the right investors to the right prperty. We enable businesses, individuals and investors to reach their financial goals, and are committed to acquire and develop quality properties based on realistic values for our clients.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="400ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Japan.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="600ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/S-Korea.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="800ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/China.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1000ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Taiwan.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1200ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Hong-Kong.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1400ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Thailand.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="16000ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Vietnam.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1800ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Malaysia.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2000ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Singapore.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2200ms" style="height: 400px; margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Indonesia.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="400ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Japan.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="600ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/S-Korea.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="800ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/China.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Taiwan.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1200ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Hong-Kong.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1400ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Thailand.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="16000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Vietnam.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1800ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Malaysia.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Singapore.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2200ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Indonesia.png') }}) no-repeat center center; background-size: cover;"></div>
         </div>
 
     <br>

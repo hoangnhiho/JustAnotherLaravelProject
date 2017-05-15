@@ -23,7 +23,7 @@
                         <a href="{{ url('press_news') }}" class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">Press Room <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ url('press_market') }}">Market Insights</a></li>
-                            <li><a href="{{ url('press_mag') }}">Magazine</a></li>
+                            <li><a href="{{ url('homestatesmagazine') }}">Magazine</a></li>
                             <li><a href="{{ url('press_news') }}">News</a></li>
                             <li><a href="{{ url('press_research') }}">Research & Development</a></li>
                             <li><a href="{{ url('press_video') }}">Vidoes</a></li>

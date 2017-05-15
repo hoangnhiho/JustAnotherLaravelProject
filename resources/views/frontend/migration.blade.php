@@ -162,7 +162,7 @@
     </div>
 
     <!-- This is before the final image area -->
-    <div class="container container-white">
+    <div class="container container-white" id="expertiseSection">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <h2 style="text-align: center;">
