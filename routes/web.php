@@ -44,3 +44,6 @@ Route::resource('career', 'CareersController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+// Route::get('/test', 'ProjectsController@test');

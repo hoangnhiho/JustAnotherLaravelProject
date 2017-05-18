@@ -48,7 +48,8 @@ class FrontendController extends Controller
     public function migration()
     {
         $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.migration', compact('footerCarousels'));
+        $projects = Project::whereIn('id', [11,15,17])->get();
+        return view('frontend.migration', compact('footerCarousels', 'projects'));
     }
 
     public function contact()

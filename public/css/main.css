@@ -673,7 +673,7 @@ ul.nostyle i {
 }
 .panel-default > .panel-heading .panel-title {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #eee;
@@ -1054,7 +1054,7 @@ ul.nostyle i {
 }
 
 #bigger-overlayer-info > h1{
-  bottom: 270px;
+  bottom: 100px;
 }
 
 .overlayer-info > h3{
@@ -1481,4 +1481,10 @@ li.dropdown:hover > .dropdown-menu {
 }
 #progressBar{
   display:none!important;
+}
+.last-footer-links{
+  color: #784BA7 !important;
+}
+.last-footer-links:hover{
+  color: black !important;
 }

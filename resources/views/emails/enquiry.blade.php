@@ -292,7 +292,9 @@
                         <hr>
                         <h3>Enquiry Details</h3>
                         <hr>
-                        <p><strong>Name:</strong> {{ $input->name }}</p>
+                        @if (isset( $input->name ))
+                          <p><strong>Name:</strong> {{ $input->name }}</p>
+                        @endif
                         <p><strong>Email:</strong> {{ $input->email }}</p>
                         <p><strong>Phone:</strong> {{ $input->phone }}</p>
                         <p><strong>Type:</strong> {{ $input->type }}</p>

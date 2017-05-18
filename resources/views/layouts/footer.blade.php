@@ -122,10 +122,10 @@
     </div>
     <div class="row" id="final-footer-links" style="margin-top: 40px">
         <div class="col-sm-12 text-center">
-            <a href="{{ url('contact') }}">Contact Us</a> | 
-            <a target="_blank" href="{{ url('pdfs/terms.pdf') }}">Privacy Policy</a> | 
-            <a target="_blank" href="{{ url('pdfs/terms.pdf') }}">Terms & Conditions</a> | 
-            <a target="_blank" href="{{ url('/') }}">@ Homestates 2017</a> 
+            <a class="last-footer-links" href="{{ url('contact') }}">Contact Us</a> | 
+            <a class="last-footer-links" target="_blank" href="{{ url('pdfs/terms.pdf') }}">Privacy Policy</a> | 
+            <a class="last-footer-links" target="_blank" href="{{ url('pdfs/terms.pdf') }}">Terms & Conditions</a> | 
+            <a class="last-footer-links" target="_blank" href="{{ url('/') }}">@ Homestates 2017</a> 
             
         </div>
     </div>
