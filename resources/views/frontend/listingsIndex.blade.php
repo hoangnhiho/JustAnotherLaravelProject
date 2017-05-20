@@ -11,7 +11,7 @@
     <div class="container-fluid wow fadeInDown" style="background-color: white; padding:40px 40px;">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 text-center">
-                <form action="{{ url('listings') }}" method="get">
+                <form action="{{ url('listings') }}" method="get" id="listingForm">
                     <div class="row">
                         <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
                             <div class="form-group">
@@ -62,6 +62,7 @@
                             </div>
                         </div>
                         {{ csrf_field() }}
+                        <input type="hidden" class="form-control" name="order_type" value="{{ $params->order_type }}" id="inputOrderType">
                         <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-1" style="margin-top:30px">
                             <button type="submit" class="btn btn-primary">Search</button>
                         </div>
@@ -81,9 +82,10 @@
                         We have {{ $listings->total() }} results for you.
                     </div>
                     <div class="col-xs-6 col-sm-3 pull-right">
-                        <select class="form-control">
-                            <option>Price (low to high)</option>
-                            <option>Price (high to low)</option>
+                        <select class="form-control" id="orderBySelect">
+                            <option value="asc">--- SortBy ---</option>
+                            <option value="asc">Price (low to high)</option>
+                            <option value="desc">Price (high to low)</option>
                         </select>
                     </div>
                 </div>
@@ -145,5 +147,10 @@
 @endsection
 @section('customjs')
     <script>
+        $('#orderBySelect').change(function(){ 
+            var value = $(this).val();
+            $('#inputOrderType').val(value);
+            $('#listingForm').submit()
+        });
     </script>
 @endsection

@@ -26,21 +26,25 @@ class ListingsController extends Controller
         $maxPrice = 5000000;
         if (isset($input['max_price'])) $maxPrice = $input['max_price'];     
         // $propType = 'all';
-        if (isset($input['prop_type'])) $propType = $input['prop_type'];     
+        if (isset($input['prop_type'])) $propType = $input['prop_type'];  
+
+        $orderType = 'asc';
+        if (isset($input['order_type'])) $orderType = $input['order_type'];  
 
         if (isset($propType)){
             if ($propType == 'all'){
-                $listings = Listing::where('address', 'like', '%'.$search.'%')->where('bed_no', '>=', $bed)->where('bath_no', '>=', $bath)->where('price', '>=', $minPrice)->where('price', '<=', $maxPrice)->paginate(5);
+                $listings = Listing::where('address', 'like', '%'.$search.'%')->where('bed_no', '>=', $bed)->where('bath_no', '>=', $bath)->where('price', '>=', $minPrice)->where('price', '<=', $maxPrice)->orderBy('price', $orderType)->paginate(5);
             }else{
                 $listings = Listing::where('address', 'like', '%'.$search.'%')
                 ->where('bed_no', '>=', $bed)
                 ->where('bath_no', '>=', $bath)
                 ->where('price', '>=', $minPrice)
                 ->where('price', '<=', $maxPrice)
-                ->where('prop_type', $propType)->paginate(5);
+                ->where('prop_type', $propType)
+                ->orderBy('price', $orderType)->paginate(5);
             }
         }else{
-            $listings = Listing::paginate(5);
+            $listings = Listing::orderBy('price', $orderType)->paginate(5);
         }
 
         // Adding in other parameters into prev_url and next_url
@@ -50,6 +54,7 @@ class ListingsController extends Controller
         if (isset($input['min_price'])) $listings->appends(['min_price' => $input['min_price']])->links();
         if (isset($input['max_price'])) $listings->appends(['max_price' => $input['max_price']])->links();
         if (isset($input['prop_type'])) $listings->appends(['prop_type' => $input['prop_type']])->links();
+        if (isset($input['order_type'])) $listings->appends(['order_type' => $input['order_type']])->links();
 
         $params = (object) $input;
         if (!isset($params->prop_type)) $params->prop_type = 'all';
@@ -57,6 +62,7 @@ class ListingsController extends Controller
         if (!isset($params->bath)) $params->bath = '';
         if (!isset($params->min_price)) $params->min_price = '';
         if (!isset($params->max_price)) $params->max_price = '';
+        if (!isset($params->order_type)) $params->order_type = '';
         return view('frontend.listingsIndex', compact('listings', 'params'));
     }
     /**

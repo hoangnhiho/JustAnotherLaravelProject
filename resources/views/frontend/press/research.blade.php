@@ -2,40 +2,21 @@
 @section('content')
 
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
-    <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
-                                <div class="carousel-content" style="color: black">
-                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
-                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
-                                    <p>January 2, 2017</p>
-                                </div>
-                            </div>
+    <section id="main-slider" style="height:500px; background-image: url({{ url('images/press/rnd.jpg') }});background-repeat: no-repeat;background-size: cover; overflow-y: hidden;">
+        <div class="slider-inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-sm-offset-7" style="background: rgba(255,255,255,0.7);">
+                        <div class="carousel-content" style="color: black; height: 500px;margin-top: 100px;">
+                            <br>
+                            <h2 style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                            <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                            <p>January 2, 2017</p>
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
-                                <div class="carousel-content" style="color: black">
-                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
-                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
-                                    <p>January 2, 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.owl-carousel-->
+            </div>
+        </div>
     </section><!--/#main-slider-->
 
     <!-- This is for the area after the slides -->

@@ -30,32 +30,24 @@
         </div>
     </section><!--/#main-slider-->
 
-
     <!-- This is for the area after the slides -->
-    <div class="container container-white" style="margin-bottom: 10px; overflow-x: hidden">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 style="margin-top: 10px; margin-bottom: 0px">Market</h3>
-                <hr style="margin-top: 5px">
-            </div>
+    <div class="container container-white" style="margin-bottom: 30px">
+        @foreach ($events as $event)
+            <div class="row" style="margin-bottom: 15px; margin-top: 15px">
+                <div class="col-xs-12 col-sm-6">
+                    <img class="img-responsive" style="width:100%; height:auto" src="{{ $event->img_url }}" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4 class="event-name">{{ $event->name }}</h4>
+                    <p  class="event-desc">{!! $event->desc !!}</p>
+                    <button class="btn btn-primary event-car-item">View Events ></button>
 
-        </div>
+                    <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
 
-        <div class="row">
-            <div id="event-owl-carousel">
-                @foreach ($events as $event)
-                    <div class="event-car-item" data-link="event-panel-{{ $event->id }}" style="background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;"> 
-                        <div class="footer-img-info"><h3 class="event-name">{{ $event->name }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
-                    </div>
-                @endforeach
+                </div>
             </div>
-            <hr>
-        </div>
+        @endforeach
     </div>
-
-
 <!-- Modal -->
 <div id="eventModal" class="modal fade" role="dialog" >
     <div class="modal-dialog modal-lg">
@@ -82,24 +74,11 @@
 @endsection
 @section('customjs')
     <script>
-        $('#event-owl-carousel').owlCarousel({
-            items : 4,
-            margin: 20,
-            autoHeight : true,
-            navigation : true,
-                navigationText: [
-                "<i class='fa fa-angle-left'></i>",
-                "<i class='fa fa-angle-right'></i>"
-                ]
-        })
-
         $('.event-car-item').click(function() {
-
-            $('#modal-e-title').html($(this).find('.event-name').html());
-            $('#modal-e-desc').html($(this).find('.event-desc').html());
-            $('#modal-e-img').attr('src', $(this).find('.event-img').html());
+            $('#modal-e-title').html($(this).parent().parent().find('.event-name').html());
+            $('#modal-e-desc').html($(this).parent().parent().find('.event-desc').html());
+            $('#modal-e-img').attr('src', $(this).parent().parent().find('.event-img').html());
             $('#eventModal').modal('show'); 
-
         });
     </script>
 @endsection
