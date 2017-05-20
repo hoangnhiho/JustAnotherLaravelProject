@@ -9,7 +9,7 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 body {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1427,7 +1427,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .news-banner-img-info{
-  max-height: 20vh;
+  max-height: 350px;
   width: 100%;
   background: rgba(0,0,0,0.3);
 }

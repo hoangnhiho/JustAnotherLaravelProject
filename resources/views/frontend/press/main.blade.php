@@ -1,65 +1,27 @@
 
 @extends('layouts.frontendApp')
 @section('content')
-<style>
-
-</style>
-    <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
-                                <div class="carousel-content" style="color: black">
-                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
-                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
-                                    <p>January 2, 2017</p>
-                                </div>
-                            </div>
+    <link href="{{ url('css/buy.css') }}" rel="stylesheet">
+    <section id="main-slider" style="height:500px; background-image: url({{ url('images/press/rnd.jpg') }});background-repeat: no-repeat;background-size: cover; overflow-y: hidden;">
+        <div class="slider-inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-sm-offset-7" style="background: rgba(255,255,255,0.7);">
+                        <div class="carousel-content" style="color: black; height: 500px;margin-top: 100px;">
+                            <br>
+                            <h2 style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
+                            <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
+                            <p>January 2, 2017</p>
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url({{ url('images/press/rnd.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-sm-offset-6" style="height:70vh;background: rgba(255,255,255,0.7);">
-                                <div class="carousel-content" style="color: black">
-                                    <h2  style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
-                                    <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
-                                    <p>January 2, 2017</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.owl-carousel-->
+            </div>
+        </div>
     </section><!--/#main-slider-->
 
     <!-- This is for the area after the slides -->
     <div class="container container-white" style="margin-bottom: 30px">
-        <div class="row">
-            <div class="col-xs-12">
-                <h3 style="margin-top: 10px; margin-bottom: 0px">Additional Reading</h3>
-                <hr style="margin-top: 5px">
-            </div>
-
-        </div>
-
-        <div class="row">
-            <a href="{{ url('press_event') }}">
-                <div class="col-xs-12 add-reading">
-                    <div class="" style="background: url({{ url('images/press/events.JPG') }}) no-repeat center center; background-size: cover;"> 
-                    <div class="news-banner-img-info"><h3>Events</h3></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
+        <br>
         <div class="row">
             <a href="{{ url('press_market') }}">
                 <div class="col-xs-6 col-sm-3 add-reading">
@@ -91,8 +53,17 @@
             </a>
             <hr>
         </div>
-
+        <br>
+        <div class="row">
+            <a href="{{ url('press_event') }}">
+                <div class="col-xs-12 add-reading">
+                    <div class="" style="background: url({{ url('images/press/events.JPG') }}) no-repeat center center; background-size: cover;"> 
+                    <div class="footer-img-info"><h3>Events</h3></div>
+                </div>
+            </a>
+        </div>
     </div>
+</div>
 @endsection
 @section('customjs')
     <script>

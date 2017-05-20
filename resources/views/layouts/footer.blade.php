@@ -1,4 +1,3 @@
-
 @if (!empty($footerCarousels))
 <section id="footer-slider">
     <div class="owl-carousel">
@@ -25,6 +24,9 @@
 </section><!--/#main-slider-->
 @endif
 <br>
+
+
+@if (Request::path() != 'pressroom')
 <footer id="footer">
     <div class="container" id="footer-container">
         <div class="row" id="footer-row">
@@ -41,6 +43,19 @@
         </div>
     </div>
 </footer><!--/#footer-->
+@else
+<footer id="footer">
+    <div class="container" id="footer-container">
+        <div class="row" id="footer-row">
+            <div class="col-sm-12" id="footer-bar-text">
+                <p class="text-center">Get the latest updates from homestates   <input type="text" name="email" class="" placeholder="Email" style="margin-left: 10px; width: 200px; color:black">
+                <i class="fa fa-envelope-o" style="margin-left: -25px;" aria-hidden="true"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer><!--/#footer-->
+@endif
 
 <div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; background-color: #E7E8EA;">
     <div class="row">

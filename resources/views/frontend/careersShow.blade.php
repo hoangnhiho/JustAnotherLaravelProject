@@ -40,39 +40,19 @@
 
 </style>
 <link href="{{ url('css/career.css') }}" rel="stylesheet">
-    <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/aboutus/bg1.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content">
-                                    <h2 style="text-align: right; padding-top: 70px">HELP REDEFINE<br>REAL ESTATE</h2>
-                                    <!-- <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p> -->
-                                </div>
-                            </div>
+<link href="{{ url('css/buy.css') }}" rel="stylesheet">
+    <section id="main-slider" style="height:500px; background-image: url({{ url('images/aboutus/bg1.jpg') }});background-repeat: no-repeat;background-size: cover;">
+        <div class="slider-inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 pull-right">
+                        <div class="carousel-content">
+                            <h2 style="margin-top: 350px; text-align: right">DEFINED BY OUR PEOPLE<br>DRIVEN BY RESULTS</h2>
                         </div>
                     </div>
                 </div>
-            </div><!--/.item-->
-            <div class="item" style="background-image: url({{ url('images/aboutus/bg1.jpg') }});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>3.5%</span> RENTAL MANAGEMENT FEE FOR THE FIRST FIVE YEARS</h2>
-                                    <p>Sign up to a 10 year management agreement for your property with Homestates by 31 March 2017 and we'll give you 3.5% for the first five years.</p>
-                                    <p>Conditions apply.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.owl-carousel-->
+            </div>
+        </div>
     </section><!--/#main-slider-->
 
     <!--  Careers -->
@@ -124,7 +104,7 @@
                         </div>
                         <div class='col-xs-12'>
                             <div class="form-group">
-                                <textarea class="form-control form-text" name="cv" placeholder="Cover Letter"></textarea> 
+                                <textarea class="form-control form-text" name="cv" placeholder="Please add a short description regarding your application here."></textarea> 
                             </div>
                         </div>
                         <hr>

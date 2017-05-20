@@ -11,8 +11,6 @@
     <div class="container-fluid wow fadeInDown" style="background-color: white; padding:40px 40px;">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 text-center">
-                <h1>Talk to a local Homestates agent</h1>
-                <p>Request a complementary listing consultation for your home</p>
                 <form action="{{ url('listings') }}" method="get">
                     <div class="row">
                         <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
