@@ -34,6 +34,9 @@
                                         <option value="apartment"  @if ($params->prop_type == 'apartment') selected @endif>Apartment</option>
                                         <option value="house"  @if ($params->prop_type == 'house') selected @endif>House</option>
                                         <option value="land"  @if ($params->prop_type == 'land') selected @endif>Land</option>
+                                        <option value="acreage"  @if ($params->prop_type == 'acreage') selected @endif>Acreage</option>
+                                        <option value="commercial"  @if ($params->prop_type == 'commercial') selected @endif>Commercial</option>
+                                        <option value="townHouse"  @if ($params->prop_type == 'townHouse') selected @endif>Townhouse</option>
                                     </select>                        
                             </div>
                         </div>
@@ -84,15 +87,17 @@
                     <div class="col-xs-6 col-sm-3 pull-right">
                         <select class="form-control" id="orderBySelect">
                             <option value="asc">--- SortBy ---</option>
-                            <option value="asc">Price (low to high)</option>
-                            <option value="desc">Price (high to low)</option>
+                            <option value="asc" @if ($params->order_type == 'asc') selected @endif>Price (low to high)</option>
+                            <option value="desc" @if ($params->order_type == 'desc') selected @endif>Price (high to low)</option>
                         </select>
                     </div>
                 </div>
                 @foreach ($listings as $listing)
                     <div class="row" style="background-color: white; margin-bottom: 30px">
                         <div class="col-xs-12 col-sm-4" style="padding-left:0px">
-                            <a href="{{ $listing->img_url }}" rel="prettyPhoto" title="{{ $listing->address }}"><img class="img-responsive listing-images" src="{{ $listing->img_url }}" alt="{{ $listing->address }}" /></a>
+                            <a href="{{ url('listings/'.$listing->id) }}">
+                                <img class="img-responsive listing-images" src="{{ $listing->img_url }}" alt="{{ $listing->address }}" />
+                            </a>
                         </div>
                         <a href="{{ url('listings/'.$listing->id) }}"><div class="col-xs-12 col-sm-8">
                             <div class="row" style="margin-top: 20px">

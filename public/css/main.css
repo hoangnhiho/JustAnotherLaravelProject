@@ -1341,9 +1341,8 @@ a{
 }
 
 .listing-images:hover {
-   -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    transform: scale(1.1,1.1);
+-webkit-filter: brightness(80%);
+
 }
 
 .dropdown > ul{

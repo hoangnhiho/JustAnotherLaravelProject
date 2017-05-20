@@ -161,7 +161,20 @@ class FrontendController extends Controller
         return view('frontend.message', compact('message', 'caption'));
     }
 
-
+    public function newsletterSignup(Request $request)
+    {
+        $input = $request->all();
+        
+        // Send Mail
+        $mailData['input']=(object)$input;
+        Mail::send('emails.newsletter', $mailData, function ($message) use ($input,$request){
+            $message->to('frank.law@homestates.com.au')->subject('Homestate Newsletter Sign up');
+        });
+        
+        $message = 'Thank You';
+        $caption = 'You\'ve successfully signed up.';
+        return view('frontend.message', compact('message', 'caption'));
+    }
 
 
     public function aboutus()

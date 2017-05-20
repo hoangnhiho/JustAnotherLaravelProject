@@ -47,16 +47,19 @@
 <footer id="footer">
     <div class="container" id="footer-container">
         <div class="row" id="footer-row">
-            <div class="col-sm-12" id="footer-bar-text">
-                <p class="text-center">Get the latest updates from homestates   <input type="text" name="email" class="" placeholder="Email" style="margin-left: 10px; width: 200px; color:black">
-                <i class="fa fa-envelope-o" style="margin-left: -25px;" aria-hidden="true"></i>
-                </p>
-            </div>
+            <form action="{{ url('newsletter_signup') }}" method="post">
+                {{ csrf_field() }}
+                <div class="col-sm-12" id="footer-bar-text">
+                    <p class="text-center">Get the latest updates from homestates   <input type="text" name="email" class="" placeholder="Email" style="margin-left: 10px; width: 200px; color:black"> <button type="submit" class="btn btn-primary" style="margin-left: 7px">Count me in</button>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </footer><!--/#footer-->
 @endif
 
+@if (Request::path() != 'listings')
 <div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; background-color: #E7E8EA;">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">
@@ -89,7 +92,7 @@
         </div>
     </div>
 </div>
-
+@endif
 <div class="container-fluid" style="background-color: #E7E8EA;">
     <div class="row">
         <div class="col-xs-offset-2 col-xs-8" style="color:black;">
