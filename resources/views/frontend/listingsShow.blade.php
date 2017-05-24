@@ -1,11 +1,31 @@
 @extends('layouts.frontendApp')
 @section('content')
+<style>
+.clickable{
+    text-align: center !important;
+}
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+.owl-pagination > .active > span{
+    background: none repeat scroll 0 0 #784BA7 !important;
+    opacity: 1!important;
+}
+</style>
     <link href="{{ url('css/sell.css') }}" rel="stylesheet">
-    <section id="main-slider">
+    <section id="main-slider" >
         <div class="owl-carousel">
             @foreach (json_decode($listing->img_urls) as $img_url)
-                <div class="item img-responsive" style="background-image: url({{ $img_url }});">
-                </div><!--/.item-->
+                <a href="{{ $img_url }}" rel="prettyPhoto"><div class="item img-responsive" style="background-image: url({{ $img_url }});"></div></a>
             @endforeach
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->  
@@ -30,7 +50,6 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-9">
-                        <p>{{ $listing->caption }}</p>
                     </div>
                     <div class="col-xs-1 text-center">
                         <p>Beds</p>
@@ -58,13 +77,13 @@
                         <p>Water rates <span class="pull-right">${{ $listing->water_rate }}</span></p>
                         <hr>
                         <h5>Available documents</h5>
-                        <p><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Floorplans</a></p>
+                        <p><a href="{{ $listing->floor_plan }}" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i> Floorplans</a></p>
                         <p><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Expression of Interest</a></p>
                         <h5>Share this property</h5>
                         <p>
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="mailto:?subject={{$listing->address}}&body={{ url()->current() }}" style="margin-right: 10px"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/home?status=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </p>
                     </div>
                 </div>
@@ -83,10 +102,20 @@
         </div>
     </div>
 
+    <div class="container-fluid" style="padding: 0 0">
+        <div class="col-xs-12" style="padding: 0 0" >
+        <div id="map" style="width: 100%;height: 400px;"></div>
+        </div>
+        
+    </div>
 @endsection
 @section('customjs')
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Mx7Xn71WqG3BEsY5bGs4snSRDB1jdHs&callback=initMap">
+    </script>    
     <script>
         // listing-preview
+        $("a[rel^='prettyPhoto']").prettyPhoto();
         $( ".listing-preview" ).hover(
             function() {
                 $( this ).find(".overlayer-info").fadeIn( "slow" );
@@ -95,4 +124,21 @@
             }
         );
     </script>
+
+    <script>
+      function initMap() {
+        var position = {lat: {{ $listing->lat }}, lng: {{ $listing->lng }} };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: position
+        });
+        map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map
+        });
+      }
+    </script>
+
 @endsection

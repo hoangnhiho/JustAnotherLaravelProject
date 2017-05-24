@@ -1,7 +1,7 @@
 @extends('layouts.frontendApp')
 @section('content')
     <link href="{{ url('css/sell.css') }}" rel="stylesheet">
-    <section id="main-slider">
+    <section id="main-slider" style="margin-top: 50px">
         <div class="owl-carousel">
             @foreach (json_decode($project->img_urls) as $img_url)
                 <div class="item img-responsive" style="background-image: url({{ $img_url }});">

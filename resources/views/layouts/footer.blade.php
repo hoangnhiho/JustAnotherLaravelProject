@@ -59,7 +59,7 @@
 </footer><!--/#footer-->
 @endif
 
-@if (Request::path() != 'listings')
+@if ( strpos(Request::path(), 'listings') != '0')
 <div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; background-color: #E7E8EA;">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10">

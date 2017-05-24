@@ -1,3 +1,34 @@
+
+<script type="text/javascript">
+    $('document').ready(function () {
+    $('#google_translate_element').on("click", function () {
+
+        // Change font family and color
+        $("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
+            .css({
+                'color': '#544F4B',
+                'font-family': 'Raleway'
+            });
+
+        // Change hover effects
+        $("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+            $(this).css('background-color', '#F38256').find('span.text').css('color', 'yellow');
+        }, function () {
+            $(this).css('background-color', 'red').find('span.text').css('color', '#544F4B');
+        });
+
+        // Change Google's default blue border
+        $("iframe").contents().find('.goog-te-menu2').css('border', '1px solid #F38256');
+
+        // Change the iframe's box shadow
+        $(".goog-te-menu-frame").css({
+            '-moz-box-shadow': '0 3px 8px 2px #666666',
+            '-webkit-box-shadow': '0 3px 8px 2px #666',
+            'box-shadow': '0 3px 8px 2px #666'
+        });
+    });
+});
+</script>
 <header id="header">
     <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
         <div class="container">
@@ -40,8 +71,9 @@
                         </ul>
                     </li>
 
-                    <li class="scroll"><a href="{{ url('login') }}">Login</a></li> 
-                     <li class="scroll translate_test" id="google_translate_element"></li> 
+                    <!-- <li class="scroll"><a href="{{ url('login') }}">Login</a></li>  -->
+                    <li class="scroll translate_test" id="google_translate_element"><!-- <span class="caret"></span> --></li> 
+
                 </ul>
             </div>
         </div><!--/.container-->
@@ -50,8 +82,48 @@
 
 </header><!--/header-->
 
+<!-- <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'nl', includedLanguages: 'zh-CN,zh-TW,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
 <script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'nl', includedLanguages: 'zh-CN,zh-TW,en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, autoDisplay: false}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<style type="text/css">
+
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active
+{
+    display: none;
+}
+select.goog-te-combo {
+    color: #784ba7;
+    margin-left: 12px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: none;
+   /* -moz-appearance: none;
+     -webkit-appearance: none; */
+    background: transparent;
+}
+.goog-te-gadget {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+/*li#google_translate_element span.caret {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    color: #794da8;
+    left: 144px;
+}*/
+</style>
