@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:image" content="{{ url('favicon.png') }}" />
     <title>Homestates</title>
 
     @include('layouts.css')

@@ -35,6 +35,7 @@ class ListingsController extends Controller
             if ($propType == 'all'){
                 $listings = Listing::where('address', 'like', '%'.$search.'%')->where('bed_no', '>=', $bed)->where('bath_no', '>=', $bath)->where('price', '>=', $minPrice)->where('price', '<=', $maxPrice)->orderBy('price', $orderType)->paginate(5);
             }else{
+                // return json_encode($propType);
                 $listings = Listing::where('address', 'like', '%'.$search.'%')
                 ->where('bed_no', '>=', $bed)
                 ->where('bath_no', '>=', $bath)

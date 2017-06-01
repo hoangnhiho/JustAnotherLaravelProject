@@ -36,8 +36,8 @@
             <div class="col-sm-5 col-xs-12" id="footer-bar-icons">
                 <ul class="social-icons pull-left" style="margin-left: 1px"> Follow us
                     <li><a href="https://www.facebook.com/homestates/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" target="_blank"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" target="_blank"></i></a></li>
+                    <li><a href="https://twitter.com/homestates" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+                    <li><a href="https://www.instagram.com/homestates/" target="_blank"><i class="fa fa-instagram" target="_blank"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +99,7 @@
             <div class="row footer-links">
                 <div class="col-xs-3">
                     <a href="{{ url('/buy#expertiseSection') }}"><p style="color:black"><b>Buy</b></p></a>
-                    <p>Choosing Homestates</p>
+                    <a href="{{ url('/buy#expertiseSection') }}"><p>Choosing Homestates</p></a>
                     <a href="{{ url('/listings') }}"><p style="color:black">Current Listings</p></a>
                 </div>
                 <div class="col-xs-3">
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-xs-3">
                     <a href="{{ url('/pressroom') }}"><p style="color:black"><b>Press Room</b></p></a>
-                    <a href="{{ url('/events') }}"><p style="color:black">Events</p></a>
+                    <a href="{{ url('/press_event') }}"><p style="color:black">Events</p></a>
                     <a href="{{ url('/homestatesmagazine') }}"><p style="color:black">Homestates</p></a>
                 </div>
                 <div class="col-xs-3">

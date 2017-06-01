@@ -125,6 +125,13 @@ class FrontendController extends Controller
         $footerCarousels = self::getFooterCarousel('migration');
         return view('frontend.press.event', compact('footerCarousels', 'press', 'events'));
     }
+    public function pressEventShow($eventId)
+    {
+        $press = true;
+        $event = Event::find($eventId);
+        $footerCarousels = self::getFooterCarousel('migration');
+        return view('frontend.press.eventShow', compact('footerCarousels', 'press', 'event'));
+    }
     public function pressPromo()
     {
         $press = true;

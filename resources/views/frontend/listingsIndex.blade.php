@@ -86,18 +86,21 @@
                     </div>
                     <div class="col-xs-6 col-sm-3 pull-right">
                         <select class="form-control" id="orderBySelect">
-                            <option value="asc">--- SortBy ---</option>
+                            <option value="asc">--- Sort by ---</option>
                             <option value="asc" @if ($params->order_type == 'asc') selected @endif>Price (low to high)</option>
                             <option value="desc" @if ($params->order_type == 'desc') selected @endif>Price (high to low)</option>
                         </select>
                     </div>
                 </div>
                 @foreach ($listings as $listing)
-                    <div class="row" style="background-color: white; margin-bottom: 30px">
+                    <div class="row" style="background-color: white; margin-bottom: 30px;">
                         <div class="col-xs-12 col-sm-4" style="padding-left:0px">
                             <a href="{{ url('listings/'.$listing->id) }}">
                                 <img class="img-responsive listing-images" src="{{ $listing->img_url }}" alt="{{ $listing->address }}" />
                             </a>
+                            @if ($listing->sold == 1)
+                            <div style="bottom: 0; height:30px;background-color:#784BA7; color:white; padding-left: 5px" class=""><b>SOLD</b></div>
+                            @endif
                         </div>
                         <a href="{{ url('listings/'.$listing->id) }}"><div class="col-xs-12 col-sm-8">
                             <div class="row" style="margin-top: 20px">
@@ -116,7 +119,15 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-9">
-                                    <p>{{ $listing->caption }}</p>
+                                    @if($listing->price == 0)
+                                        <p>Price on Application</p>
+                                    @else
+                                        @if ($listing->type == 'rent')
+                                            <p>${{ $listing->price }} per week.</p>
+                                        @else
+                                            <p>From: ${{ $listing->price }}.</p>
+                                        @endif
+                                    @endif
                                 </div>
                                 <div class="col-xs-1 text-center">
                                     <p>Beds</p>
@@ -130,7 +141,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>{!! $listing->mini_desc !!}</p>
+                                    {!! $listing->mini_desc !!}
                                 </div>
                             </div>
                         </div>

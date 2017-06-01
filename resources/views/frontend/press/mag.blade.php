@@ -30,32 +30,34 @@
         </div>
     </section><!--/#main-slider-->
 
-
-    <!-- This is for the area after the slides -->
-    <div class="container container-white" style="margin-bottom: 10px; overflow-x: hidden">
+    <div class="container-fluid container-white" style="padding-top:50px; padding-bottom: 50px; margin-top: 40px" id="projectsList">
         <div class="row">
-            <div class="col-xs-12">
-                <h3 style="margin-top: 10px; margin-bottom: 0px">Magazines</h3>
-                <hr style="margin-top: 5px">
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div id="event-owl-carousel">
-                @foreach ($mags as $event)
-                    <div class="event-car-item" data-link="event-panel-{{ $event->id }}" style="background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;"> 
-                        <div class="footer-img-info"><h3 class="event-name">{{ $event->name }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-pdf">{{ $event->pdf_url }}</h3></div>
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10">
+                        <h2 style="text-align: center;">
+                            Our magazines
+                        </h2>
+                        <p style="text-align: center">
+                            A selection of our most recent magazines
+                        </p>
                     </div>
-                @endforeach
+                </div>
+                <div class="row">
+                    @foreach ($mags as $mag)
+                        <div class="col-xs-12 col-sm-4 footer-img-links event-car-item" data-link="event-panel-{{ $mag->id }}" style="background: url({{ $mag->img_url  }}) no-repeat center center; background-size: cover;">
+                            <div class="footer-img-info"><h3 class="event-name">{{ $mag->name }}</h3></div>
+
+
+                            <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $mag->desc }}</h3></div>
+                            <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $mag->img_url }}</h3></div>
+                            <div class="footer-img-info" style="display: none;"><h3 class="event-pdf">{{ $mag->pdf_url }}</h3></div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
-            <hr>
         </div>
     </div>
-
 
 <!-- Modal -->
 <div id="eventModal" class="modal fade" role="dialog" >

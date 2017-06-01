@@ -31,6 +31,7 @@ Route::get('/press_news', 'FrontendController@pressNews');
 Route::get('/press_research', 'FrontendController@pressResearch');
 Route::get('/press_video', 'FrontendController@pressVideo');
 Route::get('/press_event', 'FrontendController@pressEvent');
+Route::get('/events/{eventId}', 'FrontendController@pressEventShow');
 Route::get('/pressroom', 'FrontendController@pressRoom');
 Route::get('/press_promo', 'FrontendController@pressPromo');
 Route::post('/press_promo', 'FrontendController@emailPressPromo');

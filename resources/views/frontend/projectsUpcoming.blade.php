@@ -53,9 +53,9 @@
                                     <h3>{{ $project->title }}</h3>
                                 </div>
                                 @if ($project->upcoming == true)
-                                    <div class="sold-banner">
+<!--                                     <div class="sold-banner">
                                         <a>Upcoming</a>
-                                    </div>
+                                    </div> -->
                                 @endif
                             </div>
                         </a>

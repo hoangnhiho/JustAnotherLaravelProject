@@ -21,6 +21,7 @@
     opacity: 1!important;
 }
 </style>
+
     <link href="{{ url('css/sell.css') }}" rel="stylesheet">
     <section id="main-slider" >
         <div class="owl-carousel">
@@ -29,10 +30,9 @@
             @endforeach
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->  
-
-    <div class="container-fluid container-white wow fadeInDown" style="margin-bottom: 40px">
+    <div class="container-fluid wow fadeInDown" style="">
         <div class="row">
-            <div class="col-xs-offset-1 col-xs-10" style="background-color: white; padding:40px 40px;">
+            <div class="col-xs-offset-1 col-xs-10" style="padding-top:20px;">
 
                 <div class="row" style="margin-top: 20px">
                     <div class="col-xs-9">
@@ -61,6 +61,14 @@
                         <p>Cars</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-white wow fadeInDown" style="margin-top: 10px">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10" style="background-color: white; padding:40px 40px;">
+
+
 
                 <div class="row" style="margin-top: 20px">
                     <div class="col-xs-12 col-sm-7">
@@ -81,9 +89,9 @@
                         <p><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Expression of Interest</a></p>
                         <h5>Share this property</h5>
                         <p>
-                            <a href="mailto:?subject={{$listing->address}}&body={{ url()->current() }}" style="margin-right: 10px"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/home?status=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="mailto:?subject={{$listing->address}}&body={{ url()->current() }}" style="margin-right: 10px" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" target="_blank" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/home?status=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" target="_blank" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </p>
                     </div>
                 </div>

@@ -31,30 +31,42 @@
         </div>
     </section><!--/#main-slider-->
 
-
-    <!-- This is for the area after the slides -->
-    <div class="container container-white" style="margin-bottom: 10px; overflow-x: hidden">
+    <div class="container-fluid wow fadeInDown" style="margin-top: 30px">
         <div class="row">
-            <div class="col-xs-12">
-                <h3 style="margin-top: 10px; margin-bottom: 0px">Events</h3>
-                <hr style="margin-top: 5px">
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div id="event-owl-carousel">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10">
                 @foreach ($events as $event)
-                    <div class="event-car-item" data-link="event-panel-{{ $event->id }}" style="background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;"> 
-                        <div class="footer-img-info"><h3 class="event-name">{{ $event->name }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
-                        <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
+                    <div class="row" style="background-color: white; margin-bottom: 30px;">
+                        <div class="col-xs-12 col-sm-4" style="padding-left:0px">
+                            <a href="{{ url('events/'.$event->id) }}">
+                                <img class="img-responsive event-images" src="{{ $event->img_url }}" alt="{{ $event->address }}" />
+                            </a>
+                        </div>
+                        <a href="{{ url('events/'.$event->id) }}">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="row" style="margin-top: 20px">
+                                    <div class="col-xs-12">
+                                        <h4 class="event-name">{{ $event->name }}</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        {{ $event->desc }}
+                                    </div>
+                                </div>
+                                <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>
+                                <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
             </div>
-            <hr>
         </div>
     </div>
+
+
+
+
+
 
 
 <!-- Modal -->

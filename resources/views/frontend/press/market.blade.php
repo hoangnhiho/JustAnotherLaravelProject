@@ -39,6 +39,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <h4 class="event-name">{{ $event->name }}</h4>
+                    <p>{{ $event->caption }}</p>
                     <p  class="event-desc">{!! $event->desc !!}</p>
                     <button class="btn btn-primary event-car-item">View Events ></button>
 

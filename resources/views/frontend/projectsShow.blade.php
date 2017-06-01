@@ -23,9 +23,9 @@
                         <p><a href="{{ $project->floor_plan }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Floorplans</a></p>
                         <h5>Share this property</h5>
                         <p>
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                            <a href="#" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="mailto:?subject={{$project->address}}&body={{ url()->current() }}" target="_blank" style="margin-right: 10px"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/projects/{{ $project->id }}" target="_blank" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                            <a href="https://twitter.com/home?status=http%3A//homestatesgroup.com.au/projects/{{ $project->id }}" target="_blank" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </p>
                     </div>
                 </div>
