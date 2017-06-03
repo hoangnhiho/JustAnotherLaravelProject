@@ -45,14 +45,16 @@
                 </div>
                 <div class="row">
                     @foreach ($mags as $mag)
-                        <div class="col-xs-12 col-sm-4 footer-img-links event-car-item" data-link="event-panel-{{ $mag->id }}" style="background: url({{ $mag->img_url  }}) no-repeat center center; background-size: cover;">
-                            <div class="footer-img-info"><h3 class="event-name">{{ $mag->name }}</h3></div>
+                        <a href="{{ $mag->pdf_url }}" target="_blank">
+                            <div class="col-xs-12 col-sm-4 footer-img-links event-car-item" data-link="event-panel-{{ $mag->id }}" style="background: url({{ $mag->img_url  }}) no-repeat center center; background-size: cover;">
+                                <div class="footer-img-info"><h3 class="event-name">{{ $mag->name }}</h3></div>
 
 
-                            <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $mag->desc }}</h3></div>
-                            <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $mag->img_url }}</h3></div>
-                            <div class="footer-img-info" style="display: none;"><h3 class="event-pdf">{{ $mag->pdf_url }}</h3></div>
-                        </div>
+                                <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $mag->desc }}</h3></div>
+                                <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $mag->img_url }}</h3></div>
+                                <div class="footer-img-info" style="display: none;"><h3 class="event-pdf">{{ $mag->pdf_url }}</h3></div>
+                            </div>
+                        </a>
                     @endforeach
                 </div>
             </div>
@@ -97,14 +99,14 @@
                 ]
         })
 
-        $('.event-car-item').click(function() {
+        // $('.event-car-item').click(function() {
 
-            $('#modal-e-title').html($(this).find('.event-name').html());
-            $('#modal-e-desc').html($(this).find('.event-desc').html());
-            $('#modal-e-img').attr('src', $(this).find('.event-img').html());
-            $('#modal-e-pdf').attr('href', $(this).find('.event-pdf').html());
-            $('#eventModal').modal('show'); 
+        //     $('#modal-e-title').html($(this).find('.event-name').html());
+        //     $('#modal-e-desc').html($(this).find('.event-desc').html());
+        //     $('#modal-e-img').attr('src', $(this).find('.event-img').html());
+        //     $('#modal-e-pdf').attr('href', $(this).find('.event-pdf').html());
+        //     $('#eventModal').modal('show'); 
 
-        });
+        // });
     </script>
 @endsection

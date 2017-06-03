@@ -57,7 +57,7 @@
                             <li><a href="{{ url('homestatesmagazine') }}">Magazine</a></li>
                             <li><a href="{{ url('press_news') }}">News</a></li>
                             <li><a href="{{ url('press_research') }}">Research & Development</a></li>
-                            <li><a href="{{ url('press_video') }}">Vidoes</a></li>
+                            <li><a href="{{ url('press_video') }}">Videos</a></li>
                             <li><a href="{{ url('press_event') }}">Events</a></li>
                             <li><a href="{{ url('press_promo') }}">Promotions</a></li>
                         </ul>

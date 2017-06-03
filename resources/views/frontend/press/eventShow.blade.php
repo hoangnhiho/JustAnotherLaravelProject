@@ -3,13 +3,13 @@
 
 
     <link href="{{ url('css/sell.css') }}" rel="stylesheet">
-    <section id="main-slider" style="height:60vh; background-image: url({{ $event->img_url }});background-repeat: no-repeat;background-size: cover;">
+    <section id="main-slider" style="height:60vh; background: url({{ $event->img_url }}) no-repeat center center; background-size: cover;">
         <div class="slider-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 pull-right">
+                    <div class="col-sm-12 ">
                         <div class="carousel-content">
-                            <h2 style="margin-top: 30vh; text-align: right">{{ $event->name }}</h2>
+                            <h2 style="margin-top: 50vh; text-align: center">{{ $event->name }}</h2>
                         </div>
                     </div>
                 </div>

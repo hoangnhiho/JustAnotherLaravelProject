@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-sm-6 pull-left">
                         <div class="carousel-content">
-                            <h2 style="margin-top: 480px; text-align: left">EFFICIENT AND SIMPLE <br> INTERMEDIARY SERVICES</h2>
+                            <h2 style="margin-top: 350px; text-align: left">EFFICIENT AND SIMPLE <br> INTERMEDIARY SERVICES</h2>
                         </div>
                     </div>
                 </div>

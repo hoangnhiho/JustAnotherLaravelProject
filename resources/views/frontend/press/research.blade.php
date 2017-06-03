@@ -22,22 +22,23 @@
     <!-- This is for the area after the slides -->
     <div class="container container-white" style="margin-bottom: 30px">
 
-        @foreach ($projects as $project)
+        @foreach ($articles as $project)
             <div class="row" style="margin-bottom: 15px; margin-top: 15px">
                 <div class="col-xs-12 col-sm-6">
-                    <img class="img-responsive" style="width:100%; height:auto" src="{{ $project->img_url }}" />
+                    <img class="img-responsive" style="width:100%; height:auto;" src="{{ $project->img_url }}" />
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <h4>{{ $project->title }}</h4>
+                    <h4>{{ $project->name }}</h4>
                     <p>{{ $project->caption }}</p>
-                    <p>{!! $project->mini_desc !!}</p>
-                    <a class="btn btn-primary" href="{{ url('projects/'.$project->id) }}">View Project ></a>
+                    <p>{{ $project->desc }}</p>
+                    <a class="btn btn-primary" href="{{ $project->pdf_url }}" target="_blank">View Project ></a>
                 </div>
             </div>
+            <hr>
         @endforeach
         <div class="row">
             <div class="col-xs-12 text-center">
-                {{ $projects->links() }}
+                {{ $articles->links() }}
             </div>
         </div>
 

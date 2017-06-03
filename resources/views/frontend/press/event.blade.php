@@ -65,10 +65,6 @@
 
 
 
-
-
-
-
 <!-- Modal -->
 <div id="eventModal" class="modal fade" role="dialog" >
     <div class="modal-dialog modal-lg">
