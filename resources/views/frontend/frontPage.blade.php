@@ -2,7 +2,7 @@
 @section('content')
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url({{ url('images/frontpage/frontheader1.JPG') }});">
+            <div class="item" style="background: url({{ url('images/frontpage/frontheader1.JPG') }}) no-repeat center center;">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-            <div class="item" style="background-image: url({{ url('images/press/promo.jpg') }});">
+            <div class="item" style="background: url({{ url('images/press/promo.jpg') }}) no-repeat center center;">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -69,8 +69,8 @@
 
     <br>
 
-        <div class="container-fluid wow fadeInDown" style="height: 550px;">
-            <div class="row wow fadeInDown overlap-img animated" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/worldmap.png') }}) no-repeat center center; background-size: cover;">
+        <div class="container-fluid wow fadeInDown world-map" style="height: 550px;">
+            <div class="row wow fadeInDown overlap-img animated map-img" style="background: url({{ url('images/frontpage/worldmap/worldmap.png')  }}) no-repeat center center;">
                 <div class="col-sm-offset-1 col-sm-4 col-xs-10" style="padding: 0px 0px; margin-top: 50px; margin-bottom: 20px;">
                     <!-- <div style="height:300px;"></div> -->
                     <div class="house-content">
@@ -82,16 +82,16 @@
                 </div>
 
             </div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="400ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Japan.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="600ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/S-Korea.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="800ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/China.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Taiwan.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1200ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Hong-Kong.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1400ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Thailand.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="16000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Vietnam.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="1800ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Malaysia.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2000ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Singapore.png') }}) no-repeat center center; background-size: cover;"></div>
-            <div class="row wow fadeInDown overlap-img animated" data-wow-delay="2200ms" style="margin: 0px 0px; background: url({{ url('images/frontpage/worldmap/Indonesia.png') }}) no-repeat center center; background-size: cover;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="400ms"  style="background: url({{ url('images/frontpage/worldmap/Japan.png') }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="600ms"  style="background: url({{ url('images/frontpage/worldmap/S-Korea.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="800ms"  style="background: url({{ url('images/frontpage/worldmap/China.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="1000ms" style="background: url({{ url('images/frontpage/worldmap/Taiwan.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="1200ms" style="background: url({{ url('images/frontpage/worldmap/Hong-Kong.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="1400ms" style="background: url({{ url('images/frontpage/worldmap/Thailand.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="16000ms" style="background: url({{ url('images/frontpage/worldmap/Vietnam.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="1800ms" style="background: url({{ url('images/frontpage/worldmap/Malaysia.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="2000ms" style="background: url({{ url('images/frontpage/worldmap/Singapore.png')  }}) no-repeat center center;"></div>
+            <div class="row wow fadeInDown overlap-img animated map-img" data-wow-delay="2200ms" style="background: url({{ url('images/frontpage/worldmap/Indonesia.png')  }}) no-repeat center center;"></div>
         </div>
 
     <br>

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta property="og:image" content="{{ url('favicon.png') }}" />
+<meta property="og:image" content="http://via.placeholder.com/600x315"/>
+<meta property="og:image:secure_url" content="http://via.placeholder.com/300x300" />
+<link rel="apple-touch-icon" href="http://via.placeholder.com/300x300">
+<link rel="image_src" href="http://via.placeholder.com/300x300"/>
+
     <title>Homestates</title>
 
     @include('layouts.css')
@@ -26,4 +30,9 @@
     @include('layouts.js')
     @yield('customjs')
 </body>
+<script>
+    // $('#home').css('top', '100px');
+    $('#home').css('margin-top', '100px');
+    $('#home').css('top', '0px');
+</script>
 </html>

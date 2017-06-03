@@ -9,6 +9,7 @@ use App\Models\FooterCarousel;
 use App\Models\Project;
 use App\Models\Event;
 use App\Models\Mag;
+use App\Models\Research;
 use Mail;
 
 class FrontendController extends Controller
@@ -82,15 +83,13 @@ class FrontendController extends Controller
     {
         $press = true;
         $events = Event::get();
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.market', compact('footerCarousels', 'events'));
+        return view('frontend.press.market', compact( 'events'));
     }
     public function pressMag()
     {
         $press = true;
         $mags = Mag::orderBy('created_at', 'asc')->get();
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.mag', compact('footerCarousels', 'mags'));
+        return view('frontend.press.mag', compact( 'mags'));
     }
     public function pressRoom()
     {
@@ -101,42 +100,36 @@ class FrontendController extends Controller
     {
         $press = true;
         $events = Event::get();
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.news', compact('footerCarousels', 'events'));
+        return view('frontend.press.news', compact('events'));
     }
     public function pressResearch()
     {
         $press = true;
-        $footerCarousels = self::getFooterCarousel('migration');
-        $projects = Project::paginate(5);
-        return view('frontend.press.research', compact('footerCarousels', 'press', 'projects'));
+        $articles = Research::paginate(5);
+        return view('frontend.press.research', compact('press', 'articles'));
     }
     public function pressVideo()
     {
         $press = true;
-        $footerCarousels = self::getFooterCarousel('migration');
         $projects = Project::paginate(9);
-        return view('frontend.press.video', compact('footerCarousels', 'press', 'projects'));
+        return view('frontend.press.video', compact('press', 'projects'));
     }
     public function pressEvent()
     {
         $press = true;
         $events = Event::get();
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.event', compact('footerCarousels', 'press', 'events'));
+        return view('frontend.press.event', compact('press', 'events'));
     }
     public function pressEventShow($eventId)
     {
         $press = true;
         $event = Event::find($eventId);
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.eventShow', compact('footerCarousels', 'press', 'event'));
+        return view('frontend.press.eventShow', compact('press', 'event'));
     }
     public function pressPromo()
     {
         $press = true;
-        $footerCarousels = self::getFooterCarousel('migration');
-        return view('frontend.press.promo', compact('footerCarousels', 'press'));
+        return view('frontend.press.promo', compact('press'));
     }
     public function emailPressPromo(Request $request)
     {
