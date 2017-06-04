@@ -26,7 +26,7 @@
     <section id="main-slider" >
         <div class="owl-carousel">
             @foreach (json_decode($listing->img_urls) as $img_url)
-                <a href="{{ $img_url }}" rel="prettyPhoto"><div class="item img-responsive" style="background-image: url({{ $img_url }});"></div></a>
+                <a href="{{ $img_url }}" rel="prettyPhoto"><div class="item img-responsive" style="background: url({{ $img_url }}) no-repeat center center;"></div></a>
             @endforeach
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->  

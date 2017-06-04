@@ -13,7 +13,7 @@
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 text-center">
                 <form action="{{ url('listings') }}" method="get" id="listingForm">
                     <div class="row">
-                        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+                        <div class="col-xs-offset-1 col-xs-8">
                             <div class="form-group">
                                 <label for="usr">Street Address, postcode, suburb:</label>
                                 @if (isset($params->search))
@@ -22,6 +22,16 @@
                                     <input type="text" class="form-control" id="usr" name="search" value="">
                                 @endif
                             </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="form-group">
+                                <label for="usr">Rent/Buy</label>
+                                    <select class="form-control" name="type">
+                                        <option value="rent" @if ($params->type == 'rent') selected @endif>Rent</option>
+                                        <option value="sale"  @if ($params->type == 'sale') selected @endif>Buy</option>
+                                    </select> 
+                            </div>
+
                         </div>
                     </div>
                     

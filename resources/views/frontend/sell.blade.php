@@ -1,13 +1,13 @@
 @extends('layouts.frontendApp')
 @section('content')
     <link href="{{ url('css/buy.css') }}" rel="stylesheet">
-    <section id="main-slider" style="height:500px; background-image: url({{ url('images/sell/sellSlider1.jpg') }});background-repeat: no-repeat;background-size: cover;">
+    <section id="main-slider" style="height:500px; background: url({{ url('images/sell/sellSlider1.jpg') }}) no-repeat center center;background-size: cover;">
         <div class="slider-inner">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 pull-left">
                         <div class="carousel-content">
-                            <h2 style="margin-top: 480px; text-align: left">START THE CONVERSATION ABOUT YOUR HOME TODAY</h2>
+                            <h2 style="margin-top: 350px; text-align: left">START THE CONVERSATION ABOUT YOUR HOME TODAY</h2>
                         </div>
                     </div>
                 </div>
@@ -81,17 +81,11 @@
         </div>
     </div>
 
+
     <section id="" style="margin-top: 40px;">
         <div class="container-fluid wow fadeInDown">
             <div class="row">
-                <div class="col-sm-offset-2 col-sm-8 col-xs-12 text-center" style="">
-                    <h1 class="section-heading">Latest sales</h1>
-                    <p>A selection of our most recent sales</p>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
+                <a href="{{ url('listings/15') }}">
                 <div class="col-sm-offset-2 col-sm-5 col-xs-12 listing-preview listing-preview-top" id="listing-preview-top-left" style="">
                     <img class="img-responsive" src="https://i3.au.reastatic.net/1530x841/6cc0e076b3c5a34b53669842ebfc77975c24fabc7f48902a1e94210527d5d636/image3.jpg" alt=""/>
                     <div class="overlayer-info">
@@ -99,6 +93,8 @@
                         <p>2 BED 2 BATH 1 CAR</p>
                     </div>
                 </div>
+                </a>
+                <a href="{{ url('listings/11') }}">
                 <div class="col-sm-3 col-xs-12 listing-preview listing-preview-top" id="listing-preview-top-right" style="">
                     <img class="img-responsive" src="https://i2.au.reastatic.net/1530x841/19fc163bfdf0ee81248fe5b6d86e6c96cff886b85b56588f37bd5c557eabb3f9/image2.jpg" alt="" />
                     <div class="overlayer-info">
@@ -106,15 +102,18 @@
                         <p>2 BED 2 BATH 1 CAR</p>
                     </div>
                 </div>
+                </a>
             </div>
             <br>
             <div class="row">
+                <a href="{{ url('projects/4') }}">
                 <div class="col-sm-offset-2 col-sm-8 col-xs-12 listing-preview" style="max-height: 300px;height: 250px; overflow: hidden;">
                     <img class="img-responsive" src="{{ url('images/frontpage/thirdhouse1.jpg') }}" alt=""/>
                     <div class="overlayer-info" id="bigger-overlayer-info">
                         <h3 style="border-bottom: 2px solid #fff;">Nero</h3>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </section>

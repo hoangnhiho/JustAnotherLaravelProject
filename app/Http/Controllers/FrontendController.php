@@ -88,7 +88,7 @@ class FrontendController extends Controller
     public function pressMag()
     {
         $press = true;
-        $mags = Mag::orderBy('created_at', 'asc')->get();
+        $mags = Mag::orderBy('created_at', 'desc')->get();
         return view('frontend.press.mag', compact( 'mags'));
     }
     public function pressRoom()

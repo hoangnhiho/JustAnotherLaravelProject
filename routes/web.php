@@ -38,8 +38,9 @@ Route::post('/press_promo', 'FrontendController@emailPressPromo');
 Route::post('/submit_enquiry', 'FrontendController@submitEnquiry');
 Route::post('/newsletter_signup', 'FrontendController@newsletterSignup');
 
-Route::get('projects/upcoming', 'ProjectsController@upcoming');
+// Route::get('projects/upcoming', 'ProjectsController@upcoming');
 Route::resource('projects', 'ProjectsController');
+// Route::get('projects', 'ProjectsController@index');
 Route::resource('listings', 'ListingsController');
 Route::post('career/{careerId}', 'CareersController@store');
 Route::resource('career', 'CareersController');

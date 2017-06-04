@@ -19,7 +19,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-5 col-sm-offset-7" style="background: rgba(255,255,255,0.7);">
-                        <div class="carousel-content" style="color: black; height: 500px;margin-top: 100px;">
+                        <div class="carousel-content" style="color: black; height: 400px;margin-top: 100px;">
                             <br>
                             <h2 style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
                             <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>

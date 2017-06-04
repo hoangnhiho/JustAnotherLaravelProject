@@ -4,7 +4,7 @@
     <section id="main-slider" style="margin-top: 50px">
         <div class="owl-carousel">
             @foreach (json_decode($project->img_urls) as $img_url)
-                <div class="item img-responsive" style="background-image: url({{ $img_url }});">
+                <div class="item img-responsive" style="background: url({{ $img_url }}) no-repeat center center;">
                 </div><!--/.item-->
             @endforeach
         </div><!--/.owl-carousel-->
