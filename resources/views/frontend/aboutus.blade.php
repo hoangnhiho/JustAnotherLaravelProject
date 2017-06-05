@@ -91,10 +91,6 @@
                             <p style="text-align: left">{{ $employee->job_title }}</p>
                             <br>
                             {!! $employee->desc !!}
-                            <br>
-                            <h4>Contact</h4>
-                            <p style="margin-bottom: 0">E: <a href="mailto:{{ $employee->email }}">{{ $employee->email }}</a></p>
-                            <p style="margin-bottom: 0">M: {{ $employee->mobile }}</p>
                         </div>
                     </div>
                 </div>
