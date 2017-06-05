@@ -29,6 +29,7 @@
                                     <select class="form-control" name="type">
                                         <option value="rent" @if ($params->type == 'rent') selected @endif>Rent</option>
                                         <option value="sale"  @if ($params->type == 'sale') selected @endif>Buy</option>
+                                        <option value="project"  @if ($params->type == 'project') selected @endif>Project</option>
                                     </select> 
                             </div>
 
@@ -134,8 +135,10 @@
                                     @else
                                         @if ($listing->type == 'rent')
                                             <p>${{ number_format($listing->price) }} per week.</p>
-                                        @else
+                                        @elseif ($listing->type == 'project')
                                             <p>From: ${{ number_format($listing->price) }}.</p>
+                                        @else
+                                            <p>${{ number_format($listing->price) }}.</p>
                                         @endif
                                     @endif
                                 </div>

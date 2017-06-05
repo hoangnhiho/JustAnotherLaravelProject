@@ -186,30 +186,24 @@
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
                 <div class="row">
-                    <a href="https://unsplash.com/photos/zlABb6Gke24" target="_blank">
                         <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url(https://images.unsplash.com/photo-1481833761820-0509d3217039?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=) no-repeat center center; background-size: cover;">
                             
                             <div class="footer-img-info" >
                                 <h3>Restaurant</h3>
                             </div>
                         </div>
-                    </a>
-                    <a href="https://unsplash.com/photos/-A3Kb429mgY" target="_blank">
                         <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url('https://images.unsplash.com/photo-1454366946088-1492c0fef995?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=') no-repeat center center; background-size: cover;">
                             
                             <div class="footer-img-info" >
                                 <h3>Commercial</h3>
                             </div>
                         </div>
-                    </a>
-                    <a href="https://unsplash.com/photos/m-r4OozGeN8" target="_blank">
                         <div class="col-xs-12 col-sm-4 footer-img-links" style="background: url('https://images.unsplash.com/photo-1444214058525-761aeb793113?dpr=1&auto=format&fit=crop&w=1080&h=608&q=80&cs=tinysrgb&crop=&bg=') no-repeat center center; background-size: cover;">
                             
                             <div class="footer-img-info" >
                                 <h3>Rural</h3>
                             </div>
                         </div>
-                    </a>
 
                 </div>
             </div>

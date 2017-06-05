@@ -100,15 +100,19 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top: 20px">
-                <div class="col-xs-12 col-sm-4 listing-img-links" style="background: url({{ $listing->employee->img_url }}) no-repeat center center; background-size: auto 100%;">
-                    
-                    <div class="listing-img-info">
-                        <h5>{{ $listing->employee->name }}</h5>
-                        <p><a href="{{ $listing->employee->email }}" style="color:white !important">Email</a> | {{ $listing->employee->phone }}</p>
+                <div class="row contactLink" style="margin-top: 20px" data-link="{{ url('aboutus#xs-employee-'.$listing->employee->id ) }}">
+                
+                    <div class="col-xs-12 col-sm-4 listing-img-links" style="background: url({{ $listing->employee->img_url }}) no-repeat center center; background-size: auto 100%;">
+                        
+                        <div class="listing-img-info">
+                            <h5>{{ $listing->employee->name }}</h5>
+                            <p><a href="{{ $listing->employee->email }}" style="color:white !important">Email</a> | {{ $listing->employee->phone }}</p>
+                        </div>
                     </div>
+
+                
                 </div>
-                </div>
+
 
             </div>
         </div>
@@ -135,6 +139,9 @@
                 $( this ).find(".overlayer-info").fadeOut( "slow" );
             }
         );
+        $('.contactLink').click(function(){
+            window.open($(this).data('link'));
+        });
     </script>
 
     <script>
