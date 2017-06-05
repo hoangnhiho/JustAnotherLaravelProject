@@ -62,7 +62,7 @@
             <br>
             <div class="row">
                 <a href="{{ url('projects/4') }}">
-                <div class="col-sm-offset-2 col-sm-8 col-xs-12 listing-preview" style="max-height: 300px;height: 250px; overflow: hidden;">
+                <div class="col-sm-offset-2 col-sm-8 col-xs-12 listing-preview" style="max-height: 400px;height: 400px; overflow: hidden;">
                     <img class="img-responsive" src="{{ url('images/frontpage/thirdhouse1.jpg') }}" alt=""/>
                     <div class="overlayer-info" id="bigger-overlayer-info">
                         <h3 style="border-bottom: 2px solid #fff;">Nero</h3>

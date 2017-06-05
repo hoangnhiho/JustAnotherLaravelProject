@@ -10,6 +10,8 @@ use App\Models\Project;
 use App\Models\Event;
 use App\Models\Mag;
 use App\Models\Research;
+use App\Models\Market;
+use App\Models\News;
 use Mail;
 
 class FrontendController extends Controller
@@ -82,8 +84,8 @@ class FrontendController extends Controller
     public function pressMarket()
     {
         $press = true;
-        $events = Event::get();
-        return view('frontend.press.market', compact( 'events'));
+        $markets = Market::get();
+        return view('frontend.press.market', compact( 'markets'));
     }
     public function pressMag()
     {
@@ -99,8 +101,8 @@ class FrontendController extends Controller
     public function pressNews()
     {
         $press = true;
-        $events = Event::get();
-        return view('frontend.press.news', compact('events'));
+        $news = News::get();
+        return view('frontend.press.news', compact('news'));
     }
     public function pressResearch()
     {

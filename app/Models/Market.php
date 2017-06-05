@@ -4,7 +4,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Listing extends Model
+class Market extends Model
 {
     use SoftDeletes;
     /**
@@ -18,14 +18,14 @@ class Listing extends Model
      *
      * @var string
      */
-    protected $table = 'listings';
+    protected $table = 'markets';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-       'title',  'caption','desc','mini_desc', 'prop_type', 'price', 'bond', 'car_no','bath_no','bed_no' , 'img_url' , 'img_urls', 'address' , 'lat' , 'lng', 'type', 'landsize', 'council_rate', 'water_rate', 'floor_plan','sold','employee_id'
+       'name', 'caption', 'desc', 'img_url'
     ];
 
     /**

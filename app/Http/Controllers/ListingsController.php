@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Listing;
+use App\Models\Employee;    
 
 class ListingsController extends Controller
 {
@@ -79,6 +80,7 @@ class ListingsController extends Controller
     public function show($listingId)
     {
         $listing = Listing::find($listingId);
+        $listing->employee = Employee::find($listing->employee_id);
         return view('frontend.listingsShow', compact('listing'));
     }
 

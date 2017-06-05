@@ -77,7 +77,11 @@
                     </div>
                     <div class="col-xs-12 col-sm-5">
                         <h5>For {{ $listing->type }}</h5>
-                        <p>${{ $listing->price }} @if ($listing->type == 'rent') per week @endif</p>
+                        @if ($listing->price == 0)
+                            <p>Price on Application</p>
+                        @else
+                            <p>${{ number_format($listing->price) }} @if ($listing->type == 'rent') per week @endif</p>
+                        @endif
                         <hr>
                         <h5>Property information</h5>
                         <p>Land size <span class="pull-right">{{ $listing->landsize }} sqm</span></p>
@@ -90,18 +94,18 @@
                         <h5>Share this property</h5>
                         <p>
                             <a href="mailto:?subject={{$listing->address}}&body=Check out this listing on Homestates {{ url()->current() }}" style="margin-right: 10px" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> 
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}&picture={{$listing->img_url}}" target="_blank" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/home?status=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}" target="_blank" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}&picture={{$listing->img_url}}&title={{ $listing->address }}" target="_blank" style="margin-right: 10px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/share?url=http%3A//homestatesgroup.com.au/listings/{{ $listing->id }}&text={{ $listing->address }}" target="_blank" style="margin-right: 10px"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </p>
                     </div>
                 </div>
 
                 <div class="row" style="margin-top: 20px">
-                <div class="col-xs-12 col-sm-4 listing-img-links" style="background: url({{ url('images/aboutus/person1.jpg') }}) no-repeat center center; background-size: cover;">
+                <div class="col-xs-12 col-sm-4 listing-img-links" style="background: url({{ $listing->employee->img_url }}) no-repeat center center; background-size: auto 100%;">
                     
                     <div class="listing-img-info">
-                        <h5>Sarah Doe</h5>
-                        <p>Email | 0400000000</p>
+                        <h5>{{ $listing->employee->name }}</h5>
+                        <p><a href="{{ $listing->employee->email }}" style="color:white !important">Email</a> | {{ $listing->employee->phone }}</p>
                     </div>
                 </div>
                 </div>
@@ -119,7 +123,7 @@
 @endsection
 @section('customjs')
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Mx7Xn71WqG3BEsY5bGs4snSRDB1jdHs&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO1XftgdiNWc9T3bRirDqu4thN43S_VX8&callback=initMap">
     </script>    
     <script>
         // listing-preview

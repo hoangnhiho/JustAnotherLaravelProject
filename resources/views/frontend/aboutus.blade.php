@@ -67,7 +67,19 @@
 
     <!-- Homestates team -->
     @foreach ($employees as $employee)
-        <div class="container container-white" id="team">
+        <div class="container container-white team xs-employee" id="xs-employee-{{$employee->id}}" data-employee="{{$employee->id}}">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="{{ $employee->img_url }}" width="100px" height="auto">
+                            <span style="text-align: left; padding-left: 20px"><b>{{ $employee->name }}</b> {{ $employee->job_title }} <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-white team lg-employee" id="lg-employee-{{$employee->id}}" data-employee="{{$employee->id}}" style="display:none">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="row">
@@ -75,10 +87,15 @@
                             <img src="{{ $employee->img_url }}" class="img-responsive">
                         </div>
                         <div class="col-xs-7 col-sm-9" style="padding-left: 0px">
-                            <h2 style="text-align: left">{{ $employee->name }}</h2>
+                            <h2 style="text-align: left">{{ $employee->name }} <i class="fa fa-chevron-up pull-right" aria-hidden="true"></i></h2>
                             <p style="text-align: left">{{ $employee->job_title }}</p>
                             <br>
                             {!! $employee->desc !!}
+                            <br>
+                            <h4>Contact</h4>
+                            <p style="margin-bottom: 0">E: <a href="mailto:{{ $employee->email }}">{{ $employee->email }}</a></p>
+                            <p style="margin-bottom: 0">M: {{ $employee->mobile }}</p>
+                            <p style="margin-bottom: 0">D: {{ $employee->phone }}</p>
                         </div>
                     </div>
                 </div>
@@ -90,6 +107,17 @@
 @endsection
 @section('customjs')
     <script>
-
+        $('.xs-employee').click(function() {
+            console.log($(this).data('employee'));
+            var employeeId = $(this).data('employee');
+            $(this).hide();
+            $('#lg-employee-'+employeeId).show();
+        });
+        $('.lg-employee').click(function() {
+            console.log($(this).data('employee'));
+            var employeeId = $(this).data('employee');
+            $(this).hide();
+            $('#xs-employee-'+employeeId).show();
+        });
     </script>
 @endsection

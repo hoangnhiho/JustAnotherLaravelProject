@@ -133,9 +133,9 @@
                                         <p>Price on Application</p>
                                     @else
                                         @if ($listing->type == 'rent')
-                                            <p>${{ $listing->price }} per week.</p>
+                                            <p>${{ number_format($listing->price) }} per week.</p>
                                         @else
-                                            <p>From: ${{ $listing->price }}.</p>
+                                            <p>From: ${{ number_format($listing->price) }}.</p>
                                         @endif
                                     @endif
                                 </div>

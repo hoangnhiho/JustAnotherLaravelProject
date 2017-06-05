@@ -32,18 +32,18 @@
 
     <!-- This is for the area after the slides -->
     <div class="container container-white" style="margin-bottom: 30px">
-        @foreach ($events as $event)
+        @foreach ($markets as $market)
             <div class="row" style="margin-bottom: 15px; margin-top: 15px">
                 <div class="col-xs-12 col-sm-6">
-                    <img class="img-responsive" style="width:100%; height:auto" src="{{ $event->img_url }}" />
+                    <img class="img-responsive" style="width:100%; height:auto" src="{{ $market->img_url }}" />
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <h4 class="event-name">{{ $event->name }}</h4>
-                    <p>{{ $event->caption }}</p>
-                    <p  class="event-desc">{!! $event->desc !!}</p>
-                    <button class="btn btn-primary event-car-item">View Events ></button>
+                    <h4 class="event-name">{{ $market->name }}</h4>
+                    <p>{{ $market->caption }}</p>
+                    <p  class="event-desc">{!! $market->desc !!}</p>
+                    <button class="btn btn-primary event-car-item">View Market ></button>
 
-                    <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $event->img_url }}</h3></div>
+                    <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $market->img_url }}</h3></div>
 
                 </div>
             </div>
