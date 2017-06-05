@@ -31,7 +31,7 @@
                     <h4>{{ $project->name }}</h4>
                     <p>{{ $project->caption }}</p>
                     <p>{{ $project->desc }}</p>
-                    <a class="btn btn-primary" href="{{ $project->pdf_url }}" target="_blank">View Project ></a>
+                    <a class="btn btn-primary" href="{{ $project->pdf_url }}" target="_blank">Download Report</a>
                 </div>
             </div>
             <hr>
