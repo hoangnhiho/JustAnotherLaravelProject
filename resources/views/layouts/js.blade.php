@@ -13,8 +13,10 @@
 <script src="{{ url('js/main.js') }}"></script>
 <script type="text/javascript">
 	$('#pressDropBtn').click(function(){
-		console.log('clicked');
 		window.location = "{{ url('pressroom') }}";
+	});
+	$('#aboutDropBtn').click(function(){
+		window.location = "{{ url('aboutus') }}";
 	});
 
 </script>

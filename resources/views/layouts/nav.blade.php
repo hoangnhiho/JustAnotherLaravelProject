@@ -51,7 +51,7 @@
                     <li class="scroll"><a href="{{ url('migration') }}">Migration & Education</a></li>
 
                     <li class="dropdown" id="pressDropBtn">
-                        <a href="{{ url('press_news') }}" class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">Press Room <span class="caret"></span></a>
+                        <a href="{{ url('pressroom') }}" class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">Press Room <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ url('press_market') }}">Market Insights</a></li>
                             <li><a href="{{ url('homestatesmagazine') }}">Magazine</a></li>
@@ -63,8 +63,8 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown" >
-                        <a class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">About<span class="caret"></span></a>
+                    <li class="dropdown" id="aboutDropBtn">
+                        <a href="{{ url('aboutus') }}" class="dropdown-toggle" role="button" data-toggle="dropdown" data-hover="dropdown">About<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ url('aboutus') }}">About us</a></li>
                             <li><a href="{{ url('career') }}">Careers</a></li>
