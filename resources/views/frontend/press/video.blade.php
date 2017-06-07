@@ -1,5 +1,5 @@
 @extends('layouts.frontendApp')
-@section('content')id
+@section('content')
 
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
     <section id="main-slider" style="height:500px; background-image: url({{ url('images/press/rnd.jpg') }});background-repeat: no-repeat;background-size: cover; overflow-y: hidden;">
@@ -29,7 +29,6 @@
                     <h4 class="text-center">{{ $video->name }}</h4>
                 </div>
             </a>
-            
         @endforeach
         </div>
     </div>
