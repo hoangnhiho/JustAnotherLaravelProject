@@ -1131,7 +1131,7 @@ ul.nostyle i {
 .listing-img-info{
   height: 30vh;
   width: 100%;
-  background: rgba(0,0,0,0.2);
+  /*background: rgba(0,0,0,0.2);*/
 }
 
 .footer-img-info > h3{

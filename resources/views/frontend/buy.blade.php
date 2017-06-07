@@ -25,7 +25,7 @@
                 <p>Property Sales services the high demand for clients seeking to buy or sell estate-a core operational function of the Group. Backed by a vetted team of experienced property specialists, Homestates offers market-proven strategies to enhance the value of your purchase or sale.</p>
                 <br>
                 <div id="centering">
-                    <a class="btn btn-primary" href="{{ url('listings') }}">
+                    <a class="btn btn-primary" href="{{ url('listings?search=&type=sale&prop_type=all&bed=&bath=&min_price=&max_price=') }}">
                         <h3 style="color:white">Current Listings</h3>
                     </a>
                 </div>

@@ -27,7 +27,7 @@
                 <br>
                 <div id="centering">
                     <button class="btn btn-primary">
-                        <a href="{{ url('listings') }}"><h3 style="color:white; margin-top: 10px">View the Collection</h3></a>
+                        <a href="{{ url('listings?search=&type=project&prop_type=all&bed=&bath=&min_price=&max_price=') }}"><h3 style="color:white; margin-top: 10px">View the Collection</h3></a>
                     </button>
                 </div>
                 <br>

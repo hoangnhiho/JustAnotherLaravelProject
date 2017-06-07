@@ -41,7 +41,7 @@
                 <div class="col-xs-12 col-sm-6">
                     <h4 class="event-name">{{ $new->name }}</h4>
                     <p  class="event-desc">{!! $new->desc !!}</p>
-                    <button class="btn btn-primary event-car-item">View News ></button>
+                    <button class="btn btn-primary event-car-item" data-event-id="{{ $new->id }}">View News ></button>
 
                     <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $new->img_url }}</h3></div>
 
@@ -52,9 +52,9 @@
 
 
 <!-- Modal -->
-<div id="eventModal" class="modal fade" role="dialog" >
+@foreach ($news as $new)
+<div class="modal fade" role="dialog" id="event-modal-{{ $new->id }}">
     <div class="modal-dialog modal-lg">
-
         <!-- Modal content-->
         <div class="modal-content text-center">
             <div class="modal-header">
@@ -63,8 +63,8 @@
             </div>
             <div class="modal-body row ">
                 <div class="col-xs-8 col-xs-offset-2" style="height:80vh; overflow-y: hidden;">
-                <p id="modal-e-desc">Some text in the modal.</p>
-                <img class="img-responsive" style="margin: 0 auto;" id="modal-e-img" src=""/>
+                <p id="modal-e-desc">{!! $new->desc !!}</p>
+                <img class="img-responsive" style="margin: 0 auto;" id="modal-e-img" src="{{ $new->img_url }}"/>
                 </div>
             </div>
             <div class="modal-footer">
@@ -74,14 +74,14 @@
 
     </div>
 </div>
+@endforeach
 @endsection
 @section('customjs')
     <script>
         $('.event-car-item').click(function() {
-            $('#modal-e-title').html($(this).parent().parent().find('.event-name').html());
-            $('#modal-e-desc').html($(this).parent().parent().find('.event-desc').html());
-            $('#modal-e-img').attr('src', $(this).parent().parent().find('.event-img').html());
-            $('#eventModal').modal('show'); 
+            var eventId = $(this).data('event-id');
+            $('.modal').modal('hide'); 
+            $('#event-modal-'+eventId).modal('show'); 
         });
     </script>
 @endsection

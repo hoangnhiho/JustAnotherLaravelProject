@@ -118,6 +118,7 @@
                                 <div class="col-xs-9">
                                     <h4>{{ $listing->address }}</h4>
                                 </div>
+                                @if($listing->type != 'project')
                                 <div class="col-xs-1 text-center">
                                     <h4>{{ $listing->bed_no }}</h4>
                                 </div>
@@ -127,6 +128,7 @@
                                 <div class="col-xs-1 text-center">
                                     <h4>{{ $listing->car_no }}</h4>
                                 </div>
+                                @endif
                             </div>
                             <div class="row">
                                 <div class="col-xs-9">
@@ -142,6 +144,7 @@
                                         @endif
                                     @endif
                                 </div>
+                                @if($listing->type != 'project')
                                 <div class="col-xs-1 text-center">
                                     <p>Beds</p>
                                 </div>
@@ -151,6 +154,7 @@
                                 <div class="col-xs-1 text-center">
                                     <p>Cars</p>
                                 </div>
+                                @endif
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">

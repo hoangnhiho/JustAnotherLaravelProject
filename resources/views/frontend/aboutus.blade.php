@@ -146,5 +146,20 @@
             $(this).hide();
             $('#xs-employee-'+employeeId).show();
         });
+
+$(document).ready(function(){
+    if (window.location.hash != ''){
+        var hash = window.location.hash;
+        var array = hash.split('-');
+        var empId = array[2];
+        $('#xs-employee-'+empId).hide();
+        $('#lg-employee-'+empId).show();
+
+        setTimeout(function () {
+            window.scrollBy(0, -100);
+        }, 1000);
+    }
+});
+
     </script>
 @endsection

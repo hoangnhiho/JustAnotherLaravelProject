@@ -12,6 +12,7 @@ use App\Models\Mag;
 use App\Models\Research;
 use App\Models\Market;
 use App\Models\News;
+use App\Models\Video;
 use Mail;
 
 class FrontendController extends Controller
@@ -90,7 +91,7 @@ class FrontendController extends Controller
     public function pressMag()
     {
         $press = true;
-        $mags = Mag::orderBy('created_at', 'desc')->get();
+        $mags = Mag::orderBy('id', 'desc')->get();
         return view('frontend.press.mag', compact( 'mags'));
     }
     public function pressRoom()
@@ -113,8 +114,8 @@ class FrontendController extends Controller
     public function pressVideo()
     {
         $press = true;
-        $projects = Project::paginate(9);
-        return view('frontend.press.video', compact('press', 'projects'));
+        $videos = Video::get();
+        return view('frontend.press.video', compact('press', 'videos'));
     }
     public function pressEvent()
     {

@@ -36,7 +36,7 @@
             <div class="col-xs-12 col-sm-offset-1 col-sm-10">
                 @foreach ($events as $event)
                     <div class="row" style="background-color: white; margin-bottom: 30px;">
-                        <div class="col-xs-12 col-sm-4" style="padding-left:0px">
+                        <div class="col-xs-12 col-sm-4" style="padding-left:0px;">
                             <a href="{{ url('events/'.$event->id) }}">
                                 <img class="img-responsive event-images" src="{{ $event->img_url }}" alt="{{ $event->address }}" />
                             </a>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        {{ $event->desc }}
+                                        {!! $event->mini_desc !!}
                                     </div>
                                 </div>
                                 <div class="footer-img-info" style="display: none;"><h3 class="event-desc">{{ $event->desc }}</h3></div>

@@ -26,7 +26,7 @@
     <section id="main-slider" >
         <div class="owl-carousel">
             @foreach (json_decode($listing->img_urls) as $img_url)
-                <a href="{{ $img_url }}" rel="prettyPhoto"><div class="item img-responsive" style="background: url({{ $img_url }}) no-repeat center center;"></div></a>
+                <div class="item img-responsive" style="background: url({{ $img_url }}) no-repeat center center;"></div>
             @endforeach
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->  
@@ -38,6 +38,7 @@
                     <div class="col-xs-9">
                         <h4>{{ $listing->address }}</h4>
                     </div>
+                    @if($listing->type != 'project')
                     <div class="col-xs-1 text-center">
                         <h4>{{ $listing->bed_no }}</h4>
                     </div>
@@ -47,10 +48,12 @@
                     <div class="col-xs-1 text-center">
                         <h4>{{ $listing->car_no }}</h4>
                     </div>
+                    @endif
                 </div>
                 <div class="row">
                     <div class="col-xs-9">
                     </div>
+                    @if($listing->type != 'project')
                     <div class="col-xs-1 text-center">
                         <p>Beds</p>
                     </div>
@@ -60,6 +63,7 @@
                     <div class="col-xs-1 text-center">
                         <p>Cars</p>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>
@@ -76,7 +80,11 @@
                         <p>{!! $listing->desc !!}</p>
                     </div>
                     <div class="col-xs-12 col-sm-5">
-                        <h5>For {{ $listing->type }}</h5>
+                        @if ( $listing->type == 'project')
+                            <h5>Project</h5>
+                        @else
+                            <h5>For {{ $listing->type }}</h5>
+                        @endif
                         @if ($listing->price == 0)
                             <p>Price on Application</p>
                         @else
@@ -100,9 +108,9 @@
                     </div>
                 </div>
 
-                <div class="row contactLink" style="margin-top: 20px" data-link="{{ url('aboutus#xs-employee-'.$listing->employee->id ) }}">
+                <div class="row " style="margin-top: 20px" >
                 
-                    <div class="col-xs-12 col-sm-4 listing-img-links" style="background: url({{ $listing->employee->img_url }}) no-repeat center center; background-size: auto 100%;">
+                    <div class="col-xs-12 col-sm-4 listing-img-links contactLink" style="background: url({{ $listing->employee->img_url }}) no-repeat center center; background-size: auto 100%;" data-link="{{ url('aboutus#lg-employee-'.$listing->employee->id ) }}">
                         
                         <div class="listing-img-info">
                             <h5>{{ $listing->employee->name }}</h5>

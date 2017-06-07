@@ -26,7 +26,7 @@
                 <p>Property Management is a core node of rental support offered by Homestates to ensure your property remains occupied with quality tenants. Backed by extensive local knowledge of the shifting property market, our management services remain competitive and comprehensive, for your peace of mind.</p>
                 <br>
                 <div id="centering">
-                    <a class="btn btn-primary" href="{{ url('listings') }}">
+                    <a class="btn btn-primary" href="{{ url('listings?search=&type=rent&prop_type=all&bed=&bath=&min_price=&max_price=') }}">
                         <h3 style="color:white">Current Listings</h3>
                     </a>
                 </div>
