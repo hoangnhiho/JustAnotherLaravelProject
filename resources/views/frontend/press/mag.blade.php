@@ -69,7 +69,7 @@
         <div class="modal-content text-center">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" id="modal-e-title">Modal Header</h4>
+                <h4 class="modal-title" id="modal-e-title">{{ $mag->name }}</h4>
             </div>
             <div class="modal-body row ">
                 <div class="col-xs-8 col-xs-offset-2" style="height:80vh; overflow-y: hidden;">

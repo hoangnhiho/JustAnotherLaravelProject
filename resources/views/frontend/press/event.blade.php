@@ -1,29 +1,14 @@
+
 @extends('layouts.frontendApp')
 @section('content')
-<style>
-.thumbnail > a > img {
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.thumbnail > a > img:hover {
-    opacity:0.5;
-}
-.owl-item{
-    margin-left: 10px;
-}
-</style>
 <link href="{{ url('css/buy.css') }}" rel="stylesheet">
-    <section id="main-slider">
-    <section id="main-slider" style="height:500px; background-image: url({{ url('images/press/rnd.jpg') }});background-repeat: no-repeat;background-size: cover; overflow-y: hidden;">
+    <section id="main-slider" style="height:500px; background-image: url({{ url('images/press/pressroomfront.jpg') }});background-repeat: no-repeat;background-size: cover;">
         <div class="slider-inner">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-sm-offset-7" style="background: rgba(255,255,255,0.7);">
-                        <div class="carousel-content" style="color: black; height: 400px;margin-top: 100px;">
-                            <br>
-                            <h2 style="color: black">Australia's Hottest Trends For the property Market in 2017</h2>
-                            <p>We've created the leading 3 trends for you to be aware of the year for the Australian property market.</p>
-                            <p>January 2, 2017</p>
+                    <div class="col-sm-6 pull-right">
+                        <div class="carousel-content">
+                            <h2 style="margin-top: 365px; text-align: right">PRESS ROOM</h2>
                         </div>
                     </div>
                 </div>
