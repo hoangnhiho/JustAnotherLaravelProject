@@ -40,7 +40,7 @@
                 <div class="col-xs-12 col-sm-6">
                     <h4 class="event-name">{{ $market->name }}</h4>
                     <p>{{ $market->caption }}</p>
-                    <p  class="event-desc">{!! $market->desc !!}</p>
+                    <p  class="event-desc">{!! $market->mini_desc !!}</p>
                     <button class="btn btn-primary event-car-item" data-event-id="{{ $market->id }}">View Insight</button>
 
                     <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $market->img_url }}</h3></div>

@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <h4 class="event-name">{{ $new->name }}</h4>
-                    <p  class="event-desc">{!! $new->desc !!}</p>
+                    <p  class="event-desc">{!! $new->mini_desc !!}</p>
                     <button class="btn btn-primary event-car-item" data-event-id="{{ $new->id }}">View News ></button>
 
                     <div class="footer-img-info" style="display: none;"><h3 class="event-img">{{ $new->img_url }}</h3></div>
